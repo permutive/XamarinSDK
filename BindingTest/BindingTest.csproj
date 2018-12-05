@@ -74,6 +74,10 @@
       <Project>{B3C3CDD4-0E8F-48B3-8223-17D0BB423564}</Project>
       <Name>Permutive</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Binding-Duktape-Android\Binding-Duktape-Android.csproj">
+      <Project>{B8A832DB-BA85-47CC-9D78-9E8D51B47B24}</Project>
+      <Name>Binding-Duktape-Android</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
