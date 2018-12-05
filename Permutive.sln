@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutive", "Permutive\Permutive.csproj", "{B3C3CDD4-0E8F-48B3-8223-17D0BB423564}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindingTest", "BindingTest\BindingTest.csproj", "{69853924-B7B8-4F3F-8706-0BC0799B84AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding-Duktape-Android", "Binding-Duktape-Android\Binding-Duktape-Android.csproj", "{B8A832DB-BA85-47CC-9D78-9E8D51B47B24}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3C3CDD4-0E8F-48B3-8223-17D0BB423564}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3C3CDD4-0E8F-48B3-8223-17D0BB423564}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3C3CDD4-0E8F-48B3-8223-17D0BB423564}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3C3CDD4-0E8F-48B3-8223-17D0BB423564}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69853924-B7B8-4F3F-8706-0BC0799B84AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69853924-B7B8-4F3F-8706-0BC0799B84AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69853924-B7B8-4F3F-8706-0BC0799B84AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69853924-B7B8-4F3F-8706-0BC0799B84AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8A832DB-BA85-47CC-9D78-9E8D51B47B24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8A832DB-BA85-47CC-9D78-9E8D51B47B24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8A832DB-BA85-47CC-9D78-9E8D51B47B24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8A832DB-BA85-47CC-9D78-9E8D51B47B24}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
