@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.BindingTest PreferredExecutionTarget="Android.Android_Accelerated_Pie" />
   <MonoDevelop.Ide.Workbench ActiveDocument="BindingTest/MainActivity.cs">
     <Files>
-      <File FileName="BindingTest/MainActivity.cs" Line="28" Column="53" />
+      <File FileName="BindingTest/MainActivity.cs" Line="40" Column="13" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,10 +13,12 @@
             </Node>
             <Node name="BindingTest" expanded="True">
               <Node name="References" expanded="True" />
+              <Node name="Assets" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Resources" expanded="True" />
               <Node name="MainActivity.cs" selected="True" />
             </Node>
             <Node name="Permutive" expanded="True">
-              <Node name="References" expanded="True" />
               <Node name="Jars" expanded="True" />
             </Node>
           </Node>

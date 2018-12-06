@@ -69,6 +69,11 @@
     <EmbeddedReferenceJar Include="Jars\support-annotations-28.0.0.jar" />
     <EmbeddedReferenceJar Include="Jars\moshi-1.7.0.jar" />
     <EmbeddedReferenceJar Include="Jars\okio-1.15.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\okhttp-3.12.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\retrofit-2.5.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\converter-moshi-2.5.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\adapter-rxjava2-2.5.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\converter-scalars-2.5.0.jar" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="libs\" />
