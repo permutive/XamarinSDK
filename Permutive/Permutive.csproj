@@ -74,6 +74,7 @@
     <EmbeddedReferenceJar Include="Jars\converter-moshi-2.5.0.jar" />
     <EmbeddedReferenceJar Include="Jars\adapter-rxjava2-2.5.0.jar" />
     <EmbeddedReferenceJar Include="Jars\converter-scalars-2.5.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\rxkotlin-2.2.0.jar" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="libs\" />
