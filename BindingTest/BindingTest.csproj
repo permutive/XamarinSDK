@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
+    <Reference Include="Naxam.ReactiveStreams.Droid">
+      <HintPath>..\packages\Naxam.ReactiveStreams.Droid.1.0.0\lib\MonoAndroid10\Naxam.ReactiveStreams.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Naxam.RxJava2.Droid">
+      <HintPath>..\packages\Naxam.RxJava2.Droid.2.1.2\lib\MonoAndroid10\Naxam.RxJava2.Droid.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -53,6 +59,7 @@
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />
