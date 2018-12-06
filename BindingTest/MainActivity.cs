@@ -33,7 +33,8 @@ namespace BindingTest
 
             //button.Text = "rx: " + Single.Just("Rx Hullo").BlockingGet();
 
-            button.Text = "rx: " + testKotlin.TestWithRx();
+            //button.Text = "rx: " + testKotlin.TestWithRx();
+            button.Text = "moshi: " + testKotlin.TestMoshi();
 
             //Duktape dt = Duktape.Create();
 

@@ -1,28 +1,22 @@
-﻿<Properties StartupConfiguration="{B3C3CDD4-0E8F-48B3-8223-17D0BB423564}|Default">
+﻿<Properties StartupConfiguration="{69853924-B7B8-4F3F-8706-0BC0799B84AE}|Default">
+  <MonoDevelop.Ide.ItemProperties.BindingTest PreferredExecutionTarget="Android.Android_Accelerated_Pie" />
   <MonoDevelop.Ide.Workbench ActiveDocument="BindingTest/MainActivity.cs">
     <Files>
-      <File FileName="BindingTest/MainActivity.cs" Line="34" Column="53" />
+      <File FileName="BindingTest/MainActivity.cs" Line="28" Column="53" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Permutive" expanded="True">
-            <Node name="Binding-Reactive-Streams" expanded="True">
-              <Node name="Jars" expanded="True" />
-            </Node>
-            <Node name="Binding-RxJava" expanded="True">
-              <Node name="References" expanded="True" />
+            <Node name="Binding-Duktape-Android" expanded="True">
               <Node name="Jars" expanded="True" />
             </Node>
             <Node name="BindingTest" expanded="True">
               <Node name="References" expanded="True" />
-              <Node name="Properties" expanded="True" />
-              <Node name="Resources" expanded="True" />
               <Node name="MainActivity.cs" selected="True" />
             </Node>
             <Node name="Permutive" expanded="True">
               <Node name="References" expanded="True" />
-              <Node name="Packages" expanded="True" />
               <Node name="Jars" expanded="True" />
             </Node>
           </Node>
@@ -38,7 +32,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Permutive PreferredExecutionTarget="Android.Android_Accelerated_Pie" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
