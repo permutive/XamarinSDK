@@ -1,27 +1,22 @@
 ﻿<Properties StartupConfiguration="{69853924-B7B8-4F3F-8706-0BC0799B84AE}|Default">
   <MonoDevelop.Ide.ItemProperties.BindingTest PreferredExecutionTarget="Android.Android_Accelerated_Pie" />
-  <MonoDevelop.Ide.ItemProperties.Binding-Room-RxJava FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Binding-Room-Runtime/Transforms/Metadata.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BindingTest/MainActivity.cs">
     <Files>
-      <File FileName="BindingTest/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="BindingTest/MainActivity.cs" Line="36" Column="13" />
       <File FileName="Binding-Room-Runtime/Transforms/Metadata.xml" Line="19" Column="5" />
       <File FileName="Binding-Room-Runtime/Transforms/EnumMethods.xml" Line="1" Column="1" />
+      <File FileName="Permutive/Transforms/Metadata.xml" Line="54" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Permutive" expanded="True">
-            <Node name="Binding-Arch-Persistence-DB-Framework" expanded="True">
-              <Node name="References" expanded="True" />
-            </Node>
-            <Node name="Binding-Room-Runtime" expanded="True">
-              <Node name="References" expanded="True" />
-              <Node name="Packages" expanded="True" />
-              <Node name="Transforms" expanded="True">
-                <Node name="Metadata.xml" selected="True" />
+            <Node name="BindingTest" expanded="True" />
+            <Node name="Permutive" expanded="True">
+              <Node name="Jars" expanded="True">
+                <Node name="core-debug.aar" selected="True" />
               </Node>
             </Node>
-            <Node name="BindingTest" expanded="True" />
           </Node>
         </State>
       </Pad>

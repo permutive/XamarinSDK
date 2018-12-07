@@ -7,4 +7,49 @@
   This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
+  
+      <remove-node path="/api/package[@name='com.permutive.android']/class[@name='BuildConfig']" />
+
+  <remove-node path="/api/package[@name='com.permutive.android.common']" />
+  <remove-node path="/api/package[@name='com.permutive.android.common.model']" />
+  <remove-node path="/api/package[@name='com.permutive.android.common.moshi']" />
+  <remove-node path="/api/package[@name='com.permutive.android.common.room.converters']" />
+
+  <remove-node path="/api/package[@name='com.permutive.android.config']" />
+  <remove-node path="/api/package[@name='com.permutive.android.config.api']" />
+  <remove-node path="/api/package[@name='com.permutive.android.config.api.model']" />
+
+  <remove-node path="/api/package[@name='com.permutive.android.context']" />
+
+  <remove-node path="/api/package[@name='com.permutive.android.engine']" />
+  <remove-node path="/api/package[@name='com.permutive.android.engine.api']" />
+  <remove-node path="/api/package[@name='com.permutive.android.engine.model']" />
+
+  <remove-node path="/api/package[@name='com.permutive.android.errorreporting']" />
+  <remove-node path="/api/package[@name='com.permutive.android.errorreporting.api']" />
+  <remove-node path="/api/package[@name='com.permutive.android.errorreporting.api.model']" />
+
+  <remove-node path="/api/package[@name='com.permutive.android.event']" />
+  <remove-node path="/api/package[@name='com.permutive.android.event.api']" />
+  <remove-node path="/api/package[@name='com.permutive.android.event.api.model']" />
+  
+  <remove-node path="/api/package[@name='com.permutive.android.event.db']" />
+  <remove-node path="/api/package[@name='com.permutive.android.event.db.model']" />
+
+  <remove-node path="/api/package[@name='com.permutive.android.identify']" />
+  <remove-node path="/api/package[@name='com.permutive.android.identify.api']" />
+  <remove-node path="/api/package[@name='com.permutive.android.identify.api.model']" />
+  <remove-node path="/api/package[@name='com.permutive.android.identify.db']" />
+  <remove-node path="/api/package[@name='com.permutive.android.identify.db.model']" />
+
+  <remove-node path="/api/package[@name='com.permutive.android.internal']" />
+
+  <remove-node path="/api/package[@name='com.permutive.android.lookalike']" />
+  <remove-node path="/api/package[@name='com.permutive.android.lookalike.api']" />
+  <remove-node path="/api/package[@name='com.permutive.android.lookalike.api.model']" />
+
+  <remove-node path="/api/package[@name='com.permutive.android.thirdparty']" />
+  <remove-node path="/api/package[@name='com.permutive.android.thirdparty.api']" />
+  <remove-node path="/api/package[@name='com.permutive.android.thirdparty.api.model']" />
+
 </metadata>

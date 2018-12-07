@@ -72,7 +72,7 @@
     <Folder Include="libs\" />
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\testlib-debug.aar" />
+    <LibraryProjectZip Include="Jars\core-debug.aar" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Binding-Duktape-Android\Binding-Duktape-Android.csproj">
