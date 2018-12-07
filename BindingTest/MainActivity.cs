@@ -2,6 +2,8 @@
 using Android.Widget;
 using Android.OS;
 using Com.Example.Testlib;
+using Android.Arch.Persistence.Room;
+
 //using IO.Reactivex;
 //using Com.Squareup.Duktape;
 
@@ -27,16 +29,18 @@ namespace BindingTest
             //TestJava test = new TestJava();
             TestKotlin testKotlin = new TestKotlin();
 
-            ////button.Text = "wha: "+ testKotlin.ReturnSomething();
-            //button.Text = "wha: " + testKotlin.TestWithArrow();
+            button.Text = "wha: "+ testKotlin.ReturnSomething();
+            button.Text = "wha: " + testKotlin.TestWithArrow();
             button.Text = "huhwa: " + testKotlin.TestWithDuktape();
 
             //button.Text = "rx: " + Single.Just("Rx Hullo").BlockingGet();
 
-            //button.Text = "rx: " + testKotlin.TestWithRx();
+            button.Text = "rx: " + testKotlin.TestWithRx();
             button.Text = "moshi2: " + testKotlin.TestMoshi();
 
-            button.Text = "retrofit2: " + testKotlin.TestRetrofit();
+            button.Text = "retrofit3: " + testKotlin.TestRetrofit();
+
+            button.Text = "room: " + testKotlin.TestRoom(this);
 
             //Duktape dt = Duktape.Create();
 

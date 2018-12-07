@@ -38,12 +38,6 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
-    <Reference Include="Naxam.ReactiveStreams.Droid">
-      <HintPath>..\packages\Naxam.ReactiveStreams.Droid.1.0.0\lib\MonoAndroid10\Naxam.ReactiveStreams.Droid.dll</HintPath>
-    </Reference>
-    <Reference Include="Naxam.RxJava2.Droid">
-      <HintPath>..\packages\Naxam.RxJava2.Droid.2.1.2\lib\MonoAndroid10\Naxam.RxJava2.Droid.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -51,7 +45,6 @@
   <ItemGroup>
     <None Include="Additions\AboutAdditions.txt" />
     <None Include="Jars\AboutJars.txt" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\EnumFields.xml" />
@@ -66,7 +59,6 @@
     <EmbeddedReferenceJar Include="Jars\annotations-13.0.jar" />
     <EmbeddedReferenceJar Include="Jars\arrow-core-0.7.3.jar" />
     <EmbeddedReferenceJar Include="Jars\kindedj-1.1.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\support-annotations-28.0.0.jar" />
     <EmbeddedReferenceJar Include="Jars\moshi-1.7.0.jar" />
     <EmbeddedReferenceJar Include="Jars\okio-1.15.0.jar" />
     <EmbeddedReferenceJar Include="Jars\okhttp-3.12.0.jar" />

@@ -50,6 +50,24 @@
     <Reference Include="Naxam.RxJava2.Droid">
       <HintPath>..\packages\Naxam.RxJava2.Droid.2.1.2\lib\MonoAndroid10\Naxam.RxJava2.Droid.dll</HintPath>
     </Reference>
+    <Reference Include="Xamarin.Android.Support.Annotations">
+      <HintPath>..\packages\Xamarin.Android.Support.Annotations.27.0.2.1\lib\MonoAndroid81\Xamarin.Android.Support.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Arch.Core.Common">
+      <HintPath>..\packages\Xamarin.Android.Arch.Core.Common.1.0.0.1\lib\MonoAndroid80\Xamarin.Android.Arch.Core.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Arch.Lifecycle.Common">
+      <HintPath>..\packages\Xamarin.Android.Arch.Lifecycle.Common.1.0.3.1\lib\MonoAndroid80\Xamarin.Android.Arch.Lifecycle.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Arch.Lifecycle.Runtime">
+      <HintPath>..\packages\Xamarin.Android.Arch.Lifecycle.Runtime.1.0.3.1\lib\MonoAndroid80\Xamarin.Android.Arch.Lifecycle.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Compat">
+      <HintPath>..\packages\Xamarin.Android.Support.Compat.27.0.2.1\lib\MonoAndroid81\Xamarin.Android.Support.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Arch.Core.Runtime">
+      <HintPath>..\packages\Xamarin.Android.Arch.Core.Runtime.1.0.0.1\lib\MonoAndroid80\Xamarin.Android.Arch.Core.Runtime.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -85,6 +103,28 @@
       <Project>{B8A832DB-BA85-47CC-9D78-9E8D51B47B24}</Project>
       <Name>Binding-Duktape-Android</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Binding-Room-Runtime\Binding-Room-Runtime.csproj">
+      <Project>{B882A2ED-4780-4AE5-9C1B-7801A19C57F4}</Project>
+      <Name>Binding-Room-Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Binding-Arch-Persistence-DB\Binding-Arch-Persistence-DB.csproj">
+      <Project>{6832C4F0-BEC4-40BC-8369-98EE0C1714A2}</Project>
+      <Name>Binding-Arch-Persistence-DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Binding-Arch-Persicence-DB-Framework\Binding-Arch-Persistence-DB-Framework.csproj">
+      <Project>{32039940-6025-40D8-86CF-8411648EC05D}</Project>
+      <Name>Binding-Arch-Persistence-DB-Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Binding-Room-RxJava\Binding-Room-RxJava.csproj">
+      <Project>{8CF3A9F5-BB96-4E5F-902A-2AF6DF99D0EE}</Project>
+      <Name>Binding-Room-RxJava</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Android.Support.Annotations.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Annotations.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Annotations.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Annotations.targets')" />
+  <Import Project="..\packages\Xamarin.Android.Arch.Core.Common.1.0.0.1\build\MonoAndroid80\Xamarin.Android.Arch.Core.Common.targets" Condition="Exists('..\packages\Xamarin.Android.Arch.Core.Common.1.0.0.1\build\MonoAndroid80\Xamarin.Android.Arch.Core.Common.targets')" />
+  <Import Project="..\packages\Xamarin.Android.Arch.Lifecycle.Common.1.0.3.1\build\MonoAndroid80\Xamarin.Android.Arch.Lifecycle.Common.targets" Condition="Exists('..\packages\Xamarin.Android.Arch.Lifecycle.Common.1.0.3.1\build\MonoAndroid80\Xamarin.Android.Arch.Lifecycle.Common.targets')" />
+  <Import Project="..\packages\Xamarin.Android.Arch.Lifecycle.Runtime.1.0.3.1\build\MonoAndroid80\Xamarin.Android.Arch.Lifecycle.Runtime.targets" Condition="Exists('..\packages\Xamarin.Android.Arch.Lifecycle.Runtime.1.0.3.1\build\MonoAndroid80\Xamarin.Android.Arch.Lifecycle.Runtime.targets')" />
+  <Import Project="..\packages\Xamarin.Android.Support.Compat.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Compat.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Compat.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Compat.targets')" />
+  <Import Project="..\packages\Xamarin.Android.Arch.Core.Runtime.1.0.0.1\build\MonoAndroid80\Xamarin.Android.Arch.Core.Runtime.targets" Condition="Exists('..\packages\Xamarin.Android.Arch.Core.Runtime.1.0.0.1\build\MonoAndroid80\Xamarin.Android.Arch.Core.Runtime.targets')" />
 </Project>
