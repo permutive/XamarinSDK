@@ -8,7 +8,56 @@
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
   
-<!--  <remove-node path="/api/package[@name='com.permutive.android']/class[@name='BuildConfig']" />-->
+<remove-node path="/api/package[@name='com.permutive.android']/class[@name='BuildConfig']" />
+
+
+<remove-node path="/api/package[@name='com.permutive.android']/class[contains(@name,'.Companion')]" />
+<remove-node path="/api/package[@name='com.permutive.android']/class[contains(@name,'Kt')]" />
+
+<!--<remove-node path="/api/package[@name='com.permutive.android']/class[@name='EventTracker.Companion']" />-->
+<!--<remove-node path="/api/package[@name='com.permutive.android']/class[@name='Permutive.Companion']" />-->
+
+<!-- <add-node path="/api/package[@name='com.permutive.android']/class[@name='Permutive']" />-->
+<!-- <remove-node path="/api/package[starts-with(@name,'com.permutive.android')]" />-->
+
+ <remove-node path="/api/package[starts-with(@name,'com.permutive.android.common')]" />
+ <remove-node path="/api/package[starts-with(@name,'com.permutive.android.config')]" />
+ <remove-node path="/api/package[starts-with(@name,'com.permutive.android.context')]" />
+ <remove-node path="/api/package[starts-with(@name,'com.permutive.android.engine')]" />
+ <remove-node path="/api/package[starts-with(@name,'com.permutive.android.errorreporting')]" />
+ <remove-node path="/api/package[starts-with(@name,'com.permutive.android.event')]" />
+
+
+  <remove-node path="/api/package[@name='com.permutive.android.identify']/class[starts-with(@name,'AliasProperties')]" />
+  <remove-node path="/api/package[@name='com.permutive.android.identify']/class[starts-with(@name,'AliasPublisher')]" />
+  <remove-node path="/api/package[@name='com.permutive.android.identify']/class[starts-with(@name,'AliasStorage')]" />
+  <remove-node path="/api/package[@name='com.permutive.android.identify']/class[starts-with(@name,'DefaultAliasProvider')]" />
+  <remove-node path="/api/package[@name='com.permutive.android.identify']/class[starts-with(@name,'UserIdProvider')]" />
+  <remove-node path="/api/package[@name='com.permutive.android.identify']/interface[starts-with(@name,'UserIdStorage')]" />
+
+ <remove-node path="/api/package[starts-with(@name,'com.permutive.android.identify.api')]" />
+ <remove-node path="/api/package[starts-with(@name,'com.permutive.android.identify.db')]" />
+
+<!--  <remove-node path="/api/package[@name='com.permutive.android.identify']/class[@name='AliasPropertiesPublisher']" />-->
+
+<!--  <remove-node path="/api/package[@name='com.permutive.android.identify']/class[starts-with(@name,'AliasPropertiesPublisher')]" />-->
+<!--  <remove-node path="/api/package[@name='com.permutive.android.identify']/class[starts-with(@name,'AliasPublisher')]" />-->
+
+<!--  <remove-node path="/api/package[@name='com.permutive.android.identify']/class[@name='AliasPublisher.AliasEntry']" />-->
+
+
+<!-- <remove-node path="/api/package[starts-with(@name,'com.permutive.android.identify')]" />-->
+<!-- <remove-node path="/api/package[starts-with(@name,'com.permutive.android.internal')]" />-->
+ <remove-node path="/api/package[starts-with(@name,'com.permutive.android.lookalike')]" />
+ <remove-node path="/api/package[starts-with(@name,'com.permutive.android.network')]" />
+ <remove-node path="/api/package[starts-with(@name,'com.permutive.android.thirdparty')]" />
+
+<remove-node path="/api/package[@name='com.permutive.android']/class[@name='Permutive']/constructor[@name='Permutive']" />
+<remove-node path="/api/package[@name='com.permutive.android']/class[@name='EventTracker']/constructor[@name='EventTracker']" />
+
+
+<!--
+  <remove-node path="/api/package[@name='com.permutive.android.common']" />
 
   <remove-node path="/api/package[@name='com.permutive.android.common']" />
   <remove-node path="/api/package[@name='com.permutive.android.common.model']" />
@@ -36,7 +85,11 @@
   <remove-node path="/api/package[@name='com.permutive.android.event.db']" />
   <remove-node path="/api/package[@name='com.permutive.android.event.db.model']" />
 
-  <remove-node path="/api/package[@name='com.permutive.android.identify']" />
+  <remove-node path="/api/package[@name='com.permutive.android.identify']/class[@name='AliasPropertiesPublisher']" />
+  <remove-node path="/api/package[@name='com.permutive.android.identify']/class[@name='AliasPublisher']" />
+  <remove-node path="/api/package[@name='com.permutive.android.identify']/class[@name='AliasPublisher.AliasEntry']" />
+
+
   <remove-node path="/api/package[@name='com.permutive.android.identify.api']" />
   <remove-node path="/api/package[@name='com.permutive.android.identify.api.model']" />
   <remove-node path="/api/package[@name='com.permutive.android.identify.db']" />
@@ -51,5 +104,6 @@
   <remove-node path="/api/package[@name='com.permutive.android.thirdparty']" />
   <remove-node path="/api/package[@name='com.permutive.android.thirdparty.api']" />
   <remove-node path="/api/package[@name='com.permutive.android.thirdparty.api.model']" />
+  -->
 
 </metadata>

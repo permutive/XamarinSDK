@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{69853924-B7B8-4F3F-8706-0BC0799B84AE}|Default">
   <MonoDevelop.Ide.ItemProperties.BindingTest PreferredExecutionTarget="Android.Android_Accelerated_Pie" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BindingTest/MainActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Permutive/Transforms/Metadata.xml">
     <Files>
-      <File FileName="Permutive/Transforms/Metadata.xml" Line="11" Column="5" />
-      <File FileName="BindingTest/MainActivity.cs" Line="76" Column="49" />
+      <File FileName="Permutive/Transforms/Metadata.xml" Line="36" Column="83" />
+      <File FileName="BindingTest/MainActivity.cs" Line="62" Column="19" />
+      <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Bindings.targets" Line="452" Column="97" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,11 +16,11 @@
             <Node name="Binding-Room-RxJava" expanded="True">
               <Node name="Jars" expanded="True" />
             </Node>
-            <Node name="BindingTest" expanded="True">
-              <Node name="MainActivity.cs" selected="True" />
-            </Node>
+            <Node name="BindingTest" expanded="True" />
             <Node name="Permutive" expanded="True">
-              <Node name="Transforms" expanded="True" />
+              <Node name="Transforms" expanded="True">
+                <Node name="Metadata.xml" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>

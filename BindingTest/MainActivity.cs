@@ -58,12 +58,17 @@ namespace BindingTest
             }
 
 
+
             Permutive permutive = new Permutive.Builder()
                         .ApiKey(projectId)
                         .ProjectId(apiKey)
+                        //.AliasProvider(null)
                         //.Identity("testIdentity@xamarin.com")
                         .Context(this)
                         .Build();
+
+
+            //EventProperties.Companion
 
 
             permutive.SetIdentity("someIdentity");
@@ -105,11 +110,15 @@ namespace BindingTest
                     //)
                     .Build();
 
-                permutive.EventTracker().Track("pageView");
+                permutive.EventTracker().Track("pageView", eventProperties);
             }
 
 
             TriggersProvider triggers = permutive.TriggersProvider();
+            //TriggersProvider.TriggerAction querySegments = triggers.QuerySegments()
+
+
+            //triggers.QueryReactions("dfp", new Com.Permutive.Android.Internal.IMethod { })
 
 
             /*
@@ -139,5 +148,11 @@ namespace BindingTest
             button.Click += delegate { button.Text = $"{count++} clicks!"; };
         }
     }
+
+    class SegmentListener : Com.Permutive.Android.Internal.IMethod
+    {
+
+    }
+
 }
 
