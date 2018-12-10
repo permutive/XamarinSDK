@@ -45,6 +45,7 @@
   <ItemGroup>
     <None Include="Additions\AboutAdditions.txt" />
     <None Include="Jars\AboutJars.txt" />
+    <None Include="Jars\core-release.aar" />
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\EnumFields.xml" />
@@ -74,7 +75,7 @@
     <Folder Include="libs\" />
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\core-release.aar" />
+    <LibraryProjectZip Include="Jars\core-debug.aar" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Binding-Duktape-Android\Binding-Duktape-Android.csproj">
