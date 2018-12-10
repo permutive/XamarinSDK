@@ -8,6 +8,7 @@ using Android.Net;
 
 using System;
 using System.Collections.Generic;
+using Uri = Android.Net.Uri;
 
 //using Com.Example.Testlib;
 //using Android.Arch.Persistence.Room;
