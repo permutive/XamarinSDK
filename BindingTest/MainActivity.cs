@@ -4,6 +4,10 @@ using Android.OS;
 
 using Com.Permutive.Android;
 using Java.Util;
+using Android.Net;
+
+using System;
+using System.Collections.Generic;
 
 //using Com.Example.Testlib;
 //using Android.Arch.Persistence.Room;
@@ -56,10 +60,53 @@ namespace BindingTest
             Permutive permutive = new Permutive.Builder()
                         .ApiKey(projectId)
                         .ProjectId(apiKey)
+                        //.Identity("testIdentity@xamarin.com")
                         .Context(this)
                         .Build();
 
-            //permutive.EventTracker().Track("pageView");
+
+            permutive.SetIdentity("someIdentity");
+
+            permutive.SetTitle("Xamarin example");
+            permutive.SetUrl(Uri.Parse("http://permutive.com/tutorials"));
+            permutive.SetReferrer(Uri.Parse("http://permutive.com/tutorials?referrer=johnDoe"));
+
+
+            EventTracker eventTracker = permutive.EventTracker();
+            bool doStuff = false;
+            if (doStuff)
+            {
+                EventProperties eventProperties =
+                    new EventProperties.Builder()
+                    .With("string", "string")
+                    .With("boolean", true)
+                    .With("int", 1)
+                    .With("long", 1L)
+                    .With("float", 1f)
+                    .With("double", 1.0)
+                    .With("string", "string")
+                    .With("boolean", true)
+                    .With("int", 1)
+                    .With("long", 1L)
+                    .With("float", 1f)
+                    .With("double", 1.0)
+                    .With("innerMap", new EventProperties.Builder()
+                                        .Build())
+                    .WithStrings("stringArray", new List<string> { "string" })
+                    //.WithBooleans("booleanArray", new List<Boolean> { Boolean.True })
+                    //.WithInts("intArray", new List<Int> { 1 })
+                    //.WithLongs("longArray", 1L)
+                    //.WithFloats("floatArray", 1f)
+                    //.WithDoubles("doubleArray", 1.0)
+                    //.WithEventProperties("innerMap", 
+                    //new EventProperties.Builder()
+                    //.Build()
+                    //)
+                    .Build();
+
+                permutive.EventTracker().Track("pageView");
+            }
+
 
             TriggersProvider triggers = permutive.TriggersProvider();
 

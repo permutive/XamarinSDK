@@ -8,7 +8,7 @@
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
   
-      <remove-node path="/api/package[@name='com.permutive.android']/class[@name='BuildConfig']" />
+<!--  <remove-node path="/api/package[@name='com.permutive.android']/class[@name='BuildConfig']" />-->
 
   <remove-node path="/api/package[@name='com.permutive.android.common']" />
   <remove-node path="/api/package[@name='com.permutive.android.common.model']" />
