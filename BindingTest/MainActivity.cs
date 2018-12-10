@@ -33,15 +33,19 @@ namespace BindingTest
             UUID TRANTOR_LIVE_PROJECT_ID = UUID.FromString("e0039147-51e7-4224-a814-0e2d438aabcd");
             UUID TRANTOR_LIVE_API_KEY = UUID.FromString("da4d09b5-843a-4bd5-bd79-8cea7f69f730");
 
-            UUID TRANTOR_STAGING_API_KEY = UUID.FromString("5c2b415d-7b20-4bc9-84fb-4f04bf0e5743");
-        UUID TRANTOR_STAGING_PROJECT_ID = UUID.FromString("be668577-07f5-444d-98e0-222b990951b1");
+            //UUID TRANTOR_STAGING_API_KEY = UUID.FromString("5c2b415d-7b20-4bc9-84fb-4f04bf0e5743");
+            //UUID TRANTOR_STAGING_PROJECT_ID = UUID.FromString("be668577-07f5-444d-98e0-222b990951b1");
 
 
             Permutive permutive = new Permutive.Builder()
-                        .ApiKey(TRANTOR_STAGING_API_KEY)
-                        .ProjectId(TRANTOR_STAGING_PROJECT_ID)
+                        .ApiKey(TRANTOR_LIVE_API_KEY)
+                        .ProjectId(TRANTOR_LIVE_PROJECT_ID)
                         .Context(this)
                         .Build();
+
+            //permutive.EventTracker().Track("pageView");
+
+            TriggersProvider triggers = permutive.TriggersProvider();
 
 
             /*

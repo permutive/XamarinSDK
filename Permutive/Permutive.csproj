@@ -67,12 +67,14 @@
     <EmbeddedReferenceJar Include="Jars\adapter-rxjava2-2.5.0.jar" />
     <EmbeddedReferenceJar Include="Jars\converter-scalars-2.5.0.jar" />
     <EmbeddedReferenceJar Include="Jars\rxkotlin-2.2.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\rxjava-2.2.4.jar" />
+    <EmbeddedReferenceJar Include="Jars\reactive-streams-1.0.2.jar" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="libs\" />
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\core-debug.aar" />
+    <LibraryProjectZip Include="Jars\core-release.aar" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Binding-Duktape-Android\Binding-Duktape-Android.csproj">
