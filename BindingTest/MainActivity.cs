@@ -52,11 +52,34 @@ namespace BindingTest
             TriggersProvider triggersProvider = permutive.TriggersProvider();
             TriggersProvider.TriggerAction querySegments = triggersProvider.QuerySegments(new SegmentListener());
 
+            MonitorSegments(result => {
+                Android.Util.Log.Debug("WTF", "WTF: MonitorSegments result:");
+                foreach(var value in result)
+                {
+                    Android.Util.Log.Debug("WTF", $"WTF:\t{value}");
+                }
+            });
+
+            MonitorReactions("dfp", result => {
+                Android.Util.Log.Debug("WTF", "WTF: MonitorReactions result:");
+                foreach (var value in result)
+                {
+                    Android.Util.Log.Debug("WTF", $"WTF:\t{value}");
+                }
+            });
+
+            //TriggersProvider.TriggerAction querySegments = triggersProvider.QuerySegments(new SegmentListener());
+
+            /*
             TriggersProvider.TriggerAction queryReactions = triggersProvider.QueryReactions("dfp", new ReactionsListener());
 
             TriggersProvider.TriggerAction specific = triggersProvider.InvokeTriggerAction(1068, new QueryListener());
 
             TriggersProvider.TriggerAction map = triggersProvider.TriggerActionMap(1068, new QueryListener());
+            */
+
+            MonitorQuery<bool>(1068, result => Android.Util.Log.Debug("WTF", $"MonitorQuery result: {result}"));
+
 
             //queryReactions.Close();
 
@@ -98,6 +121,158 @@ namespace BindingTest
             permutive.EventTracker().Track("pageView", eventProperties);
         }
 
+        void MonitorSegments(Action<List<int>> action)
+        {
+            MethodListWrapper<int> methodWrapper = new MethodListWrapper<int>(action);
+            permutive.TriggersProvider().QuerySegments(methodWrapper);
+        }
+
+        void MonitorReactions(string reaction, Action<List<int>> action)
+        {
+            MethodListWrapper<int> methodWrapper = new MethodListWrapper<int>(action);
+            permutive.TriggersProvider().QueryReactions(reaction, methodWrapper);
+        }
+
+        void MonitorQuery<T>(int queryId, Action<T> action)
+        {
+            MethodWrapper<T> methodWrapper = new MethodWrapper<T>(action);
+            permutive.TriggersProvider().InvokeTriggerAction(queryId, methodWrapper);
+        }
+
+    }
+
+    //Can be of type:
+    //Boolean
+    //String
+    //Int
+    //Long
+    //Float
+    //Double
+    //Map<String, Any>
+
+    class MethodWrapper<T> : Java.Lang.Object, Com.Permutive.Android.Internal.IMethod
+    {
+        private Action<T> action;
+
+        public MethodWrapper(Action<T> action)
+        {
+            this.action = action;
+        }
+
+        void IMethod.Invoke(Java.Lang.Object p0)
+        {
+            //Android.Util.Log.Debug("WTF", $"WTF: MethodWrapper::invoke({p0}) type is {p0.GetType()}");
+
+            Type type = typeof(T);
+
+            if (type == typeof(bool))
+            {
+                Java.Lang.Boolean value = p0.JavaCast<Java.Lang.Boolean>();
+                action((T)(object)value.BooleanValue());
+            }
+            else if (type == typeof(string))
+            {
+                Java.Lang.String value = p0.JavaCast<Java.Lang.String>();
+                action((T)(object)value.ToString());
+            }
+            else if (type == typeof(int))
+            {
+                Java.Lang.Integer value = p0.JavaCast<Java.Lang.Integer>();
+                action((T)(object)value.IntValue());
+            }
+            else if (type == typeof(long))
+            {
+                Java.Lang.Long value = p0.JavaCast<Java.Lang.Long>();
+                action((T)(object)value.LongValue());
+            }
+            else if (type == typeof(float))
+            {
+                Java.Lang.Float value = p0.JavaCast<Java.Lang.Float>();
+                action((T)(object)value.FloatValue());
+            }
+            else if (type == typeof(double))
+            {
+                Java.Lang.Double value = p0.JavaCast<Java.Lang.Double>();
+                action((T)(object)value.DoubleValue());
+            }
+            else
+            {
+                throw new IllegalArgumentException("Type parameter must be: bool/string/int/long/float/double");
+            }
+        }
+    }
+
+
+    class MethodListWrapper<T> : Java.Lang.Object, Com.Permutive.Android.Internal.IMethod
+    {
+        private Action<List<T>> action;
+
+        public MethodListWrapper(Action<List<T>> action)
+        {
+            this.action = action;
+        }
+
+        void IMethod.Invoke(Java.Lang.Object p0)
+        {
+            Android.Util.Log.Debug("WTF", $"WTF: MethodListWrapper::invoke({p0}) type is {p0.GetType()}");
+
+            Java.Util.IList list = p0.JavaCast<Java.Util.IList>();
+
+            var returnList = new List<T>(list.Size());
+
+
+            for (int index = 0; index < list.Size(); index++)
+            {
+                returnList.Add(convertBasicType(list.Get(index)));
+            }
+
+
+            action(returnList);
+
+        }
+
+        private T convertBasicType(Java.Lang.Object p0)
+        {
+            Type type = typeof(T);
+            T returns;
+
+            if (type == typeof(bool))
+            {
+                Java.Lang.Boolean value = p0.JavaCast<Java.Lang.Boolean>();
+                returns = (T)(object)value.BooleanValue();
+            }
+            else if (type == typeof(string))
+            {
+                Java.Lang.String value = p0.JavaCast<Java.Lang.String>();
+                returns = (T)(object)value.ToString();
+            }
+            else if (type == typeof(int))
+            {
+                Java.Lang.Integer value = p0.JavaCast<Java.Lang.Integer>();
+                returns = (T)(object)value.IntValue();
+            }
+            else if (type == typeof(long))
+            {
+                Java.Lang.Long value = p0.JavaCast<Java.Lang.Long>();
+                returns = (T)(object)value.LongValue();
+            }
+            else if (type == typeof(float))
+            {
+                Java.Lang.Float value = p0.JavaCast<Java.Lang.Float>();
+                returns = (T)(object)value.FloatValue();
+            }
+            else if (type == typeof(double))
+            {
+                Java.Lang.Double value = p0.JavaCast<Java.Lang.Double>();
+                returns = (T)(object)value.DoubleValue();
+            }
+            else
+            {
+                throw new IllegalArgumentException("Type parameter must be: bool/string/int/long/float/double");
+            }
+
+            return returns;
+        }
     }
 
 

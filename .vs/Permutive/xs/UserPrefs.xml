@@ -1,13 +1,13 @@
 ﻿<Properties StartupConfiguration="{69853924-B7B8-4F3F-8706-0BC0799B84AE}|Default">
   <MonoDevelop.Ide.ItemProperties.BindingTest PreferredExecutionTarget="Android.Android_Accelerated_Pie" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BindingTest/Properties/AndroidManifest.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BindingTest/MainActivity.cs">
     <Files>
       <File FileName="Permutive/Transforms/Metadata.xml" Line="33" Column="1" />
-      <File FileName="BindingTest/MainActivity.cs" Line="132" Column="26" />
+      <File FileName="BindingTest/MainActivity.cs" Line="214" Column="29" />
       <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Bindings.targets" Line="435" Column="44" />
       <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="2239" Column="57" />
-      <File FileName="BindingTest/BindingTestApplication.cs" Line="21" Column="44" />
-      <File FileName="BindingTest/Properties/AndroidManifest.xml" Line="6" Column="102" />
+      <File FileName="BindingTest/BindingTestApplication.cs" Line="31" Column="46" />
+      <File FileName="BindingTest/Properties/AndroidManifest.xml" Line="6" Column="101" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,9 +20,8 @@
               <Node name="Jars" expanded="True" />
             </Node>
             <Node name="BindingTest" expanded="True">
-              <Node name="Properties" expanded="True">
-                <Node name="AndroidManifest.xml" selected="True" />
-              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="MainActivity.cs" selected="True" />
             </Node>
             <Node name="Permutive" expanded="True">
               <Node name="Transforms" expanded="True" />
