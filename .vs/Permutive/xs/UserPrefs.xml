@@ -3,7 +3,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="BindingTest/MainActivity.cs">
     <Files>
       <File FileName="Permutive/Transforms/Metadata.xml" Line="33" Column="1" />
-      <File FileName="BindingTest/MainActivity.cs" Line="214" Column="29" />
+      <File FileName="BindingTest/MainActivity.cs" Line="166" Column="34" />
       <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Bindings.targets" Line="435" Column="44" />
       <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="2239" Column="57" />
       <File FileName="BindingTest/BindingTestApplication.cs" Line="31" Column="46" />
