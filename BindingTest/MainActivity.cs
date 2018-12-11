@@ -9,6 +9,9 @@ using Android.Net;
 using System;
 using System.Collections.Generic;
 using Uri = Android.Net.Uri;
+using Java.Lang;
+using Android.Runtime;
+using Com.Permutive.Android.Internal;
 
 //using Com.Example.Testlib;
 //using Android.Arch.Persistence.Room;
@@ -58,7 +61,6 @@ namespace BindingTest
             }
 
 
-
             Permutive permutive = new Permutive.Builder()
                         .ApiKey(projectId)
                         .ProjectId(apiKey)
@@ -68,10 +70,7 @@ namespace BindingTest
                         .Build();
 
 
-            //EventProperties.Companion
-
-
-            permutive.SetIdentity("someIdentity");
+            //permutive.SetIdentity("someIdentity");
 
             permutive.SetTitle("Xamarin example");
             permutive.SetUrl(Uri.Parse("http://permutive.com/tutorials"));
@@ -96,6 +95,8 @@ namespace BindingTest
                     .With("long", 1L)
                     .With("float", 1f)
                     .With("double", 1.0)
+                    .With("geo", EventProperties.GEO_INFO)
+                    .With("isp", EventProperties.ISP_INFO)
                     .With("innerMap", new EventProperties.Builder()
                                         .Build())
                     .WithStrings("stringArray", new List<string> { "string" })
@@ -114,11 +115,16 @@ namespace BindingTest
             }
 
 
-            TriggersProvider triggers = permutive.TriggersProvider();
-            //TriggersProvider.TriggerAction querySegments = triggers.QuerySegments()
+            TriggersProvider triggersProvider = permutive.TriggersProvider();
+            TriggersProvider.TriggerAction querySegments = triggersProvider.QuerySegments(new SegmentListener());
 
+            //TriggersProvider.TriggerAction queryReactions = triggersProvider.QueryReactions("dfp", new ReactionsListener());
 
-            //triggers.QueryReactions("dfp", new Com.Permutive.Android.Internal.IMethod { })
+            TriggersProvider.TriggerAction specific = triggersProvider.InvokeTriggerAction(1068, new QueryListener());
+
+            TriggersProvider.TriggerAction map = triggersProvider.TriggerActionMap(1068, new QueryListener());
+
+            //queryReactions.Close();
 
 
             /*
@@ -131,8 +137,7 @@ namespace BindingTest
 
             //button.Text = "rx: " + Single.Just("Rx Hullo").BlockingGet();
 
-            button.Text = "rx: " + testKotlin.TestWithRx();
-            button.Text = "moshi2: " + testKotlin.TestMoshi();
+            button.Text = "rx: " + testKotlin.TestWithRx(); button.Text = "moshi2: " + testKotlin.TestMoshi();
 
             button.Text = "retrofit3: " + testKotlin.TestRetrofit();
 
@@ -149,9 +154,41 @@ namespace BindingTest
         }
     }
 
-    class SegmentListener : Com.Permutive.Android.Internal.IMethod
+    class SegmentListener : Java.Lang.Object, Com.Permutive.Android.Internal.IMethod
     {
 
+        void IMethod.Invoke(Java.Lang.Object p0)
+        {
+            Java.Util.IList segments = p0.JavaCast<Java.Util.IList>();
+            Android.Util.Log.Debug("WTF", $"Segments updated: {segments}");
+
+            //foreach (var segment in segments) //doesn't work!
+            //for (int index = 0;  index < segments.Size();  index++)
+            //{
+            //    Android.Util.Log.Debug("WTF", $"getting {index}");
+            //    Android.Util.Log.Debug("WTF", $"{segments.Get(index)}");
+            //}
+        }
+    }
+
+    class ReactionsListener : Java.Lang.Object, Com.Permutive.Android.Internal.IMethod
+    {
+
+        void IMethod.Invoke(Java.Lang.Object p0)
+        {
+            Java.Util.IList segments = p0.JavaCast<Java.Util.IList>();
+            Android.Util.Log.Debug("WTF", $"Reactions updated: {segments}");
+        }
+    }
+
+    class QueryListener : Java.Lang.Object, Com.Permutive.Android.Internal.IMethod
+    {
+
+        void IMethod.Invoke(Java.Lang.Object p0)
+        {
+            //Java.Util.ArrayList segments = p0.JavaCast<Java.Util.ArrayList>();
+            Android.Util.Log.Debug("WTF", $"Query updated: {p0} {p0.GetType()}");
+        }
     }
 
 }
