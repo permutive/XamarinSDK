@@ -8,15 +8,13 @@
       <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="2239" Column="57" />
       <File FileName="BindingTest/BindingTestApplication.cs" Line="20" Column="9" />
       <File FileName="BindingTest/Properties/AndroidManifest.xml" Line="6" Column="101" />
-      <File FileName="Library.Android/PermutiveSDKImpl.cs" Line="256" Column="5" />
+      <File FileName="Library.Android/PermutiveSDKImpl.cs" Line="157" Column="33" />
+      <File FileName="Library.Interface/PermutiveSDK.cs" Line="55" Column="54" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Permutive.Xamarin" expanded="True">
-            <Node name="Binding.Android" expanded="True">
-              <Node name="Jars" expanded="True" />
-            </Node>
             <Node name="BindingTest" expanded="True">
               <Node name="References" expanded="True" />
             </Node>
@@ -24,7 +22,9 @@
               <Node name="References" expanded="True" />
               <Node name="PermutiveSDKImpl.cs" selected="True" />
             </Node>
-            <Node name="Library.Interface" expanded="True" />
+            <Node name="Library.Interface" expanded="True">
+              <Node name="Properties" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>

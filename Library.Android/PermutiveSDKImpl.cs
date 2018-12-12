@@ -25,18 +25,16 @@ namespace Permutive.Xamarin
 
         public override EventTracker EventTracker()
         {
-            throw new NotImplementedException();
+            return new EventTrackerImpl(permutive.EventTracker());
         }
 
         public override Permutive Initialize(PermutiveOptions options)
         {
             permutive = new Com.Permutive.Android.Permutive.Builder()
                     .Context(context)
-                    //.ProjectId(Java.Util.UUID.FromString("5c2b415d-7b20-4bc9-84fb-4f04bf0e5743"))
-                    //.ApiKey(Java.Util.UUID.FromString("be668577-07f5-444d-98e0-222b990951b1"))
                     .ProjectId(Java.Util.UUID.FromString(options.ProjectId))
                     .ApiKey(Java.Util.UUID.FromString(options.ApiKey))
-                    //other stuff?
+                    //..?
                     .Build();
 
             return this;
@@ -65,6 +63,11 @@ namespace Permutive.Xamarin
         public override TriggersProvider TriggersProvider()
         {
             return new TriggersProviderImpl(permutive.TriggersProvider());
+        }
+
+        public override EventProperties.Builder CreateEventPropertiesBuilder()
+        {
+            return new EventPropertiesImpl.BuilderImpl();
         }
     };
 
@@ -99,8 +102,138 @@ namespace Permutive.Xamarin
         }
     }
 
+    public class EventPropertiesImpl : EventProperties
+    {
+        internal Com.Permutive.Android.EventProperties eventProperties;
 
-    class TriggerActionWrapper : IDisposable
+        internal EventPropertiesImpl(Com.Permutive.Android.EventProperties eventProperties)
+        {
+            this.eventProperties = eventProperties;
+        }
+
+        public class BuilderImpl : EventProperties.Builder
+        {
+            private Com.Permutive.Android.EventProperties.Builder builder;
+
+            internal BuilderImpl()
+            {
+                this.builder = new Com.Permutive.Android.EventProperties.Builder();
+            }
+
+            public override Builder With(string key, bool value)
+            {
+                builder.With(key, value);
+                return this;
+            }
+
+            public override Builder With(string key, string value)
+            {
+                builder.With(key, value);
+                return this;
+            }
+
+            public override Builder With(string key, int value)
+            {
+                builder.With(key, value);
+                return this;
+            }
+
+            public override Builder With(string key, long value)
+            {
+                builder.With(key, value);
+                return this;
+            }
+
+            public override Builder With(string key, float value)
+            {
+                builder.With(key, value);
+                return this;
+            }
+
+            public override Builder With(string key, double value)
+            {
+                builder.With(key, value);
+                return this;
+            }
+
+            public override Builder With(string key, EventProperties value)
+            {
+                builder.With(key, ((EventPropertiesImpl) value).eventProperties);
+                return this;
+            }
+
+            public override Builder With(string key, IList<bool> value)
+            {
+                builder.WithBooleans(key, new List<bool>(value).ConvertAll<Java.Lang.Boolean>(v => Java.Lang.Boolean.ValueOf(v)));
+                return this;
+            }
+
+            public override Builder With(string key, IList<string> value)
+            {
+                builder.WithStrings(key, value);
+                return this;
+            }
+
+            public override Builder With(string key, IList<int> value)
+            {
+                builder.WithInts(key, new List<int>(value).ConvertAll<Java.Lang.Integer>(v => Java.Lang.Integer.ValueOf(v)));
+                return this;
+            }
+
+            public override Builder With(string key, IList<long> value)
+            {
+                builder.WithLongs(key, new List<long>(value).ConvertAll<Java.Lang.Long>(v => Java.Lang.Long.ValueOf(v)));
+                return this;
+            }
+
+            public override Builder With(string key, IList<float> value)
+            {
+                builder.WithFloats(key, new List<float>(value).ConvertAll<Java.Lang.Float>(v => Java.Lang.Float.ValueOf(v)));
+                return this;
+            }
+
+            public override Builder With(string key, IList<double> value)
+            {
+                builder.WithDoubles(key, new List<double>(value).ConvertAll<Java.Lang.Double>(v => Java.Lang.Double.ValueOf(v)));
+                return this;
+            }
+
+            public override Builder With(string key, IList<EventProperties> value)
+            {
+                builder.WithEventProperties(key, new List<EventProperties>(value).ConvertAll<Com.Permutive.Android.EventProperties>(v => ((EventPropertiesImpl)v).eventProperties));
+                return this;
+            }
+
+            public override EventProperties Build()
+            {
+                return new EventPropertiesImpl(builder.Build());
+            }
+        }
+    }
+
+    internal class EventTrackerImpl : EventTracker
+    {
+        private Com.Permutive.Android.EventTracker eventTracker;
+
+        internal EventTrackerImpl(Com.Permutive.Android.EventTracker eventTracker)
+        {
+            this.eventTracker = eventTracker;
+        }
+
+        public override void TrackEvent(string eventName, EventProperties properties = null)
+        {
+            if (properties != null)
+            {
+                eventTracker.Track(eventName, ((EventPropertiesImpl)properties).eventProperties);
+            }
+            else
+            {
+                eventTracker.Track(eventName);
+            }
+        }
+    }
+
+    internal class TriggerActionWrapper : IDisposable
     {
         private Com.Permutive.Android.TriggersProvider.TriggerAction triggerAction;
 

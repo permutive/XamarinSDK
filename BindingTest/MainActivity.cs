@@ -42,12 +42,13 @@ namespace BindingTest
             TriggersProvider triggersProvider = permutive.TriggersProvider();
 
 
-            triggersProvider.QuerySegments(result => {
-                    Android.Util.Log.Debug("WTF", "WTF: MonitorSegments result:");
-                    foreach(var value in result)
-                    {
-                        Android.Util.Log.Debug("WTF", $"WTF:\t{value}");
-                    }
+            triggersProvider.QuerySegments(result =>
+            {
+                Android.Util.Log.Debug("WTF", "WTF: MonitorSegments result:");
+                foreach (var value in result)
+                {
+                    Android.Util.Log.Debug("WTF", $"WTF:\t{value}");
+                }
             });
 
 
@@ -60,49 +61,25 @@ namespace BindingTest
                 }
             });
 
-            triggersProvider.TriggerAction<bool>(1068, result => Android.Util.Log.Debug("WTF", $"WTF: 1068 : {result}"));
+            var thing = triggersProvider.TriggerAction<bool>(1068, result => Android.Util.Log.Debug("WTF", $"WTF: 1068 : {result}"));
 
-            //TriggersProvider.TriggerAction querySegments = triggersProvider.QuerySegments(new SegmentListener());
-
-            //MonitorSegments(result => {
-            //    Android.Util.Log.Debug("WTF", "WTF: MonitorSegments result:");
-            //    foreach(var value in result)
-            //    {
-            //        Android.Util.Log.Debug("WTF", $"WTF:\t{value}");
-            //    }
-            //});
-
-            //MonitorReactions("dfp", result => {
-            //    Android.Util.Log.Debug("WTF", "WTF: MonitorReactions result:");
-            //    foreach (var value in result)
-            //    {
-            //        Android.Util.Log.Debug("WTF", $"WTF:\t{value}");
-            //    }
-            //});
-
-            //TriggersProvider.TriggerAction querySegments = triggersProvider.QuerySegments(new SegmentListener());
+            //triggersProvider.TriggerAction<Dictionary<string, object>>(1068, result => Android.Util.Log.Debug("WTF", $"WTF: 1068 (map) : {result}"));
 
             /*
-            TriggersProvider.TriggerAction queryReactions = triggersProvider.QueryReactions("dfp", new ReactionsListener());
-
-            TriggersProvider.TriggerAction specific = triggersProvider.InvokeTriggerAction(1068, new QueryListener());
-
             TriggersProvider.TriggerAction map = triggersProvider.TriggerActionMap(1068, new QueryListener());
             */
 
-            //MonitorQuery<bool>(1068, result => Android.Util.Log.Debug("WTF", $"MonitorQuery result: {result}"));
 
 
-            //queryReactions.Close();
+            //queryReactions.Dispose();
 
             button.Click += delegate { button.Text = $"{count++} clicks!"; };
         }
 
         private void trackEvent()
         {
-            /*
             EventProperties eventProperties =
-                new EventProperties.Builder()
+                permutive.CreateEventPropertiesBuilder()
                 .With("string", "string")
                 .With("boolean", true)
                 .With("int", 1)
@@ -117,190 +94,21 @@ namespace BindingTest
                 .With("double", 1.0)
                 .With("geo", EventProperties.GEO_INFO)
                 .With("isp", EventProperties.ISP_INFO)
-                .With("innerMap", new EventProperties.Builder()
+                .With("innerMap", permutive.CreateEventPropertiesBuilder()
                                     .Build())
-                .WithStrings("stringArray", new List<string> { "string" })
-                //.WithBooleans("booleanArray", new List<Boolean> { Boolean.True })
-                //.WithInts("intArray", new List<Int> { 1 })
-                //.WithLongs("longArray", 1L)
-                //.WithFloats("floatArray", 1f)
-                //.WithDoubles("doubleArray", 1.0)
-                //.WithEventProperties("innerMap", 
-                //new EventProperties.Builder()
-                //.Build()
-                //)
+                .With("stringArray", new List<string> { "string" })
+                .With("booleanArray", new List<bool> { true })
+                .With("intArray", new List<int> { 1 })
+                .With("longArray", new List<long> { 1L })
+                .With("floatArray", new List<float> { 1f })
+                .With("doubleArray", new List<double> { 1.0 })
+                .With("innerMaps", new List<EventProperties> {permutive.CreateEventPropertiesBuilder()
+                .Build() }
+                )
                 .Build();
 
-            permutive.EventTracker().Track("pageView", eventProperties);
-            */
+            permutive.EventTracker().TrackEvent("Pageview", eventProperties);
         }
     }
-
-    /*
-//Can be of type:
-//Boolean
-//String
-//Int
-//Long
-//Float
-//Double
-//Map<String, Any>
-
-class MethodWrapper<T> : Java.Lang.Object, Com.Permutive.Android.Internal.IMethod
-{
-    private Action<T> action;
-
-    public MethodWrapper(Action<T> action)
-    {
-        this.action = action;
-    }
-
-    void IMethod.Invoke(Java.Lang.Object p0)
-    {
-        //Android.Util.Log.Debug("WTF", $"WTF: MethodWrapper::invoke({p0}) type is {p0.GetType()}");
-
-        Type type = typeof(T);
-
-        if (type == typeof(bool))
-        {
-            Java.Lang.Boolean value = p0.JavaCast<Java.Lang.Boolean>();
-            action((T)(object)value.BooleanValue());
-        }
-        else if (type == typeof(string))
-        {
-            Java.Lang.String value = p0.JavaCast<Java.Lang.String>();
-            action((T)(object)value.ToString());
-        }
-        else if (type == typeof(int))
-        {
-            Java.Lang.Integer value = p0.JavaCast<Java.Lang.Integer>();
-            action((T)(object)value.IntValue());
-        }
-        else if (type == typeof(long))
-        {
-            Java.Lang.Long value = p0.JavaCast<Java.Lang.Long>();
-            action((T)(object)value.LongValue());
-        }
-        else if (type == typeof(float))
-        {
-            Java.Lang.Float value = p0.JavaCast<Java.Lang.Float>();
-            action((T)(object)value.FloatValue());
-        }
-        else if (type == typeof(double))
-        {
-            Java.Lang.Double value = p0.JavaCast<Java.Lang.Double>();
-            action((T)(object)value.DoubleValue());
-        }
-        else
-        {
-            throw new IllegalArgumentException("Type parameter must be: bool/string/int/long/float/double");
-        }
-    }
-}
-
-
-class MethodListWrapper<T> : Java.Lang.Object, Com.Permutive.Android.Internal.IMethod
-{
-    private Action<List<T>> action;
-
-    public MethodListWrapper(Action<List<T>> action)
-    {
-        this.action = action;
-    }
-
-    void IMethod.Invoke(Java.Lang.Object p0)
-    {
-        Android.Util.Log.Debug("WTF", $"WTF: MethodListWrapper::invoke({p0}) type is {p0.GetType()}");
-
-        Java.Util.IList list = p0.JavaCast<Java.Util.IList>();
-
-        var returnList = new List<T>(list.Size());
-
-
-        for (int index = 0; index < list.Size(); index++)
-        {
-            returnList.Add(convertBasicType(list.Get(index)));
-        }
-
-
-        action(returnList);
-
-    }
-
-    private T convertBasicType(Java.Lang.Object p0)
-    {
-        Type type = typeof(T);
-        T returns;
-
-        if (type == typeof(bool))
-        {
-            Java.Lang.Boolean value = p0.JavaCast<Java.Lang.Boolean>();
-            returns = (T)(object)value.BooleanValue();
-        }
-        else if (type == typeof(string))
-        {
-            Java.Lang.String value = p0.JavaCast<Java.Lang.String>();
-            returns = (T)(object)value.ToString();
-        }
-        else if (type == typeof(int))
-        {
-            Java.Lang.Integer value = p0.JavaCast<Java.Lang.Integer>();
-            returns = (T)(object)value.IntValue();
-        }
-        else if (type == typeof(long))
-        {
-            Java.Lang.Long value = p0.JavaCast<Java.Lang.Long>();
-            returns = (T)(object)value.LongValue();
-        }
-        else if (type == typeof(float))
-        {
-            Java.Lang.Float value = p0.JavaCast<Java.Lang.Float>();
-            returns = (T)(object)value.FloatValue();
-        }
-        else if (type == typeof(double))
-        {
-            Java.Lang.Double value = p0.JavaCast<Java.Lang.Double>();
-            returns = (T)(object)value.DoubleValue();
-        }
-        else
-        {
-            throw new IllegalArgumentException("Type parameter must be: bool/string/int/long/float/double");
-        }
-
-        return returns;
-    }
-}
-
-
-class SegmentListener : Java.Lang.Object, Com.Permutive.Android.Internal.IMethod
-{
-
-    void IMethod.Invoke(Java.Lang.Object p0)
-    {
-        Java.Util.IList segments = p0.JavaCast<Java.Util.IList>();
-        Android.Util.Log.Debug("WTF", $"Segments updated: {segments}");
-    }
-}
-
-class ReactionsListener : Java.Lang.Object, Com.Permutive.Android.Internal.IMethod
-{
-
-    void IMethod.Invoke(Java.Lang.Object p0)
-    {
-        Java.Util.IList segments = p0.JavaCast<Java.Util.IList>();
-        Android.Util.Log.Debug("WTF", $"Reactions updated: {segments}");
-    }
-}
-
-class QueryListener : Java.Lang.Object, Com.Permutive.Android.Internal.IMethod
-{
-
-    void IMethod.Invoke(Java.Lang.Object p0)
-    {
-        Android.Util.Log.Debug("WTF", $"Query updated: {p0} {p0.GetType()}");
-    }
-}
-*/
-
 }
 
