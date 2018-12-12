@@ -90,10 +90,6 @@
     <AndroidAsset Include="Assets\AboutAssets.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Permutive\Permutive.csproj">
-      <Project>{B3C3CDD4-0E8F-48B3-8223-17D0BB423564}</Project>
-      <Name>Permutive</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Binding-Duktape-Android\Binding-Duktape-Android.csproj">
       <Project>{B8A832DB-BA85-47CC-9D78-9E8D51B47B24}</Project>
       <Name>Binding-Duktape-Android</Name>
@@ -113,6 +109,18 @@
     <ProjectReference Include="..\Binding-Room-RxJava\Binding-Room-RxJava.csproj">
       <Project>{8CF3A9F5-BB96-4E5F-902A-2AF6DF99D0EE}</Project>
       <Name>Binding-Room-RxJava</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Permutive\Binding.Android.csproj">
+      <Project>{B3C3CDD4-0E8F-48B3-8223-17D0BB423564}</Project>
+      <Name>Binding.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Library.Android\Library.Android.csproj">
+      <Project>{C3D2E79C-1BFD-4FD9-9C6C-8EA04206E4AE}</Project>
+      <Name>Library.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Library.Interface\Library.Interface.csproj">
+      <Project>{703ED430-92E0-4A6A-B6F0-20DC810F2A2E}</Project>
+      <Name>Library.Interface</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

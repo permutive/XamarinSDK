@@ -26,6 +26,8 @@ namespace BindingTest
 		
 		public static void UpdateIdValues()
 		{
+			global::Library.Android.Resource.String.app_name = global::BindingTest.Resource.String.app_name;
+			global::Library.Android.Resource.String.library_name = global::BindingTest.Resource.String.library_name;
 		}
 		
 		public partial class Attribute
@@ -397,8 +399,11 @@ namespace BindingTest
 			// aapt resource value: 0x7f050001
 			public const int app_name = 2131034113;
 			
+			// aapt resource value: 0x7f050003
+			public const int hello = 2131034115;
+			
 			// aapt resource value: 0x7f050002
-			public const int hello = 2131034114;
+			public const int library_name = 2131034114;
 			
 			// aapt resource value: 0x7f050000
 			public const int status_bar_notification_info_overflow = 2131034112;

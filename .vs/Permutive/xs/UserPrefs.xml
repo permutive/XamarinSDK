@@ -12,21 +12,7 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Permutive" expanded="True">
-            <Node name="Binding-Room-Runtime" expanded="True">
-              <Node name="Transforms" expanded="True" />
-            </Node>
-            <Node name="Binding-Room-RxJava" expanded="True">
-              <Node name="Jars" expanded="True" />
-            </Node>
-            <Node name="BindingTest" expanded="True">
-              <Node name="Properties" expanded="True" />
-              <Node name="MainActivity.cs" selected="True" />
-            </Node>
-            <Node name="Permutive" expanded="True">
-              <Node name="Transforms" expanded="True" />
-            </Node>
-          </Node>
+          <Node name="Permutive" expanded="True" />
         </State>
       </Pad>
       <Pad Id="ClassPad">
