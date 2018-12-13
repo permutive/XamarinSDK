@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
-    <Button android:id="@+id/myButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hello" />
-</LinearLayout>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:id="@+id/setIdentityButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Set identity" android:layout_gravity="center_horizontal|top" />
+    <Button android:id="@+id/SendEventButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Send event" android:layout_gravity="center" />
+</FrameLayout>

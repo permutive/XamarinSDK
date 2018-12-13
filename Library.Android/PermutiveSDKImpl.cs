@@ -34,7 +34,7 @@ namespace Permutive.Xamarin
                     .Context(context)
                     .ProjectId(Java.Util.UUID.FromString(options.ProjectId))
                     .ApiKey(Java.Util.UUID.FromString(options.ApiKey))
-                    //..?
+                    //TODO: add support for Alias Providers
                     .Build();
 
             return this;
@@ -98,13 +98,6 @@ namespace Permutive.Xamarin
         {
             MethodWrapper<T> methodWrapper = new MethodWrapper<T>(callback);
             Com.Permutive.Android.TriggersProvider.TriggerAction action = triggersProvider.InvokeTriggerAction(queryId, methodWrapper);
-            return new TriggerActionWrapper(action);
-        }
-
-        public override IDisposable TriggerActionDictionary(int queryId, Action<Dictionary<string, object>> callback)
-        {
-            MethodMapWrapper methodWrapper = new MethodMapWrapper(callback);
-            Com.Permutive.Android.TriggersProvider.TriggerAction action = triggersProvider.TriggerActionMap(queryId, methodWrapper);
             return new TriggerActionWrapper(action);
         }
     }
@@ -259,16 +252,6 @@ namespace Permutive.Xamarin
         }
     }
 
-
-    //Can be of type:
-    //Boolean
-    //String
-    //Int
-    //Long
-    //Float
-    //Double
-    //Map<String, Any> ..?
-
     class MethodWrapper<T> : Java.Lang.Object, Com.Permutive.Android.Internal.IMethod
     {
         private Action<T> action;
@@ -281,24 +264,6 @@ namespace Permutive.Xamarin
         void IMethod.Invoke(Java.Lang.Object obj)
         {
             action(Utils.ConvertBasicType<T>(obj));
-        }
-    }
-
-    class MethodMapWrapper: Java.Lang.Object, Com.Permutive.Android.Internal.IMethod
-    {
-        private Action<Dictionary<string,object>> action;
-
-        public MethodMapWrapper(Action<Dictionary<string,object>> action)
-        {
-            this.action = action;
-        }
-
-        void IMethod.Invoke(Java.Lang.Object obj)
-        {
-            Android.Util.Log.Debug("WTF", $"WTF: Map Invoke {obj} type {obj.GetType()}");
-            Utils.ConvertMap(obj);
-            //Android.Util.Log.Debug("WTF", $"WTF: Invoke {obj} type {obj.GetType()}");
-            //action(Utils.ConvertBasicType<T>(obj));
         }
     }
 
@@ -375,23 +340,6 @@ namespace Permutive.Xamarin
 
             return returnList; 
         }
-
-        internal static Dictionary<string, object> ConvertMap(Java.Lang.Object obj)
-        {
-            var map = obj.JavaCast<Java.Util.IMap>();
-
-            foreach (var key in map.KeySet())
-            {
-                Android.Util.Log.Debug("WTF", $"WTF: key is {key} {key.GetType()}");
-                var value = map.Get((Java.Lang.Object)key);
-                Android.Util.Log.Debug("WTF", $"WTF: value is {value} {value.GetType()}");
-            }
-
-            var dictionary = new Dictionary<string, object>();
-
-            return dictionary;
-        }
-
     }
 }
 

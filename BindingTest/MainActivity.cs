@@ -12,69 +12,50 @@ namespace BindingTest
     [Activity(Label = "BindingTest", MainLauncher = true, Icon = "@mipmap/icon")]
     public class MainActivity : Activity
     {
-        private int count = 1;
         private Permutive.Xamarin.Permutive permutive;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
-            // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            // Get our button from the layout resource,
-            // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.myButton);
+            Button sendEventButton = FindViewById<Button>(Resource.Id.SendEventButton);
+            Button setIdentityButton = FindViewById<Button>(Resource.Id.setIdentityButton);
 
             BindingTestApplication application = (BindingTestApplication)Application;
 
             permutive = application.GetPermutive();
 
-            //permutive.SetIdentity("someIdentity");
-
             permutive.SetTitle("Xamarin example");
-            //permutive.SetUrl(Uri.Parse("http://permutive.com/tutorials"));
-            //permutive.SetReferrer(Uri.Parse("http://permutive.com/tutorials?referrer=johnDoe"));
-
-
-            //EventTracker eventTracker = permutive.EventTracker();
+            permutive.SetUrl(new Uri("http://permutive.com/tutorials"));
+            permutive.SetReferrer(new Uri("http://permutive.com/tutorials?referrer=johnDoe"));
 
             TriggersProvider triggersProvider = permutive.TriggersProvider();
 
-
             triggersProvider.QuerySegments(result =>
             {
-                Android.Util.Log.Debug("WTF", "WTF: MonitorSegments result:");
+                Android.Util.Log.Debug("Permutive", "Current user is in segments:");
                 foreach (var value in result)
                 {
-                    Android.Util.Log.Debug("WTF", $"WTF:\t{value}");
+                    Android.Util.Log.Debug("Permutive", $"\t{value}");
                 }
             });
 
 
             triggersProvider.QueryReactions("dfp", result =>
             {
-                Android.Util.Log.Debug("WTF", "WTF: Monitor DFP reactions result:");
+                Android.Util.Log.Debug("Permutive", "Current user is in DFP segments:");
                 foreach (var value in result)
                 {
-                    Android.Util.Log.Debug("WTF", $"WTF:\t{value}");
+                    Android.Util.Log.Debug("Permutive", $"\t{value}");
                 }
             });
 
-            var thing = triggersProvider.TriggerAction<bool>(1068, result => Android.Util.Log.Debug("WTF", $"WTF: 1068 : {result}"));
+            var thing = triggersProvider.TriggerAction<bool>(1068, result => Android.Util.Log.Debug("Permutive", $"Is user in segment 1068? {result}"));
 
-            //triggersProvider.TriggerAction<Dictionary<string, object>>(1068, result => Android.Util.Log.Debug("WTF", $"WTF: 1068 (map) : {result}"));
-            triggersProvider.TriggerActionDictionary(1068, result => Android.Util.Log.Debug("WTF", $"WTF: 1068 (map) : {result}"));
-
-            /*
-            TriggersProvider.TriggerAction map = triggersProvider.TriggerActionMap(1068, new QueryListener());
-            */
-
-
-
-            //queryReactions.Dispose();
-
-            button.Click += delegate { button.Text = $"{count++} clicks!"; };
+            sendEventButton.Click += delegate { trackEvent(); };
+            setIdentityButton.Click += delegate { permutive.SetIdentity("testIdentity1@test.com"); };
         }
 
         private void trackEvent()
@@ -95,15 +76,15 @@ namespace BindingTest
                 .With("double", 1.0)
                 .With("geo", EventProperties.GEO_INFO)
                 .With("isp", EventProperties.ISP_INFO)
-                .With("innerMap", permutive.CreateEventPropertiesBuilder()
+                .With("innermap", permutive.CreateEventPropertiesBuilder()
                                     .Build())
-                .With("stringArray", new List<string> { "string" })
-                .With("booleanArray", new List<bool> { true })
-                .With("intArray", new List<int> { 1 })
-                .With("longArray", new List<long> { 1L })
-                .With("floatArray", new List<float> { 1f })
-                .With("doubleArray", new List<double> { 1.0 })
-                .With("innerMaps", new List<EventProperties> {permutive.CreateEventPropertiesBuilder()
+                .With("stringarray", new List<string> { "string" })
+                .With("booleanarray", new List<bool> { true })
+                .With("intarray", new List<int> { 1 })
+                .With("longarray", new List<long> { 1L })
+                .With("floatarray", new List<float> { 1f })
+                .With("doublearray", new List<double> { 1.0 })
+                .With("innermaps", new List<EventProperties> {permutive.CreateEventPropertiesBuilder()
                 .Build() }
                 )
                 .Build();
@@ -112,4 +93,3 @@ namespace BindingTest
         }
     }
 }
-
