@@ -1,0 +1,51 @@
+﻿<Properties StartupConfiguration="{69853924-B7B8-4F3F-8706-0BC0799B84AE}|Default">
+  <MonoDevelop.Ide.ItemProperties.BindingTest AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Pie" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BindingTest/MainActivity.cs">
+    <Files>
+      <File FileName="Permutive/Transforms/Metadata.xml" Line="33" Column="1" />
+      <File FileName="BindingTest/MainActivity.cs" Line="37" Column="39" />
+      <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Bindings.targets" Line="435" Column="44" />
+      <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="2239" Column="57" />
+      <File FileName="BindingTest/BindingTestApplication.cs" Line="20" Column="9" />
+      <File FileName="BindingTest/Properties/AndroidManifest.xml" Line="6" Column="101" />
+      <File FileName="Library.Android/PermutiveSDKImpl.cs" Line="37" Column="59" />
+      <File FileName="Library.Interface/PermutiveSDK.cs" Line="17" Column="9" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Permutive.Xamarin" expanded="True">
+            <Node name="BindingTest" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="Assets" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="layout" expanded="True" />
+              </Node>
+              <Node name="MainActivity.cs" selected="True" />
+            </Node>
+            <Node name="Library.Android" expanded="True">
+              <Node name="References" expanded="True" />
+            </Node>
+            <Node name="Library.Interface" expanded="True">
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="Permutive.Xamarin" expanded="True" selected="True" />
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

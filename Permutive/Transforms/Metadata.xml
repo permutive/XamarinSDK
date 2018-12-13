@@ -1,10 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-    <!--
-  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
   
-  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
-  -->
+<!-- Hide BuildConfig and Kotlin specific classes - Companion objects/Kt -->
+<remove-node path="/api/package[@name='com.permutive.android']/class[@name='BuildConfig']" />
+<remove-node path="/api/package[@name='com.permutive.android']/class[contains(@name,'.Companion')]" />
+<remove-node path="/api/package[@name='com.permutive.android']/class[contains(@name,'Kt')]" />
+
+<!-- Don't bind packages that are internal -->
+ <remove-node path="/api/package[starts-with(@name,'com.permutive.android.common')]" />
+ <remove-node path="/api/package[starts-with(@name,'com.permutive.android.config')]" />
+ <remove-node path="/api/package[starts-with(@name,'com.permutive.android.context')]" />
+ <remove-node path="/api/package[starts-with(@name,'com.permutive.android.engine')]" />
+ <remove-node path="/api/package[starts-with(@name,'com.permutive.android.errorreporting')]" />
+ <remove-node path="/api/package[starts-with(@name,'com.permutive.android.event')]" />
+ <remove-node path="/api/package[starts-with(@name,'com.permutive.android.identify.api')]" />
+ <remove-node path="/api/package[starts-with(@name,'com.permutive.android.identify.db')]" />
+ <remove-node path="/api/package[starts-with(@name,'com.permutive.android.lookalike')]" />
+ <remove-node path="/api/package[starts-with(@name,'com.permutive.android.network')]" />
+ <remove-node path="/api/package[starts-with(@name,'com.permutive.android.thirdparty')]" />
+ 
+ <!-- Only AliasProvider should be exposed in the identify package - hide all others -->
+<remove-node path="/api/package[@name='com.permutive.android.identify']/class[starts-with(@name,'AliasProperties')]" />
+<remove-node path="/api/package[@name='com.permutive.android.identify']/class[starts-with(@name,'AliasPublisher')]" />
+<remove-node path="/api/package[@name='com.permutive.android.identify']/class[starts-with(@name,'AliasStorage')]" />
+<remove-node path="/api/package[@name='com.permutive.android.identify']/class[starts-with(@name,'DefaultAliasProvider')]" />
+<remove-node path="/api/package[@name='com.permutive.android.identify']/class[starts-with(@name,'UserIdProvider')]" />
+<remove-node path="/api/package[@name='com.permutive.android.identify']/interface[starts-with(@name,'UserIdStorage')]" />
+
+<!-- Hide constructors that are internal -->
+<remove-node path="/api/package[@name='com.permutive.android']/class[@name='Permutive']/constructor[@name='Permutive']" />
+<remove-node path="/api/package[@name='com.permutive.android']/class[@name='EventTracker']/constructor[@name='EventTracker']" />
+
 </metadata>
