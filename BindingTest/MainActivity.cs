@@ -64,6 +64,7 @@ namespace BindingTest
             var thing = triggersProvider.TriggerAction<bool>(1068, result => Android.Util.Log.Debug("WTF", $"WTF: 1068 : {result}"));
 
             //triggersProvider.TriggerAction<Dictionary<string, object>>(1068, result => Android.Util.Log.Debug("WTF", $"WTF: 1068 (map) : {result}"));
+            triggersProvider.TriggerActionDictionary(1068, result => Android.Util.Log.Debug("WTF", $"WTF: 1068 (map) : {result}"));
 
             /*
             TriggersProvider.TriggerAction map = triggersProvider.TriggerActionMap(1068, new QueryListener());

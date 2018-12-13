@@ -67,7 +67,7 @@ namespace Permutive.Xamarin
         public abstract IDisposable QuerySegments(Action<List<int>> callback);
         public abstract IDisposable QueryReactions(string reaction, Action<List<int>> callback);
         public abstract IDisposable TriggerAction<T>(int queryId, Action<T> callback);
-        //public abstract IDisposable TriggerActionMap<T>(int queryId, Action<T> callback); ?
+        public abstract IDisposable TriggerActionDictionary(int queryId, Action<Dictionary<string,object>> callback);
     }
 
 

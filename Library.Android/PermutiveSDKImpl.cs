@@ -100,6 +100,13 @@ namespace Permutive.Xamarin
             Com.Permutive.Android.TriggersProvider.TriggerAction action = triggersProvider.InvokeTriggerAction(queryId, methodWrapper);
             return new TriggerActionWrapper(action);
         }
+
+        public override IDisposable TriggerActionDictionary(int queryId, Action<Dictionary<string, object>> callback)
+        {
+            MethodMapWrapper methodWrapper = new MethodMapWrapper(callback);
+            Com.Permutive.Android.TriggersProvider.TriggerAction action = triggersProvider.TriggerActionMap(queryId, methodWrapper);
+            return new TriggerActionWrapper(action);
+        }
     }
 
     public class EventPropertiesImpl : EventProperties
@@ -277,6 +284,24 @@ namespace Permutive.Xamarin
         }
     }
 
+    class MethodMapWrapper: Java.Lang.Object, Com.Permutive.Android.Internal.IMethod
+    {
+        private Action<Dictionary<string,object>> action;
+
+        public MethodMapWrapper(Action<Dictionary<string,object>> action)
+        {
+            this.action = action;
+        }
+
+        void IMethod.Invoke(Java.Lang.Object obj)
+        {
+            Android.Util.Log.Debug("WTF", $"WTF: Map Invoke {obj} type {obj.GetType()}");
+            Utils.ConvertMap(obj);
+            //Android.Util.Log.Debug("WTF", $"WTF: Invoke {obj} type {obj.GetType()}");
+            //action(Utils.ConvertBasicType<T>(obj));
+        }
+    }
+
     class MethodListWrapper<T> : Java.Lang.Object, Com.Permutive.Android.Internal.IMethod
     {
         private Action<List<T>> action;
@@ -288,16 +313,7 @@ namespace Permutive.Xamarin
 
         void IMethod.Invoke(Java.Lang.Object obj)
         {
-            Java.Util.IList list = obj.JavaCast<Java.Util.IList>();
-
-            var returnList = new List<T>(list.Size());
-
-            for (int index = 0; index < list.Size(); index++)
-            {
-                returnList.Add(Utils.ConvertBasicType<T>(list.Get(index)));
-            }
-
-            action(returnList);
+            action(Utils.ConvertList<T>(obj));
         }
     }
 
@@ -340,13 +356,42 @@ namespace Permutive.Xamarin
             }
             else
             {
-                throw new IllegalArgumentException("Type parameter must be: bool/string/int/long/float/double");
+                throw new IllegalArgumentException($"Type parameter must be: bool/string/int/long/float/double but was {type}");
             }
 
             return returns;
         }
 
-    }
+        internal static List<T> ConvertList<T>(Java.Lang.Object obj)
+        {
+            Java.Util.IList list = obj.JavaCast<Java.Util.IList>();
 
+            var returnList = new List<T>(list.Size());
+
+            for (int index = 0; index < list.Size(); index++)
+            {
+                returnList.Add(Utils.ConvertBasicType<T>(list.Get(index)));
+            }
+
+            return returnList; 
+        }
+
+        internal static Dictionary<string, object> ConvertMap(Java.Lang.Object obj)
+        {
+            var map = obj.JavaCast<Java.Util.IMap>();
+
+            foreach (var key in map.KeySet())
+            {
+                Android.Util.Log.Debug("WTF", $"WTF: key is {key} {key.GetType()}");
+                var value = map.Get((Java.Lang.Object)key);
+                Android.Util.Log.Debug("WTF", $"WTF: value is {value} {value.GetType()}");
+            }
+
+            var dictionary = new Dictionary<string, object>();
+
+            return dictionary;
+        }
+
+    }
 }
 

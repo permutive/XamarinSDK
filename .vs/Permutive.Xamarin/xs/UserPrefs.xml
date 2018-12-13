@@ -3,13 +3,13 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Library.Android/PermutiveSDKImpl.cs">
     <Files>
       <File FileName="Permutive/Transforms/Metadata.xml" Line="33" Column="1" />
-      <File FileName="BindingTest/MainActivity.cs" Line="63" Column="120" />
+      <File FileName="BindingTest/MainActivity.cs" Line="66" Column="60" />
       <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Bindings.targets" Line="435" Column="44" />
       <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="2239" Column="57" />
       <File FileName="BindingTest/BindingTestApplication.cs" Line="20" Column="9" />
       <File FileName="BindingTest/Properties/AndroidManifest.xml" Line="6" Column="101" />
-      <File FileName="Library.Android/PermutiveSDKImpl.cs" Line="157" Column="33" />
-      <File FileName="Library.Interface/PermutiveSDK.cs" Line="55" Column="54" />
+      <File FileName="Library.Android/PermutiveSDKImpl.cs" Line="390" Column="13" />
+      <File FileName="Library.Interface/PermutiveSDK.cs" Line="70" Column="117" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
