@@ -33,7 +33,7 @@ namespace BindingTest
 
             TriggersProvider triggersProvider = permutive.TriggersProvider();
 
-            triggersProvider.QuerySegments(result =>
+            var querySegmentsDisposable = triggersProvider.QuerySegments(result =>
             {
                 Android.Util.Log.Debug("Permutive", "Current user is in segments:");
                 foreach (var value in result)
@@ -43,7 +43,7 @@ namespace BindingTest
             });
 
 
-            triggersProvider.QueryReactions("dfp", result =>
+            var queryReactionsDisposable = triggersProvider.QueryReactions("dfp", result =>
             {
                 Android.Util.Log.Debug("Permutive", "Current user is in DFP segments:");
                 foreach (var value in result)
@@ -52,7 +52,12 @@ namespace BindingTest
                 }
             });
 
-            var thing = triggersProvider.TriggerAction<bool>(1068, result => Android.Util.Log.Debug("Permutive", $"Is user in segment 1068? {result}"));
+            var triggerDisposable = triggersProvider.TriggerAction<bool>(1068, result => Android.Util.Log.Debug("Permutive", $"Is user in segment 1068? {result}"));
+
+            //when we wish to stop listening to events: 
+            //querySegmentsDisposable.Dispose();
+            //queryReactionsDisposable.Dispose();
+            //triggerDisposable.Dispose();
 
             sendEventButton.Click += delegate { trackEvent(); };
             setIdentityButton.Click += delegate { permutive.SetIdentity("testIdentity1@test.com"); };
