@@ -94,9 +94,9 @@ EventTracker eventTracker = permutive.EventTracker();
 
 final EventProperties eventProperties =
     permutive.CreateEventPropertiesBuilder()
-        .with("my_geo_info", EventProperties.GEO_INFO)
-        .with("my_isp_info", EventProperties.ISP_INFO)
-        .build()
+        .With("my_geo_info", EventProperties.GEO_INFO)
+        .With("my_isp_info", EventProperties.ISP_INFO)
+        .Build()
 
 eventTracker.TrackEvent("eventX" , eventProperties)
 ```
@@ -136,7 +136,7 @@ var action =
     {
         foreach (var segment in segments)
         {
-            log($"The user is in segment: {segment}");
+            Log($"The user is in segment: {segment}");
         }
     });
 ```
@@ -157,7 +157,7 @@ Using a wrong type for a given query Id will immediately log an error to the con
 TriggersProvider triggersProvider = permutive.TriggersProvider();
 
 var triggerAction =
-    triggersProvider.TriggerAction<bool>(1, value => log($"Query 1 change: {value}")); //value is bool
+    triggersProvider.TriggerAction<bool>(1, value => Log($"Query 1 change: {value}")); //value is bool
 
 //when you wish to stop tracking changes, dispose the action
 triggerAction.Dispose()
@@ -174,7 +174,7 @@ var action =
     triggerProvider.QueryReactions("dfp",segments => 
     {
         foreach (var segment in segments){
-            log($"The user is in segment: {segment}");
+            Log($"The user is in segment: {segment}");
         }
     });
 ```
