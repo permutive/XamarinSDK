@@ -1,6 +1,6 @@
 The Xamarin SDK is a wrapper around the Android SDK, and in the near future the iOS SDK, and kit libraries. The interface between the two platforms will be identical.
 
-Please refer to the Readme.md in Library.Interface for usage of the SDK, and look at the BindingTest library for an example/reference application.
+Please refer to the README.md in Library.Interface for usage of the SDK, and look at the BindingTest library for an example/reference application.
 
 ## Structure
 
