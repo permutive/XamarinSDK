@@ -6,7 +6,7 @@
     <ProjectGuid>{3282592E-A28C-4122-99DF-1DEFE73AC173}</ProjectGuid>
     <ProjectTypeGuids>{10368E6C-D01B-4462-8E8B-01FC667A7035};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>Permutive.Xamarin.Android.Arch.Persistence.DB</RootNamespace>
+    <RootNamespace>Permutive.Xamarin.Android.Arch.Persistence.Db</RootNamespace>
     <AssemblyName>Permutive.Xamarin.Android.Arch.Persistence.DB</AssemblyName>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>

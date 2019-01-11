@@ -104,11 +104,11 @@
     </ProjectReference>
     <ProjectReference Include="..\Permutive.Xamarin.Android.Arch.Persistence.DB.Framework\Permutive.Xamarin.Android.Arch.Persistence.DB.Framework.csproj">
       <Project>{13EF6F17-DBB0-4489-BE4D-0DD942CA3129}</Project>
-      <Name>Permutive.Xamarin.Android.Arch.Persistence.DB.Framework</Name>
+      <Name>Permutive.Xamarin.Android.Arch.Persistence.Db.Framework</Name>
     </ProjectReference>
     <ProjectReference Include="..\Permutive.Xamarin.Android.Arch.Persistence.DB\Permutive.Xamarin.Android.Arch.Persistence.DB.csproj">
       <Project>{3282592E-A28C-4122-99DF-1DEFE73AC173}</Project>
-      <Name>Permutive.Xamarin.Android.Arch.Persistence.DB</Name>
+      <Name>Permutive.Xamarin.Android.Arch.Persistence.Db</Name>
     </ProjectReference>
     <ProjectReference Include="..\Permutive.Xamarin.Android.Ducktape\Permutive.Xamarin.Android.Ducktape.csproj">
       <Project>{D5D68562-5131-49AD-B49E-E8DA91716D2E}</Project>
