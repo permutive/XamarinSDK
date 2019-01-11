@@ -18,6 +18,13 @@ namespace Permutive.Xamarin
         public string identity = null;
     }
 
+    /// <summary>
+    /// Properties of a Permutive event. EventProperties are immutable.
+    /// </summary> 
+    ///
+    /// Each property name must be made up of the characters in the set (a-z0-9_).
+    /// Each property value must from the type: (bool, int, long, float, double, string, eventProperties)
+    /// or from a list variant of this set (i.e. List<Boolean>, List<Int>, ... )
     public abstract class EventProperties
     {
         public const string ISP_INFO = "$ip_isp_info";

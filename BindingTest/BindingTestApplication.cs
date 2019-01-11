@@ -35,8 +35,8 @@ namespace BindingTest
         {
 
             PermutiveOptions options = new PermutiveOptions();
-            options.ApiKey= YOUR_API_KEY;
-            options.ProjectId = YOUR_PROJECT_ID;
+            options.ApiKey= "da4d09b5-843a-4bd5-bd79-8cea7f69f730";
+            options.ProjectId = "e0039147-51e7-4224-a814-0e2d438aabcd";
 
             var newPermutive = new PermutiveImpl(this);
             newPermutive.Initialize(options);
