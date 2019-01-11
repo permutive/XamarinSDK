@@ -9,15 +9,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding-Duktape-Android", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding-Room-Runtime", "Binding-Room-Runtime\Binding-Room-Runtime.csproj", "{B882A2ED-4780-4AE5-9C1B-7801A19C57F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding-Arch-Persistence-DB", "Binding-Arch-Persistence-DB\Binding-Arch-Persistence-DB.csproj", "{6832C4F0-BEC4-40BC-8369-98EE0C1714A2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding-Arch-Persistence-DB-Framework", "Binding-Arch-Persicence-DB-Framework\Binding-Arch-Persistence-DB-Framework.csproj", "{32039940-6025-40D8-86CF-8411648EC05D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding-Room-RxJava", "Binding-Room-RxJava\Binding-Room-RxJava.csproj", "{8CF3A9F5-BB96-4E5F-902A-2AF6DF99D0EE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Android", "Library.Android\Library.Android.csproj", "{C3D2E79C-1BFD-4FD9-9C6C-8EA04206E4AE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Interface", "Library.Interface\Library.Interface.csproj", "{703ED430-92E0-4A6A-B6F0-20DC810F2A2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutive.Xamarin.Android.Arch.Persistence.DB", "Permutive.Xamarin.Android.Arch.Persistence.DB\Permutive.Xamarin.Android.Arch.Persistence.DB.csproj", "{3282592E-A28C-4122-99DF-1DEFE73AC173}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutive.Xamarin.Android.Arch.Persistence.DB.Framework", "Permutive.Xamarin.Android.Arch.Persistence.DB.Framework\Permutive.Xamarin.Android.Arch.Persistence.DB.Framework.csproj", "{13EF6F17-DBB0-4489-BE4D-0DD942CA3129}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,14 +41,6 @@ Global
 		{B882A2ED-4780-4AE5-9C1B-7801A19C57F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B882A2ED-4780-4AE5-9C1B-7801A19C57F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B882A2ED-4780-4AE5-9C1B-7801A19C57F4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6832C4F0-BEC4-40BC-8369-98EE0C1714A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6832C4F0-BEC4-40BC-8369-98EE0C1714A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6832C4F0-BEC4-40BC-8369-98EE0C1714A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6832C4F0-BEC4-40BC-8369-98EE0C1714A2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{32039940-6025-40D8-86CF-8411648EC05D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{32039940-6025-40D8-86CF-8411648EC05D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{32039940-6025-40D8-86CF-8411648EC05D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{32039940-6025-40D8-86CF-8411648EC05D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8CF3A9F5-BB96-4E5F-902A-2AF6DF99D0EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8CF3A9F5-BB96-4E5F-902A-2AF6DF99D0EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CF3A9F5-BB96-4E5F-902A-2AF6DF99D0EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -61,5 +53,13 @@ Global
 		{703ED430-92E0-4A6A-B6F0-20DC810F2A2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{703ED430-92E0-4A6A-B6F0-20DC810F2A2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{703ED430-92E0-4A6A-B6F0-20DC810F2A2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3282592E-A28C-4122-99DF-1DEFE73AC173}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3282592E-A28C-4122-99DF-1DEFE73AC173}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3282592E-A28C-4122-99DF-1DEFE73AC173}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3282592E-A28C-4122-99DF-1DEFE73AC173}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13EF6F17-DBB0-4489-BE4D-0DD942CA3129}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13EF6F17-DBB0-4489-BE4D-0DD942CA3129}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13EF6F17-DBB0-4489-BE4D-0DD942CA3129}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13EF6F17-DBB0-4489-BE4D-0DD942CA3129}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
