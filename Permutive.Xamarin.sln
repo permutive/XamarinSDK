@@ -5,10 +5,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding.Android", "Permutiv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindingTest", "BindingTest\BindingTest.csproj", "{69853924-B7B8-4F3F-8706-0BC0799B84AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding-Room-Runtime", "Binding-Room-Runtime\Binding-Room-Runtime.csproj", "{B882A2ED-4780-4AE5-9C1B-7801A19C57F4}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding-Room-RxJava", "Binding-Room-RxJava\Binding-Room-RxJava.csproj", "{8CF3A9F5-BB96-4E5F-902A-2AF6DF99D0EE}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Android", "Library.Android\Library.Android.csproj", "{C3D2E79C-1BFD-4FD9-9C6C-8EA04206E4AE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Interface", "Library.Interface\Library.Interface.csproj", "{703ED430-92E0-4A6A-B6F0-20DC810F2A2E}"
@@ -18,6 +14,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutive.Xamarin.Android.Arch.Persistence.DB.Framework", "Permutive.Xamarin.Android.Arch.Persistence.DB.Framework\Permutive.Xamarin.Android.Arch.Persistence.DB.Framework.csproj", "{13EF6F17-DBB0-4489-BE4D-0DD942CA3129}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutive.Xamarin.Android.Ducktape", "Permutive.Xamarin.Android.Ducktape\Permutive.Xamarin.Android.Ducktape.csproj", "{D5D68562-5131-49AD-B49E-E8DA91716D2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutive.Xamarin.Android.Arch.Persistence.Room.Runtime", "Permutive.Xamarin.Android.Arch.Persistence.Room.Runtime\Permutive.Xamarin.Android.Arch.Persistence.Room.Runtime.csproj", "{58F2E1E4-05CB-4369-A655-0578F0CE7FD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutive.Xamarin.Android.Arch.Persistence.Room.RxJava", "Permutive.Xamarin.Android.Arch.Persistence.Room.RxJava\Permutive.Xamarin.Android.Arch.Persistence.Room.RxJava.csproj", "{B236D768-A8EA-4A59-A7F8-2EF4C55C2CEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,14 +33,6 @@ Global
 		{69853924-B7B8-4F3F-8706-0BC0799B84AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69853924-B7B8-4F3F-8706-0BC0799B84AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69853924-B7B8-4F3F-8706-0BC0799B84AE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B882A2ED-4780-4AE5-9C1B-7801A19C57F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B882A2ED-4780-4AE5-9C1B-7801A19C57F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B882A2ED-4780-4AE5-9C1B-7801A19C57F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B882A2ED-4780-4AE5-9C1B-7801A19C57F4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8CF3A9F5-BB96-4E5F-902A-2AF6DF99D0EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8CF3A9F5-BB96-4E5F-902A-2AF6DF99D0EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8CF3A9F5-BB96-4E5F-902A-2AF6DF99D0EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8CF3A9F5-BB96-4E5F-902A-2AF6DF99D0EE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C3D2E79C-1BFD-4FD9-9C6C-8EA04206E4AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C3D2E79C-1BFD-4FD9-9C6C-8EA04206E4AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3D2E79C-1BFD-4FD9-9C6C-8EA04206E4AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -61,5 +53,13 @@ Global
 		{D5D68562-5131-49AD-B49E-E8DA91716D2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5D68562-5131-49AD-B49E-E8DA91716D2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5D68562-5131-49AD-B49E-E8DA91716D2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58F2E1E4-05CB-4369-A655-0578F0CE7FD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58F2E1E4-05CB-4369-A655-0578F0CE7FD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58F2E1E4-05CB-4369-A655-0578F0CE7FD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58F2E1E4-05CB-4369-A655-0578F0CE7FD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B236D768-A8EA-4A59-A7F8-2EF4C55C2CEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B236D768-A8EA-4A59-A7F8-2EF4C55C2CEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B236D768-A8EA-4A59-A7F8-2EF4C55C2CEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B236D768-A8EA-4A59-A7F8-2EF4C55C2CEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

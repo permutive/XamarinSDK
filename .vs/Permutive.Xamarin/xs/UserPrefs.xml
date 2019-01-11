@@ -1,24 +1,25 @@
 ﻿<Properties StartupConfiguration="{69853924-B7B8-4F3F-8706-0BC0799B84AE}|Default">
   <MonoDevelop.Ide.ItemProperties.BindingTest AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Pie" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BindingTest/BindingTestApplication.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Permutive.Xamarin.Android.Arch.Persistence.Room.Runtime/Transforms/Metadata.xml">
     <Files>
       <File FileName="BindingTest/MainActivity.cs" Line="1" Column="1" />
       <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Bindings.targets" Line="435" Column="44" />
       <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="2239" Column="57" />
-      <File FileName="BindingTest/BindingTestApplication.cs" Line="39" Column="50" />
+      <File FileName="BindingTest/BindingTestApplication.cs" Line="33" Column="9" />
       <File FileName="BindingTest/Properties/AndroidManifest.xml" Line="1" Column="1" />
       <File FileName="Library.Android/PermutiveSDKImpl.cs" Line="1" Column="1" />
       <File FileName="Library.Interface/PermutiveSDK.cs" Line="4" Column="14" />
+      <File FileName="Permutive.Xamarin.Android.Arch.Persistence.Room.Runtime/Transforms/EnumFields.xml" Line="1" Column="1" />
+      <File FileName="Permutive.Xamarin.Android.Arch.Persistence.Room.Runtime/Transforms/Metadata.xml" Line="13" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Permutive.Xamarin" expanded="True">
-            <Node name="BindingTest" expanded="True">
-              <Node name="References" expanded="True" />
-              <Node name="Packages" expanded="True" />
+          <Node name="Permutive.Xamarin" expanded="True" selected="True">
+            <Node name="Permutive.Xamarin.Android.Arch.Persistence.Room.Runtime" expanded="True">
+              <Node name="Jars" expanded="True" />
+              <Node name="Transforms" expanded="True" />
             </Node>
-            <Node name="Permutive.Xamarin.Android.Arch.Persistence.DB" expanded="True" />
           </Node>
         </State>
       </Pad>

@@ -90,14 +90,6 @@
     <AndroidAsset Include="Assets\AboutAssets.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Binding-Room-Runtime\Binding-Room-Runtime.csproj">
-      <Project>{B882A2ED-4780-4AE5-9C1B-7801A19C57F4}</Project>
-      <Name>Binding-Room-Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Binding-Room-RxJava\Binding-Room-RxJava.csproj">
-      <Project>{8CF3A9F5-BB96-4E5F-902A-2AF6DF99D0EE}</Project>
-      <Name>Binding-Room-RxJava</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Permutive\Binding.Android.csproj">
       <Project>{B3C3CDD4-0E8F-48B3-8223-17D0BB423564}</Project>
       <Name>Binding.Android</Name>
@@ -121,6 +113,14 @@
     <ProjectReference Include="..\Permutive.Xamarin.Android.Ducktape\Permutive.Xamarin.Android.Ducktape.csproj">
       <Project>{D5D68562-5131-49AD-B49E-E8DA91716D2E}</Project>
       <Name>Permutive.Xamarin.Android.Ducktape</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Permutive.Xamarin.Android.Arch.Persistence.Room.Runtime\Permutive.Xamarin.Android.Arch.Persistence.Room.Runtime.csproj">
+      <Project>{58F2E1E4-05CB-4369-A655-0578F0CE7FD3}</Project>
+      <Name>Permutive.Xamarin.Android.Arch.Persistence.Room.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Permutive.Xamarin.Android.Arch.Persistence.Room.RxJava\Permutive.Xamarin.Android.Arch.Persistence.Room.RxJava.csproj">
+      <Project>{B236D768-A8EA-4A59-A7F8-2EF4C55C2CEB}</Project>
+      <Name>Permutive.Xamarin.Android.Arch.Persistence.Room.RxJava</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
