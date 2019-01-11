@@ -90,10 +90,6 @@
     <AndroidAsset Include="Assets\AboutAssets.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Binding-Duktape-Android\Binding-Duktape-Android.csproj">
-      <Project>{B8A832DB-BA85-47CC-9D78-9E8D51B47B24}</Project>
-      <Name>Binding-Duktape-Android</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Binding-Room-Runtime\Binding-Room-Runtime.csproj">
       <Project>{B882A2ED-4780-4AE5-9C1B-7801A19C57F4}</Project>
       <Name>Binding-Room-Runtime</Name>
@@ -121,6 +117,10 @@
     <ProjectReference Include="..\Permutive.Xamarin.Android.Arch.Persistence.DB\Permutive.Xamarin.Android.Arch.Persistence.DB.csproj">
       <Project>{3282592E-A28C-4122-99DF-1DEFE73AC173}</Project>
       <Name>Permutive.Xamarin.Android.Arch.Persistence.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Permutive.Xamarin.Android.Ducktape\Permutive.Xamarin.Android.Ducktape.csproj">
+      <Project>{D5D68562-5131-49AD-B49E-E8DA91716D2E}</Project>
+      <Name>Permutive.Xamarin.Android.Ducktape</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
