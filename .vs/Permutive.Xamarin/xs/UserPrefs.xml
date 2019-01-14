@@ -1,13 +1,12 @@
 ﻿<Properties StartupConfiguration="{69853924-B7B8-4F3F-8706-0BC0799B84AE}|Default">
   <MonoDevelop.Ide.ItemProperties.BindingTest AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Pie" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Permutive.Xamarin.Android/PermutiveSDKImpl.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BindingTest/BindingTestApplication.cs">
     <Files>
       <File FileName="BindingTest/MainActivity.cs" Line="1" Column="1" />
       <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Bindings.targets" Line="435" Column="44" />
       <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="2239" Column="57" />
-      <File FileName="BindingTest/BindingTestApplication.cs" Line="33" Column="1" />
+      <File FileName="BindingTest/BindingTestApplication.cs" Line="32" Column="1" />
       <File FileName="BindingTest/Properties/AndroidManifest.xml" Line="1" Column="1" />
-      <File FileName="Library.Interface/PermutiveSDK.cs" Line="1" Column="1" />
       <File FileName="Permutive.Xamarin.Android/PermutiveSDKImpl.cs" Line="50" Column="35" />
       <File FileName="Permutive.Xamarin.Android/Properties/AssemblyInfo.cs~" Line="1" Column="1" />
       <File FileName="Permutive.Xamarin.Android/Resources/Resource.designer.cs~" Line="1" Column="1" />
@@ -16,7 +15,9 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Permutive.Xamarin" expanded="True" selected="True" />
+          <Node name="Permutive.Xamarin" expanded="True">
+            <Node name="Permutive.Xamarin.Interface" expanded="True" />
+          </Node>
         </State>
       </Pad>
       <Pad Id="ClassPad">

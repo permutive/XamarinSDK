@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{703ED430-92E0-4A6A-B6F0-20DC810F2A2E}</ProjectGuid>
+    <ProjectGuid>{096455FA-AD61-4A3B-9133-C12B1F3B3800}</ProjectGuid>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>Library.Interface</RootNamespace>
-    <AssemblyName>Library.Interface</AssemblyName>
+    <RootNamespace>Permutive.Xamarin.Interface</RootNamespace>
+    <AssemblyName>Permutive.Xamarin.Interface</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
   </PropertyGroup>
@@ -27,8 +27,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="PermutiveSDK.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PermutiveSDK.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>
