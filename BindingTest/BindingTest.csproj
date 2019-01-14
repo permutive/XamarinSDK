@@ -90,10 +90,6 @@
     <AndroidAsset Include="Assets\AboutAssets.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Library.Android\Library.Android.csproj">
-      <Project>{C3D2E79C-1BFD-4FD9-9C6C-8EA04206E4AE}</Project>
-      <Name>Library.Android</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Library.Interface\Library.Interface.csproj">
       <Project>{703ED430-92E0-4A6A-B6F0-20DC810F2A2E}</Project>
       <Name>Library.Interface</Name>
@@ -121,6 +117,10 @@
     <ProjectReference Include="..\Permutive.Xamarin.Android.Binding\Permutive.Xamarin.Android.Binding.csproj">
       <Project>{C337FAE5-437A-490D-AB87-0DFEF10F42BF}</Project>
       <Name>Permutive.Xamarin.Android.Binding</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Permutive.Xamarin.Android\Permutive.Xamarin.Android.csproj">
+      <Project>{C3D2E79C-1BFD-4FD9-9C6C-8EA04206E4AE}</Project>
+      <Name>Permutive.Xamarin.Android</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
