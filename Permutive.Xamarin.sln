@@ -1,17 +1,15 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding.Android", "Permutive\Binding.Android.csproj", "{B3C3CDD4-0E8F-48B3-8223-17D0BB423564}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindingTest", "BindingTest\BindingTest.csproj", "{69853924-B7B8-4F3F-8706-0BC0799B84AE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Android", "Library.Android\Library.Android.csproj", "{C3D2E79C-1BFD-4FD9-9C6C-8EA04206E4AE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Interface", "Library.Interface\Library.Interface.csproj", "{703ED430-92E0-4A6A-B6F0-20DC810F2A2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutive.Xamarin.Android.Arch.Persistence.Db", "Permutive.Xamarin.Android.Arch.Persistence.DB\Permutive.Xamarin.Android.Arch.Persistence.DB.csproj", "{3282592E-A28C-4122-99DF-1DEFE73AC173}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutive.Xamarin.Android.Arch.Persistence.DB", "Permutive.Xamarin.Android.Arch.Persistence.DB\Permutive.Xamarin.Android.Arch.Persistence.DB.csproj", "{3282592E-A28C-4122-99DF-1DEFE73AC173}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutive.Xamarin.Android.Arch.Persistence.Db.Framework", "Permutive.Xamarin.Android.Arch.Persistence.DB.Framework\Permutive.Xamarin.Android.Arch.Persistence.DB.Framework.csproj", "{13EF6F17-DBB0-4489-BE4D-0DD942CA3129}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutive.Xamarin.Android.Arch.Persistence.DB.Framework", "Permutive.Xamarin.Android.Arch.Persistence.DB.Framework\Permutive.Xamarin.Android.Arch.Persistence.DB.Framework.csproj", "{13EF6F17-DBB0-4489-BE4D-0DD942CA3129}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutive.Xamarin.Android.Ducktape", "Permutive.Xamarin.Android.Ducktape\Permutive.Xamarin.Android.Ducktape.csproj", "{D5D68562-5131-49AD-B49E-E8DA91716D2E}"
 EndProject
@@ -19,16 +17,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutive.Xamarin.Android.A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutive.Xamarin.Android.Arch.Persistence.Room.RxJava", "Permutive.Xamarin.Android.Arch.Persistence.Room.RxJava\Permutive.Xamarin.Android.Arch.Persistence.Room.RxJava.csproj", "{B236D768-A8EA-4A59-A7F8-2EF4C55C2CEB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutive.Xamarin.Android.Binding", "Permutive.Xamarin.Android.Binding\Permutive.Xamarin.Android.Binding.csproj", "{C337FAE5-437A-490D-AB87-0DFEF10F42BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B3C3CDD4-0E8F-48B3-8223-17D0BB423564}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B3C3CDD4-0E8F-48B3-8223-17D0BB423564}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B3C3CDD4-0E8F-48B3-8223-17D0BB423564}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B3C3CDD4-0E8F-48B3-8223-17D0BB423564}.Release|Any CPU.Build.0 = Release|Any CPU
 		{69853924-B7B8-4F3F-8706-0BC0799B84AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{69853924-B7B8-4F3F-8706-0BC0799B84AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69853924-B7B8-4F3F-8706-0BC0799B84AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -61,5 +57,9 @@ Global
 		{B236D768-A8EA-4A59-A7F8-2EF4C55C2CEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B236D768-A8EA-4A59-A7F8-2EF4C55C2CEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B236D768-A8EA-4A59-A7F8-2EF4C55C2CEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C337FAE5-437A-490D-AB87-0DFEF10F42BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C337FAE5-437A-490D-AB87-0DFEF10F42BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C337FAE5-437A-490D-AB87-0DFEF10F42BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C337FAE5-437A-490D-AB87-0DFEF10F42BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

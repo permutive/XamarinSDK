@@ -54,13 +54,13 @@
     <AndroidResource Include="Resources\values\Strings.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Permutive\Binding.Android.csproj">
-      <Project>{B3C3CDD4-0E8F-48B3-8223-17D0BB423564}</Project>
-      <Name>Binding.Android</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Library.Interface\Library.Interface.csproj">
       <Project>{703ED430-92E0-4A6A-B6F0-20DC810F2A2E}</Project>
       <Name>Library.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Permutive.Xamarin.Android.Binding\Permutive.Xamarin.Android.Binding.csproj">
+      <Project>{C337FAE5-437A-490D-AB87-0DFEF10F42BF}</Project>
+      <Name>Permutive.Xamarin.Android.Binding</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

@@ -90,10 +90,6 @@
     <AndroidAsset Include="Assets\AboutAssets.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Permutive\Binding.Android.csproj">
-      <Project>{B3C3CDD4-0E8F-48B3-8223-17D0BB423564}</Project>
-      <Name>Binding.Android</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Library.Android\Library.Android.csproj">
       <Project>{C3D2E79C-1BFD-4FD9-9C6C-8EA04206E4AE}</Project>
       <Name>Library.Android</Name>
@@ -104,11 +100,11 @@
     </ProjectReference>
     <ProjectReference Include="..\Permutive.Xamarin.Android.Arch.Persistence.DB.Framework\Permutive.Xamarin.Android.Arch.Persistence.DB.Framework.csproj">
       <Project>{13EF6F17-DBB0-4489-BE4D-0DD942CA3129}</Project>
-      <Name>Permutive.Xamarin.Android.Arch.Persistence.Db.Framework</Name>
+      <Name>Permutive.Xamarin.Android.Arch.Persistence.DB.Framework</Name>
     </ProjectReference>
     <ProjectReference Include="..\Permutive.Xamarin.Android.Arch.Persistence.DB\Permutive.Xamarin.Android.Arch.Persistence.DB.csproj">
       <Project>{3282592E-A28C-4122-99DF-1DEFE73AC173}</Project>
-      <Name>Permutive.Xamarin.Android.Arch.Persistence.Db</Name>
+      <Name>Permutive.Xamarin.Android.Arch.Persistence.DB</Name>
     </ProjectReference>
     <ProjectReference Include="..\Permutive.Xamarin.Android.Ducktape\Permutive.Xamarin.Android.Ducktape.csproj">
       <Project>{D5D68562-5131-49AD-B49E-E8DA91716D2E}</Project>
@@ -121,6 +117,10 @@
     <ProjectReference Include="..\Permutive.Xamarin.Android.Arch.Persistence.Room.RxJava\Permutive.Xamarin.Android.Arch.Persistence.Room.RxJava.csproj">
       <Project>{B236D768-A8EA-4A59-A7F8-2EF4C55C2CEB}</Project>
       <Name>Permutive.Xamarin.Android.Arch.Persistence.Room.RxJava</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Permutive.Xamarin.Android.Binding\Permutive.Xamarin.Android.Binding.csproj">
+      <Project>{C337FAE5-437A-490D-AB87-0DFEF10F42BF}</Project>
+      <Name>Permutive.Xamarin.Android.Binding</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

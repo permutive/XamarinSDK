@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B3C3CDD4-0E8F-48B3-8223-17D0BB423564}</ProjectGuid>
+    <ProjectGuid>{C337FAE5-437A-490D-AB87-0DFEF10F42BF}</ProjectGuid>
     <ProjectTypeGuids>{10368E6C-D01B-4462-8E8B-01FC667A7035};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>Permutive</RootNamespace>
-    <AssemblyName>Permutive</AssemblyName>
+    <RootNamespace>Permutive.Xamarin.Android.Binding</RootNamespace>
+    <AssemblyName>Permutive.Xamarin.Android.Binding</AssemblyName>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
@@ -22,6 +22,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
     <AndroidManagedSymbols>true</AndroidManagedSymbols>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -52,23 +54,23 @@
     <TransformFile Include="Transforms\Metadata.xml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedReferenceJar Include="Jars\adapter-rxjava2-2.5.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\annotations-13.0.jar" />
     <EmbeddedReferenceJar Include="Jars\arrow-annotations-0.7.3.jar" />
+    <EmbeddedReferenceJar Include="Jars\arrow-core-0.7.3.jar" />
+    <EmbeddedReferenceJar Include="Jars\converter-moshi-2.5.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\converter-scalars-2.5.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\kindedj-1.1.0.jar" />
     <EmbeddedReferenceJar Include="Jars\kotlin-stdlib-1.3.10.jar" />
     <EmbeddedReferenceJar Include="Jars\kotlin-stdlib-common-1.3.10.jar" />
     <EmbeddedReferenceJar Include="Jars\kotlin-stdlib-jdk7-1.3.10.jar" />
-    <EmbeddedReferenceJar Include="Jars\annotations-13.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\arrow-core-0.7.3.jar" />
-    <EmbeddedReferenceJar Include="Jars\kindedj-1.1.0.jar" />
     <EmbeddedReferenceJar Include="Jars\moshi-1.7.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\okio-1.15.0.jar" />
     <EmbeddedReferenceJar Include="Jars\okhttp-3.12.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\retrofit-2.5.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\converter-moshi-2.5.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\adapter-rxjava2-2.5.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\converter-scalars-2.5.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\rxkotlin-2.2.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\rxjava-2.2.4.jar" />
+    <EmbeddedReferenceJar Include="Jars\okio-1.15.0.jar" />
     <EmbeddedReferenceJar Include="Jars\reactive-streams-1.0.2.jar" />
+    <EmbeddedReferenceJar Include="Jars\retrofit-2.5.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\rxjava-2.2.4.jar" />
+    <EmbeddedReferenceJar Include="Jars\rxkotlin-2.2.0.jar" />
   </ItemGroup>
   <ItemGroup>
     <LibraryProjectZip Include="Jars\core-0.2.1.aar" />
