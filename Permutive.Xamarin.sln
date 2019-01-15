@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutive.Xamarin.Android.A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutive.Xamarin.Android.Arch.Persistence.DB.Framework", "Permutive.Xamarin.Android.Arch.Persistence.DB.Framework\Permutive.Xamarin.Android.Arch.Persistence.DB.Framework.csproj", "{13EF6F17-DBB0-4489-BE4D-0DD942CA3129}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutive.Xamarin.Android.Ducktape", "Permutive.Xamarin.Android.Ducktape\Permutive.Xamarin.Android.Ducktape.csproj", "{D5D68562-5131-49AD-B49E-E8DA91716D2E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutive.Xamarin.Android.Arch.Persistence.Room.Runtime", "Permutive.Xamarin.Android.Arch.Persistence.Room.Runtime\Permutive.Xamarin.Android.Arch.Persistence.Room.Runtime.csproj", "{58F2E1E4-05CB-4369-A655-0578F0CE7FD3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutive.Xamarin.Android.Arch.Persistence.Room.RxJava", "Permutive.Xamarin.Android.Arch.Persistence.Room.RxJava\Permutive.Xamarin.Android.Arch.Persistence.Room.RxJava.csproj", "{B236D768-A8EA-4A59-A7F8-2EF4C55C2CEB}"
@@ -18,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutive.Xamarin.Android", "Permutive.Xamarin.Android\Permutive.Xamarin.Android.csproj", "{C3D2E79C-1BFD-4FD9-9C6C-8EA04206E4AE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutive.Xamarin.Interface", "Permutive.Xamarin.Interface\Permutive.Xamarin.Interface.csproj", "{096455FA-AD61-4A3B-9133-C12B1F3B3800}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutive.Xamarin.Android.Duktape", "Permutive.Xamarin.Android.Duktape\Permutive.Xamarin.Android.Duktape.csproj", "{D5D68562-5131-49AD-B49E-E8DA91716D2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,10 +37,6 @@ Global
 		{13EF6F17-DBB0-4489-BE4D-0DD942CA3129}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13EF6F17-DBB0-4489-BE4D-0DD942CA3129}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13EF6F17-DBB0-4489-BE4D-0DD942CA3129}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D5D68562-5131-49AD-B49E-E8DA91716D2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D5D68562-5131-49AD-B49E-E8DA91716D2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D5D68562-5131-49AD-B49E-E8DA91716D2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D5D68562-5131-49AD-B49E-E8DA91716D2E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{58F2E1E4-05CB-4369-A655-0578F0CE7FD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{58F2E1E4-05CB-4369-A655-0578F0CE7FD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58F2E1E4-05CB-4369-A655-0578F0CE7FD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -61,5 +57,9 @@ Global
 		{096455FA-AD61-4A3B-9133-C12B1F3B3800}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{096455FA-AD61-4A3B-9133-C12B1F3B3800}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{096455FA-AD61-4A3B-9133-C12B1F3B3800}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5D68562-5131-49AD-B49E-E8DA91716D2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5D68562-5131-49AD-B49E-E8DA91716D2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5D68562-5131-49AD-B49E-E8DA91716D2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5D68562-5131-49AD-B49E-E8DA91716D2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
