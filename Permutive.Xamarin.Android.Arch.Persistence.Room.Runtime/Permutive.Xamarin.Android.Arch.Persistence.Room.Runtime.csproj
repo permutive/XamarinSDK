@@ -14,7 +14,7 @@
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <PackageId>Permutive.Xamarin.Android.Arch.Persistence.Room.Runtime</PackageId>
-    <PackageVersion>1.1.1</PackageVersion>
+    <PackageVersion>1.1.1.2</PackageVersion>
     <Authors>Tom.Hall</Authors>
     <PackageReleaseNotes>Android Arch Persistence Room Runtime v1.1.1</PackageReleaseNotes>
     <Summary>Xamarin Android Binding Library - Arch Persistence Room Runtime</Summary>
