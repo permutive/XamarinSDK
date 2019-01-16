@@ -64,9 +64,6 @@
     <Reference Include="Xamarin.Android.Arch.Core.Runtime">
       <HintPath>..\packages\Xamarin.Android.Arch.Core.Runtime.1.1.1\lib\monoandroid90\Xamarin.Android.Arch.Core.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="Permutive.Xamarin.Android.Arch.Persistence.Room.Runtime">
-      <HintPath>..\packages\Permutive.Xamarin.Android.Arch.Persistence.Room.Runtime.1.1.1\lib\monoandroid90\Permutive.Xamarin.Android.Arch.Persistence.Room.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="Xamarin.Android.Arch.Lifecycle.Common">
       <HintPath>..\packages\Xamarin.Android.Arch.Lifecycle.Common.1.1.1\lib\monoandroid90\Xamarin.Android.Arch.Lifecycle.Common.dll</HintPath>
     </Reference>
@@ -81,6 +78,21 @@
     </Reference>
     <Reference Include="Xamarin.Android.Support.Compat">
       <HintPath>..\packages\Xamarin.Android.Support.Compat.28.0.0\lib\monoandroid90\Xamarin.Android.Support.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="Permutive.Xamarin.Android.Arch.Persistence.Room.Runtime">
+      <HintPath>..\packages\Permutive.Xamarin.Android.Arch.Persistence.Room.Runtime.1.1.1.2\lib\monoandroid90\Permutive.Xamarin.Android.Arch.Persistence.Room.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Permutive.Xamarin.Android.Arch.Persistence.Room.RxJava">
+      <HintPath>..\packages\Permutive.Xamarin.Android.Arch.Persistence.Room.RxJava.1.1.1\lib\monoandroid90\Permutive.Xamarin.Android.Arch.Persistence.Room.RxJava.dll</HintPath>
+    </Reference>
+    <Reference Include="Permutive.Xamarin.Interface">
+      <HintPath>..\packages\Permutive.Xamarin.Interface.0.1.0\lib\portable45-net45+win8+wpa81\Permutive.Xamarin.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Permutive.Xamarin.Android.Binding">
+      <HintPath>..\packages\Permutive.Xamarin.Android.Binding.0.1.0\lib\monoandroid90\Permutive.Xamarin.Android.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="Library.Android">
+      <HintPath>..\packages\Permutive.Xamarin.Android.0.1.0\lib\monoandroid90\Library.Android.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -108,24 +120,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\AboutAssets.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Permutive.Xamarin.Android.Arch.Persistence.Room.RxJava\Permutive.Xamarin.Android.Arch.Persistence.Room.RxJava.csproj">
-      <Project>{B236D768-A8EA-4A59-A7F8-2EF4C55C2CEB}</Project>
-      <Name>Permutive.Xamarin.Android.Arch.Persistence.Room.RxJava</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Permutive.Xamarin.Android.Binding\Permutive.Xamarin.Android.Binding.csproj">
-      <Project>{C337FAE5-437A-490D-AB87-0DFEF10F42BF}</Project>
-      <Name>Permutive.Xamarin.Android.Binding</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Permutive.Xamarin.Android\Permutive.Xamarin.Android.csproj">
-      <Project>{C3D2E79C-1BFD-4FD9-9C6C-8EA04206E4AE}</Project>
-      <Name>Permutive.Xamarin.Android</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Permutive.Xamarin.Interface\Permutive.Xamarin.Interface.csproj">
-      <Project>{096455FA-AD61-4A3B-9133-C12B1F3B3800}</Project>
-      <Name>Permutive.Xamarin.Interface</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Annotations.28.0.0\build\monoandroid90\Xamarin.Android.Support.Annotations.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Annotations.28.0.0\build\monoandroid90\Xamarin.Android.Support.Annotations.targets')" />
