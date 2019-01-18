@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutive.Xamarin.Interface
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutive.Xamarin.Android.Duktape", "Permutive.Xamarin.Android.Duktape\Permutive.Xamarin.Android.Duktape.csproj", "{D5D68562-5131-49AD-B49E-E8DA91716D2E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutive.Xamarin.Android.GoogleAds.Binding", "Permutive.Xamarin.Android.GoogleAds.Binding\Permutive.Xamarin.Android.GoogleAds.Binding.csproj", "{3079F65A-9E3E-4E5A-853F-3E0140534A28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutive.Xamarin.Android.GoogleAds", "Permutive.Xamarin.Android.GoogleAds\Permutive.Xamarin.Android.GoogleAds.csproj", "{CE594427-C220-43A8-8C2B-37A02AE278CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,5 +65,13 @@ Global
 		{D5D68562-5131-49AD-B49E-E8DA91716D2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5D68562-5131-49AD-B49E-E8DA91716D2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5D68562-5131-49AD-B49E-E8DA91716D2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3079F65A-9E3E-4E5A-853F-3E0140534A28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3079F65A-9E3E-4E5A-853F-3E0140534A28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3079F65A-9E3E-4E5A-853F-3E0140534A28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3079F65A-9E3E-4E5A-853F-3E0140534A28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE594427-C220-43A8-8C2B-37A02AE278CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE594427-C220-43A8-8C2B-37A02AE278CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE594427-C220-43A8-8C2B-37A02AE278CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE594427-C220-43A8-8C2B-37A02AE278CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

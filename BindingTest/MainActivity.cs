@@ -94,7 +94,8 @@ namespace BindingTest
                 )
                 .Build();
 
-            permutive.EventTracker().TrackEvent("Pageview", eventProperties);
+            //permutive.EventTracker().TrackEvent("Pageview", eventProperties);
+            permutive.EventTracker().TrackEvent("Pageview");
         }
     }
 }

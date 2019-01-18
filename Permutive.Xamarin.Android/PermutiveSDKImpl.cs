@@ -30,12 +30,21 @@ namespace Permutive.Xamarin
 
         public override Permutive Initialize(PermutiveOptions options)
         {
-            permutive = new Com.Permutive.Android.Permutive.Builder()
-                    .Context(context)
-                    .ProjectId(Java.Util.UUID.FromString(options.ProjectId))
-                    .ApiKey(Java.Util.UUID.FromString(options.ApiKey))
-                    //TODO: add support for Alias Providers
-                    .Build();
+            Com.Permutive.Android.Permutive.Builder builder = new Com.Permutive.Android.Permutive.Builder()
+                .Context(context)
+                .ProjectId(Java.Util.UUID.FromString(options.ProjectId))
+                .ApiKey(Java.Util.UUID.FromString(options.ApiKey));
+
+
+            foreach(var provider in options.AliasProviders)
+            {
+                if (provider.InternalProvider() is Com.Permutive.Android.Identify.AliasProvider internalProvider)
+                {
+                    builder.AliasProvider(internalProvider);
+                }
+            }
+
+            permutive = builder.Build();
 
             return this;
         }

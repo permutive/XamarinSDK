@@ -4,18 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{69853924-B7B8-4F3F-8706-0BC0799B84AE}</ProjectGuid>
-    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{3079F65A-9E3E-4E5A-853F-3E0140534A28}</ProjectGuid>
+    <ProjectTypeGuids>{10368E6C-D01B-4462-8E8B-01FC667A7035};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>BindingTest</RootNamespace>
-    <AssemblyName>BindingTest</AssemblyName>
+    <RootNamespace>Permutive.Xamarin.Android.GoogleAds.Binding</RootNamespace>
+    <AssemblyName>Permutive.Xamarin.Android.GoogleAds.Binding</AssemblyName>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
-    <AndroidApplication>True</AndroidApplication>
-    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
-    <AndroidResgenClass>Resource</AndroidResgenClass>
-    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidClassParser>class-parse</AndroidClassParser>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -26,9 +23,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
-    <JavaMaximumHeapSize></JavaMaximumHeapSize>
-    <AndroidSupportedAbis>arm64-v8a;armeabi;armeabi-v7a;x86</AndroidSupportedAbis>
-    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -39,17 +34,31 @@
     <WarningLevel>4</WarningLevel>
     <AndroidManagedSymbols>true</AndroidManagedSymbols>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
-    <JavaMaximumHeapSize></JavaMaximumHeapSize>
-    <AndroidSupportedAbis>armeabi-v7a;x86</AndroidSupportedAbis>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
-    <Reference Include="Java.Interop" />
+    <Reference Include="Xamarin.GooglePlayServices.Basement">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Basement.60.1142.1\lib\MonoAndroid80\Xamarin.GooglePlayServices.Basement.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Ads.Lite">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Ads.Lite.60.1142.1\lib\MonoAndroid80\Xamarin.GooglePlayServices.Ads.Lite.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Gass">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Gass.60.1142.1\lib\MonoAndroid80\Xamarin.GooglePlayServices.Gass.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Ads">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Ads.60.1142.1\lib\MonoAndroid80\Xamarin.GooglePlayServices.Ads.dll</HintPath>
+    </Reference>
     <Reference Include="Permutive.Xamarin.Android.Ducktape">
       <HintPath>..\packages\Permutive.Xamarin.Android.Duktape.1.3.0\lib\monoandroid90\Permutive.Xamarin.Android.Ducktape.dll</HintPath>
+    </Reference>
+    <Reference Include="Java.Interop" />
+    <Reference Include="Xamarin.Android.Support.Annotations">
+      <HintPath>..\packages\Xamarin.Android.Support.Annotations.28.0.0\lib\monoandroid90\Xamarin.Android.Support.Annotations.dll</HintPath>
     </Reference>
     <Reference Include="Permutive.Xamarin.Android.Arch.Persistence.DB">
       <HintPath>..\packages\Permutive.Xamarin.Android.Arch.Persistence.DB.1.1.1\lib\monoandroid90\Permutive.Xamarin.Android.Arch.Persistence.DB.dll</HintPath>
@@ -57,29 +66,11 @@
     <Reference Include="Permutive.Xamarin.Android.Arch.Persistence.DB.Framework">
       <HintPath>..\packages\Permutive.Xamarin.Android.Arch.Persistence.DB.Framework.1.1.1\lib\monoandroid90\Permutive.Xamarin.Android.Arch.Persistence.DB.Framework.dll</HintPath>
     </Reference>
-    <Reference Include="Xamarin.Android.Support.Annotations">
-      <HintPath>..\packages\Xamarin.Android.Support.Annotations.28.0.0\lib\monoandroid90\Xamarin.Android.Support.Annotations.dll</HintPath>
-    </Reference>
     <Reference Include="Xamarin.Android.Arch.Core.Common">
       <HintPath>..\packages\Xamarin.Android.Arch.Core.Common.1.1.1\lib\monoandroid90\Xamarin.Android.Arch.Core.Common.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Arch.Core.Runtime">
       <HintPath>..\packages\Xamarin.Android.Arch.Core.Runtime.1.1.1\lib\monoandroid90\Xamarin.Android.Arch.Core.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Android.Arch.Lifecycle.Common">
-      <HintPath>..\packages\Xamarin.Android.Arch.Lifecycle.Common.1.1.1\lib\monoandroid90\Xamarin.Android.Arch.Lifecycle.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Android.Arch.Lifecycle.Runtime">
-      <HintPath>..\packages\Xamarin.Android.Arch.Lifecycle.Runtime.1.1.1\lib\monoandroid90\Xamarin.Android.Arch.Lifecycle.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Android.Support.Collections">
-      <HintPath>..\packages\Xamarin.Android.Support.Collections.28.0.0\lib\monoandroid90\Xamarin.Android.Support.Collections.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Android.Support.VersionedParcelable">
-      <HintPath>..\packages\Xamarin.Android.Support.VersionedParcelable.28.0.0\lib\monoandroid90\Xamarin.Android.Support.VersionedParcelable.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Android.Support.Compat">
-      <HintPath>..\packages\Xamarin.Android.Support.Compat.28.0.0\lib\monoandroid90\Xamarin.Android.Support.Compat.dll</HintPath>
     </Reference>
     <Reference Include="Permutive.Xamarin.Android.Arch.Persistence.Room.Runtime">
       <HintPath>..\packages\Permutive.Xamarin.Android.Arch.Persistence.Room.Runtime.1.1.1.2\lib\monoandroid90\Permutive.Xamarin.Android.Arch.Persistence.Room.Runtime.dll</HintPath>
@@ -90,14 +81,23 @@
     <Reference Include="Permutive.Xamarin.Android.Binding">
       <HintPath>..\packages\Permutive.Xamarin.Android.Binding.0.1.0\lib\monoandroid90\Permutive.Xamarin.Android.Binding.dll</HintPath>
     </Reference>
+    <Reference Include="Xamarin.Android.Arch.Lifecycle.Common">
+      <HintPath>..\packages\Xamarin.Android.Arch.Lifecycle.Common.1.1.1\lib\monoandroid90\Xamarin.Android.Arch.Lifecycle.Common.dll</HintPath>
+    </Reference>
     <Reference Include="Xamarin.Android.Arch.Lifecycle.LiveData.Core">
       <HintPath>..\packages\Xamarin.Android.Arch.Lifecycle.LiveData.Core.1.1.1\lib\monoandroid90\Xamarin.Android.Arch.Lifecycle.LiveData.Core.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Arch.Lifecycle.LiveData">
       <HintPath>..\packages\Xamarin.Android.Arch.Lifecycle.LiveData.1.1.1\lib\monoandroid90\Xamarin.Android.Arch.Lifecycle.LiveData.dll</HintPath>
     </Reference>
+    <Reference Include="Xamarin.Android.Arch.Lifecycle.Runtime">
+      <HintPath>..\packages\Xamarin.Android.Arch.Lifecycle.Runtime.1.1.1\lib\monoandroid90\Xamarin.Android.Arch.Lifecycle.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Xamarin.Android.Arch.Lifecycle.ViewModel">
       <HintPath>..\packages\Xamarin.Android.Arch.Lifecycle.ViewModel.1.1.1\lib\monoandroid90\Xamarin.Android.Arch.Lifecycle.ViewModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Collections">
+      <HintPath>..\packages\Xamarin.Android.Support.Collections.28.0.0\lib\monoandroid90\Xamarin.Android.Support.Collections.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Support.CursorAdapter">
       <HintPath>..\packages\Xamarin.Android.Support.CursorAdapter.28.0.0\lib\monoandroid90\Xamarin.Android.Support.CursorAdapter.dll</HintPath>
@@ -113,6 +113,12 @@
     </Reference>
     <Reference Include="Xamarin.Android.Support.Print">
       <HintPath>..\packages\Xamarin.Android.Support.Print.28.0.0\lib\monoandroid90\Xamarin.Android.Support.Print.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.VersionedParcelable">
+      <HintPath>..\packages\Xamarin.Android.Support.VersionedParcelable.28.0.0\lib\monoandroid90\Xamarin.Android.Support.VersionedParcelable.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Compat">
+      <HintPath>..\packages\Xamarin.Android.Support.Compat.28.0.0\lib\monoandroid90\Xamarin.Android.Support.Compat.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Support.AsyncLayoutInflater">
       <HintPath>..\packages\Xamarin.Android.Support.AsyncLayoutInflater.28.0.0\lib\monoandroid90\Xamarin.Android.Support.AsyncLayoutInflater.dll</HintPath>
@@ -150,80 +156,45 @@
     <Reference Include="Xamarin.Android.Support.Fragment">
       <HintPath>..\packages\Xamarin.Android.Support.Fragment.28.0.0\lib\monoandroid90\Xamarin.Android.Support.Fragment.dll</HintPath>
     </Reference>
-    <Reference Include="Xamarin.GooglePlayServices.Basement">
-      <HintPath>..\packages\Xamarin.GooglePlayServices.Basement.60.1142.1\lib\MonoAndroid80\Xamarin.GooglePlayServices.Basement.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.GooglePlayServices.Ads.Lite">
-      <HintPath>..\packages\Xamarin.GooglePlayServices.Ads.Lite.60.1142.1\lib\MonoAndroid80\Xamarin.GooglePlayServices.Ads.Lite.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.GooglePlayServices.Gass">
-      <HintPath>..\packages\Xamarin.GooglePlayServices.Gass.60.1142.1\lib\MonoAndroid80\Xamarin.GooglePlayServices.Gass.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.GooglePlayServices.Ads">
-      <HintPath>..\packages\Xamarin.GooglePlayServices.Ads.60.1142.1\lib\MonoAndroid80\Xamarin.GooglePlayServices.Ads.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainActivity.cs" />
-    <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="BindingTestApplication.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\AboutResources.txt" />
-    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Additions\AboutAdditions.txt" />
+    <None Include="Jars\AboutJars.txt" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\Main.axml" />
-    <AndroidResource Include="Resources\values\Strings.xml" />
-    <AndroidResource Include="Resources\mipmap-hdpi\Icon.png" />
-    <AndroidResource Include="Resources\mipmap-mdpi\Icon.png" />
-    <AndroidResource Include="Resources\mipmap-xhdpi\Icon.png" />
-    <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
-    <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
+    <TransformFile Include="Transforms\EnumFields.xml" />
+    <TransformFile Include="Transforms\EnumMethods.xml" />
+    <TransformFile Include="Transforms\Metadata.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\drawable\" />
+    <LibraryProjectZip Include="Jars\google-ads-0.2.1.aar" />
   </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\AboutAssets.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Permutive.Xamarin.Android.GoogleAds.Binding\Permutive.Xamarin.Android.GoogleAds.Binding.csproj">
-      <Project>{3079F65A-9E3E-4E5A-853F-3E0140534A28}</Project>
-      <Name>Permutive.Xamarin.Android.GoogleAds.Binding</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Permutive.Xamarin.Android\Permutive.Xamarin.Android.csproj">
-      <Project>{C3D2E79C-1BFD-4FD9-9C6C-8EA04206E4AE}</Project>
-      <Name>Permutive.Xamarin.Android</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Permutive.Xamarin.Android.GoogleAds\Permutive.Xamarin.Android.GoogleAds.csproj">
-      <Project>{CE594427-C220-43A8-8C2B-37A02AE278CA}</Project>
-      <Name>Permutive.Xamarin.Android.GoogleAds</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Permutive.Xamarin.Interface\Permutive.Xamarin.Interface.csproj">
-      <Project>{096455FA-AD61-4A3B-9133-C12B1F3B3800}</Project>
-      <Name>Permutive.Xamarin.Interface</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
+  <Import Project="..\packages\Xamarin.Build.Download.0.4.9\build\Xamarin.Build.Download.targets" Condition="Exists('..\packages\Xamarin.Build.Download.0.4.9\build\Xamarin.Build.Download.targets')" />
+  <Import Project="..\packages\Xamarin.GooglePlayServices.Basement.60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Basement.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Basement.60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Basement.targets')" />
+  <Import Project="..\packages\Xamarin.GooglePlayServices.Ads.Lite.60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Ads.Lite.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Ads.Lite.60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Ads.Lite.targets')" />
+  <Import Project="..\packages\Xamarin.GooglePlayServices.Gass.60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Gass.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Gass.60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Gass.targets')" />
+  <Import Project="..\packages\Xamarin.GooglePlayServices.Ads.60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Ads.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Ads.60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Ads.targets')" />
   <Import Project="..\packages\Xamarin.Android.Support.Annotations.28.0.0\build\monoandroid90\Xamarin.Android.Support.Annotations.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Annotations.28.0.0\build\monoandroid90\Xamarin.Android.Support.Annotations.targets')" />
   <Import Project="..\packages\Xamarin.Android.Arch.Core.Common.1.1.1\build\monoandroid90\Xamarin.Android.Arch.Core.Common.targets" Condition="Exists('..\packages\Xamarin.Android.Arch.Core.Common.1.1.1\build\monoandroid90\Xamarin.Android.Arch.Core.Common.targets')" />
   <Import Project="..\packages\Xamarin.Android.Arch.Core.Runtime.1.1.1\build\monoandroid90\Xamarin.Android.Arch.Core.Runtime.targets" Condition="Exists('..\packages\Xamarin.Android.Arch.Core.Runtime.1.1.1\build\monoandroid90\Xamarin.Android.Arch.Core.Runtime.targets')" />
   <Import Project="..\packages\Xamarin.Android.Arch.Lifecycle.Common.1.1.1\build\monoandroid90\Xamarin.Android.Arch.Lifecycle.Common.targets" Condition="Exists('..\packages\Xamarin.Android.Arch.Lifecycle.Common.1.1.1\build\monoandroid90\Xamarin.Android.Arch.Lifecycle.Common.targets')" />
-  <Import Project="..\packages\Xamarin.Android.Arch.Lifecycle.Runtime.1.1.1\build\monoandroid90\Xamarin.Android.Arch.Lifecycle.Runtime.targets" Condition="Exists('..\packages\Xamarin.Android.Arch.Lifecycle.Runtime.1.1.1\build\monoandroid90\Xamarin.Android.Arch.Lifecycle.Runtime.targets')" />
-  <Import Project="..\packages\Xamarin.Android.Support.Collections.28.0.0\build\monoandroid90\Xamarin.Android.Support.Collections.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Collections.28.0.0\build\monoandroid90\Xamarin.Android.Support.Collections.targets')" />
-  <Import Project="..\packages\Xamarin.Android.Support.VersionedParcelable.28.0.0\build\monoandroid90\Xamarin.Android.Support.VersionedParcelable.targets" Condition="Exists('..\packages\Xamarin.Android.Support.VersionedParcelable.28.0.0\build\monoandroid90\Xamarin.Android.Support.VersionedParcelable.targets')" />
-  <Import Project="..\packages\Xamarin.Android.Support.Compat.28.0.0\build\monoandroid90\Xamarin.Android.Support.Compat.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Compat.28.0.0\build\monoandroid90\Xamarin.Android.Support.Compat.targets')" />
   <Import Project="..\packages\Xamarin.Android.Arch.Lifecycle.LiveData.Core.1.1.1\build\monoandroid90\Xamarin.Android.Arch.Lifecycle.LiveData.Core.targets" Condition="Exists('..\packages\Xamarin.Android.Arch.Lifecycle.LiveData.Core.1.1.1\build\monoandroid90\Xamarin.Android.Arch.Lifecycle.LiveData.Core.targets')" />
   <Import Project="..\packages\Xamarin.Android.Arch.Lifecycle.LiveData.1.1.1\build\monoandroid90\Xamarin.Android.Arch.Lifecycle.LiveData.targets" Condition="Exists('..\packages\Xamarin.Android.Arch.Lifecycle.LiveData.1.1.1\build\monoandroid90\Xamarin.Android.Arch.Lifecycle.LiveData.targets')" />
+  <Import Project="..\packages\Xamarin.Android.Arch.Lifecycle.Runtime.1.1.1\build\monoandroid90\Xamarin.Android.Arch.Lifecycle.Runtime.targets" Condition="Exists('..\packages\Xamarin.Android.Arch.Lifecycle.Runtime.1.1.1\build\monoandroid90\Xamarin.Android.Arch.Lifecycle.Runtime.targets')" />
   <Import Project="..\packages\Xamarin.Android.Arch.Lifecycle.ViewModel.1.1.1\build\monoandroid90\Xamarin.Android.Arch.Lifecycle.ViewModel.targets" Condition="Exists('..\packages\Xamarin.Android.Arch.Lifecycle.ViewModel.1.1.1\build\monoandroid90\Xamarin.Android.Arch.Lifecycle.ViewModel.targets')" />
+  <Import Project="..\packages\Xamarin.Android.Support.Collections.28.0.0\build\monoandroid90\Xamarin.Android.Support.Collections.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Collections.28.0.0\build\monoandroid90\Xamarin.Android.Support.Collections.targets')" />
   <Import Project="..\packages\Xamarin.Android.Support.CursorAdapter.28.0.0\build\monoandroid90\Xamarin.Android.Support.CursorAdapter.targets" Condition="Exists('..\packages\Xamarin.Android.Support.CursorAdapter.28.0.0\build\monoandroid90\Xamarin.Android.Support.CursorAdapter.targets')" />
   <Import Project="..\packages\Xamarin.Android.Support.DocumentFile.28.0.0\build\monoandroid90\Xamarin.Android.Support.DocumentFile.targets" Condition="Exists('..\packages\Xamarin.Android.Support.DocumentFile.28.0.0\build\monoandroid90\Xamarin.Android.Support.DocumentFile.targets')" />
   <Import Project="..\packages\Xamarin.Android.Support.Interpolator.28.0.0\build\monoandroid90\Xamarin.Android.Support.Interpolator.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Interpolator.28.0.0\build\monoandroid90\Xamarin.Android.Support.Interpolator.targets')" />
   <Import Project="..\packages\Xamarin.Android.Support.LocalBroadcastManager.28.0.0\build\monoandroid90\Xamarin.Android.Support.LocalBroadcastManager.targets" Condition="Exists('..\packages\Xamarin.Android.Support.LocalBroadcastManager.28.0.0\build\monoandroid90\Xamarin.Android.Support.LocalBroadcastManager.targets')" />
   <Import Project="..\packages\Xamarin.Android.Support.Print.28.0.0\build\monoandroid90\Xamarin.Android.Support.Print.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Print.28.0.0\build\monoandroid90\Xamarin.Android.Support.Print.targets')" />
+  <Import Project="..\packages\Xamarin.Android.Support.VersionedParcelable.28.0.0\build\monoandroid90\Xamarin.Android.Support.VersionedParcelable.targets" Condition="Exists('..\packages\Xamarin.Android.Support.VersionedParcelable.28.0.0\build\monoandroid90\Xamarin.Android.Support.VersionedParcelable.targets')" />
+  <Import Project="..\packages\Xamarin.Android.Support.Compat.28.0.0\build\monoandroid90\Xamarin.Android.Support.Compat.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Compat.28.0.0\build\monoandroid90\Xamarin.Android.Support.Compat.targets')" />
   <Import Project="..\packages\Xamarin.Android.Support.AsyncLayoutInflater.28.0.0\build\monoandroid90\Xamarin.Android.Support.AsyncLayoutInflater.targets" Condition="Exists('..\packages\Xamarin.Android.Support.AsyncLayoutInflater.28.0.0\build\monoandroid90\Xamarin.Android.Support.AsyncLayoutInflater.targets')" />
   <Import Project="..\packages\Xamarin.Android.Support.CustomView.28.0.0\build\monoandroid90\Xamarin.Android.Support.CustomView.targets" Condition="Exists('..\packages\Xamarin.Android.Support.CustomView.28.0.0\build\monoandroid90\Xamarin.Android.Support.CustomView.targets')" />
   <Import Project="..\packages\Xamarin.Android.Support.CoordinaterLayout.28.0.0\build\monoandroid90\Xamarin.Android.Support.CoordinaterLayout.targets" Condition="Exists('..\packages\Xamarin.Android.Support.CoordinaterLayout.28.0.0\build\monoandroid90\Xamarin.Android.Support.CoordinaterLayout.targets')" />
@@ -236,9 +207,4 @@
   <Import Project="..\packages\Xamarin.Android.Support.ViewPager.28.0.0\build\monoandroid90\Xamarin.Android.Support.ViewPager.targets" Condition="Exists('..\packages\Xamarin.Android.Support.ViewPager.28.0.0\build\monoandroid90\Xamarin.Android.Support.ViewPager.targets')" />
   <Import Project="..\packages\Xamarin.Android.Support.Core.UI.28.0.0\build\monoandroid90\Xamarin.Android.Support.Core.UI.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Core.UI.28.0.0\build\monoandroid90\Xamarin.Android.Support.Core.UI.targets')" />
   <Import Project="..\packages\Xamarin.Android.Support.Fragment.28.0.0\build\monoandroid90\Xamarin.Android.Support.Fragment.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Fragment.28.0.0\build\monoandroid90\Xamarin.Android.Support.Fragment.targets')" />
-  <Import Project="..\packages\Xamarin.Build.Download.0.4.9\build\Xamarin.Build.Download.targets" Condition="Exists('..\packages\Xamarin.Build.Download.0.4.9\build\Xamarin.Build.Download.targets')" />
-  <Import Project="..\packages\Xamarin.GooglePlayServices.Basement.60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Basement.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Basement.60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Basement.targets')" />
-  <Import Project="..\packages\Xamarin.GooglePlayServices.Ads.Lite.60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Ads.Lite.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Ads.Lite.60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Ads.Lite.targets')" />
-  <Import Project="..\packages\Xamarin.GooglePlayServices.Gass.60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Gass.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Gass.60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Gass.targets')" />
-  <Import Project="..\packages\Xamarin.GooglePlayServices.Ads.60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Ads.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Ads.60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Ads.targets')" />
 </Project>
