@@ -17,6 +17,11 @@ namespace Permutive.Xamarin
             this.context = context;
         }
 
+        public Com.Permutive.Android.Permutive InternalPermutive()
+        {
+            return permutive;
+        }
+
         public override void Dispose()
         {
             permutive.Close();

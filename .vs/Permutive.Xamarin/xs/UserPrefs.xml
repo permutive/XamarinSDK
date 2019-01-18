@@ -1,26 +1,28 @@
 ﻿<Properties StartupConfiguration="{69853924-B7B8-4F3F-8706-0BC0799B84AE}|Default">
-  <MonoDevelop.Ide.ItemProperties.BindingTest PreferredExecutionTarget="Android.Android_Accelerated_Pie" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Permutive.Xamarin.Interface/PermutiveSDK.cs">
+  <MonoDevelop.Ide.ItemProperties.BindingTest AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Pie" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BindingTest/MainActivity.cs">
     <Files>
-      <File FileName="Permutive.Xamarin.Interface/PermutiveSDK.cs" Line="13" Column="42" />
+      <File FileName="Permutive.Xamarin.Interface/PermutiveSDK.cs" Line="11" Column="40" />
       <File FileName="Permutive.Xamarin.Android.GoogleAds/PermutiveGoogleAdsSDK.cs" Line="9" Column="1" />
-      <File FileName="BindingTest/BindingTestApplication.cs" Line="41" Column="54" />
-      <File FileName="Permutive.Xamarin.Android/PermutiveSDKImpl.cs" Line="28" Column="66" />
-      <File FileName="BindingTest/MainActivity.cs" Line="88" Column="54" />
+      <File FileName="BindingTest/BindingTestApplication.cs" Line="43" Column="1" />
+      <File FileName="Permutive.Xamarin.Android/PermutiveSDKImpl.cs" Line="2" Column="1" />
+      <File FileName="BindingTest/MainActivity.cs" Line="68" Column="25" />
+      <File FileName="BindingTest/Resources/Resource.designer.cs" Line="1" Column="1" />
+      <File FileName="BindingTest/Properties/AndroidManifest.xml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Permutive.Xamarin" expanded="True">
-            <Node name="BindingTest" expanded="True" selected="True">
+            <Node name="BindingTest" expanded="True">
               <Node name="References" expanded="True" />
-              <Node name="Assets" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="layout" expanded="True" />
+                <Node name="values" expanded="True" />
+              </Node>
+              <Node name="MainActivity.cs" selected="True" />
             </Node>
-            <Node name="Permutive.Xamarin.Android" expanded="True" />
-            <Node name="Permutive.Xamarin.Android.GoogleAds" expanded="True">
-              <Node name="References" expanded="True" />
-            </Node>
-            <Node name="Permutive.Xamarin.Interface" expanded="True" />
           </Node>
         </State>
       </Pad>
