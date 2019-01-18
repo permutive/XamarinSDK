@@ -1,27 +1,27 @@
 ﻿<Properties StartupConfiguration="{69853924-B7B8-4F3F-8706-0BC0799B84AE}|Default">
-  <MonoDevelop.Ide.ItemProperties.BindingTest AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Pie" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BindingTest/MainActivity.cs">
+  <MonoDevelop.Ide.ItemProperties.BindingTest PreferredExecutionTarget="Android.Android_Accelerated_Pie" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Permutive.Xamarin.Interface/PermutiveSDK.cs">
     <Files>
-      <File FileName="Permutive.Xamarin.Interface/PermutiveSDK.cs" Line="11" Column="40" />
-      <File FileName="Permutive.Xamarin.Android.GoogleAds/PermutiveGoogleAdsSDK.cs" Line="9" Column="1" />
-      <File FileName="BindingTest/BindingTestApplication.cs" Line="43" Column="1" />
-      <File FileName="Permutive.Xamarin.Android/PermutiveSDKImpl.cs" Line="2" Column="1" />
-      <File FileName="BindingTest/MainActivity.cs" Line="68" Column="25" />
+      <File FileName="Permutive.Xamarin.Interface/PermutiveSDK.cs" Line="61" Column="5" />
+      <File FileName="Permutive.Xamarin.Android.GoogleAds/PermutiveGoogleAdsSDK.cs" Line="31" Column="79" />
+      <File FileName="BindingTest/BindingTestApplication.cs" Line="43" Column="21" />
+      <File FileName="Permutive.Xamarin.Android/PermutiveSDKImpl.cs" Line="15" Column="43" />
+      <File FileName="BindingTest/MainActivity.cs" Line="90" Column="34" />
       <File FileName="BindingTest/Resources/Resource.designer.cs" Line="1" Column="1" />
       <File FileName="BindingTest/Properties/AndroidManifest.xml" Line="1" Column="1" />
+      <File FileName="Permutive.Xamarin.Android.Arch.Persistence.DB/packages.config" Line="5" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Permutive.Xamarin" expanded="True">
-            <Node name="BindingTest" expanded="True">
+            <Node name="Permutive.Xamarin.Android" expanded="True" selected="True">
               <Node name="References" expanded="True" />
-              <Node name="Properties" expanded="True" />
-              <Node name="Resources" expanded="True">
-                <Node name="layout" expanded="True" />
-                <Node name="values" expanded="True" />
-              </Node>
-              <Node name="MainActivity.cs" selected="True" />
+              <Node name="Packages" expanded="True" />
+            </Node>
+            <Node name="Permutive.Xamarin.Interface" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="Packages" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -37,7 +37,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
