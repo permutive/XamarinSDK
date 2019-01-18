@@ -40,7 +40,6 @@ namespace Permutive.Xamarin
                 .ProjectId(Java.Util.UUID.FromString(options.ProjectId))
                 .ApiKey(Java.Util.UUID.FromString(options.ApiKey));
 
-
             foreach(var provider in options.AliasProviders)
             {
                 if (provider.InternalProvider() is Com.Permutive.Android.Identify.AliasProvider internalProvider)

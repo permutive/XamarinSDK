@@ -65,8 +65,6 @@ namespace BindingTest
             sendEventButton.Click += delegate { trackEvent(); };
             setIdentityButton.Click += delegate { permutive.SetIdentity("testIdentity1@test.com"); };
 
-            //new PermutiveAdRequestBuilder(permutive)
-
             publisherAdView.LoadAd(
                 new PublisherAdRequest.Builder()
                     .AddTestDevice(PublisherAdRequest.DeviceIdEmulator)
