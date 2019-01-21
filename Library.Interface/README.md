@@ -1,4 +1,17 @@
-Library.Interface describes the common interface between the Android and iOS libraries. iOS will be supported in the very near future.
+Library.Interface describes the common interface between the Android and iOS libraries. Please note that iOS is not yet supported but will be in the near future.
+
+The Xamarin SDK is comprised of one core SDK, and several kit libraries integrating with other 3rd Party SDKs.
+
+Using multiple kit libraries enables feature-rich integration with minimal effort for developers and greater benefits to our clients.
+
+## Download
+
+To include in your Xamarin (Android) application, you should add the NuGet package. [See here](https://developer.xamarin.com/guides/cross-platform/xamarin-studio/nuget_walkthrough/)
+
+```bash
+Install-Package Permutive.Xamarin.Android -Version 0.1.1
+```
+
 
 ## Initialise the SDK
 
@@ -8,7 +21,7 @@ The Permutive object should be created only once, we suggest initialising this i
 
 Construction of the Permutive object is quick - it won't cause any issues with framerate drops (for the beta there are still some issues around this, but this will be fixed for release). You can start making permutive calls straight away.
 
-```C#
+```cs
 
 using Permutive.Xamarin;
 //..
@@ -32,7 +45,7 @@ You can set a custom identity for the user, whenever it's available. This may be
 
 You can start the Permutive SDK with an optional identity, if you have this:
 
-```C#
+```cs
     PermutiveOptions options = new PermutiveOptions();
     options.ApiKey= YOUR_API_KEY;
     options.ProjectId = YOUR_PROJECT_ID;
@@ -44,7 +57,7 @@ You can start the Permutive SDK with an optional identity, if you have this:
 
 Or you can call setIdentity at any point after the Permutive SDK has been created.
 
-```C#
+```cs
 permutive.SetIdentity("xamarin@permutive.com")
 ```
 
@@ -62,7 +75,7 @@ As with all other Permutive SDK APIs, the event tracker object is lightweight an
 
 Just like on the web, you can add extra context to the events you are tracking. You can set values for url, title and referrer. Domain is automatically inferred from url, if it has been set. Subsequent calls to **Track** will contain the extra context as part of the event. The context is persisted between application instances.
 
-```C#
+```cs
 
 EventTracker eventTracker = permutive.EventTracker();
 
@@ -88,7 +101,7 @@ EventTracker.TrackEvent("page viewed")
 
 To pass through geographic or ISP information for your custom events, you can pass through a special value when tracking the event:
 
-```C#
+```cs
 
 EventTracker eventTracker = permutive.EventTracker();
 
@@ -129,7 +142,7 @@ If at the time no geo or isp information is available, these properties are stri
 
 To track what segments the user belongs to, you can use the API call below. The callback will be called straight away with the current segments the user is in, and then called each time the segment list changes. Segments are returned as a list of Integers. These correspond to segment IDs setup in the Permutive Dashboard. The returned list is never null.
 
-```C#
+```cs
 TriggerProvider triggerProvider = permutive.TriggerProvider();
 var action =
     triggerProvider.QuerySegments(segments => 
@@ -153,28 +166,81 @@ If a query Id does not exist, the trigger will still be created, but the callbac
 
 Using a wrong type for a given query Id will immediately log an error to the console. The callback will **never** be called.
 
-```C#
+```cs
 TriggersProvider triggersProvider = permutive.TriggersProvider();
 
 var triggerAction =
     triggersProvider.TriggerAction<bool>(1, value => Log($"Query 1 change: {value}")); //value is bool
 
 //when you wish to stop tracking changes, dispose the action
-triggerAction.Dispose()
+triggerAction.Dispose();
 ```
 
 ## Tracking reactions
 
 Tracking reactions is very similiar to tracking segment changes, once you register a listener, you will get the initial state, and on each change you will get an update until you close the trigger action.
 
-```c#
+```cs
 
 var triggerProvider = permutive.TriggersProvider();
-var action =
+var queryReactionsDisposable =
     triggerProvider.QueryReactions("dfp",segments => 
     {
         foreach (var segment in segments){
             Log($"The user is in segment: {segment}");
         }
     });
+
+//when you wish to stop tracking changes, dispose the action
+queryReactionsDisposable.Dispose();
+
+```
+
+We have provided an easy way to add targeting for google ads requests. See the **google-ads** library instructions below.
+
+## Tracking AAID identities
+
+In addition to identifying your user via a custom identity, you can also automatically track a user by their AAID. To do this, just include the google-ads dependency in your gradle build:
+```bash
+Install-Package Permutive.Xamarin.Android.GoogleAds -Version 0.1.1
+```
+
+When creating the permutive object, simply add the **AliasAaidProvider** to the alias providers
+```cs
+using Permutive.Xamarin;
+//..
+
+  public override void OnCreate()
+  {
+    //..
+    PermutiveOptions options = new PermutiveOptions();
+    options.ApiKey= YOUR_API_KEY;
+    options.ProjectId = YOUR_PROJECT_ID;
+    options.AliasProviders = new List<IAliasProvider>
+    {
+        new AliasProvider(this)
+    } 
+	
+
+    var permutive = new PermutiveImpl(this);
+    permutive.Initialize(options);
+  }
+```
+
+The AAID will be tracked automatically by the SDK as soon as it is available.
+
+## Custom targeting with Google Ads
+
+We provide an easy way to add custom targeting of your Permutive reactions to your google ads requests. To do this:
+```cs
+//To add custom targeting
+val adRequest1 = 
+            new PublisherAdRequest.Builder()
+                .AddPermutiveTargeting(permutive)
+                .build()
+
+//Or simply without the build call:
+val adRequest2 = 
+        new PublisherAdRequest.Builder()
+            .BuildWithPermutiveTargeting(permutive)
 ```
