@@ -40,7 +40,7 @@ namespace BindingTest
             options.ProjectId = "e0039147-51e7-4224-a814-0e2d438aabcd";
             options.AliasProviders = new List<IAliasProvider>
             {
-                //new AliasAaidProvider(this)
+                new AliasAaidProvider(this)
             };
 
             var newPermutive = new PermutiveImpl(this);

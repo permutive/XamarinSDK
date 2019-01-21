@@ -69,7 +69,8 @@ namespace BindingTest
                 new PublisherAdRequest.Builder()
                     .AddTestDevice(PublisherAdRequest.DeviceIdEmulator)
                     //.AddPermutiveTargeting(permutive)
-                    .Build()
+                    .BuildWithPermutiveTargeting(permutive)
+                    //.Build()
             );
         }
 
