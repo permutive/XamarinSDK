@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using Android.Runtime;
 using Permutive.Xamarin;
 using Android.Gms.Ads.DoubleClick;
-using Com.Permutive.Android.Ads;
+//using Com.Permutive.Android.Ads;
 
 namespace BindingTest
 {
@@ -68,7 +68,7 @@ namespace BindingTest
             publisherAdView.LoadAd(
                 new PublisherAdRequest.Builder()
                     .AddTestDevice(PublisherAdRequest.DeviceIdEmulator)
-                    .AddPermutiveTargeting(permutive)
+                    //.AddPermutiveTargeting(permutive)
                     .Build()
             );
         }
