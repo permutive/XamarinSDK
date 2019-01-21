@@ -3,18 +3,16 @@ using System.Collections.Generic;
 
 namespace Permutive.Xamarin
 {
-
-    public interface AliasProvider
+    public interface IAliasProvider
     {
-
+        object InternalProvider();
     }
-
 
     public sealed class PermutiveOptions
     {
         public string ProjectId;
         public string ApiKey;
-        public List<AliasProvider> AliasProviders = new List<AliasProvider>();
+        public List<IAliasProvider> AliasProviders = new List<IAliasProvider>();
         public string identity = null;
     }
 

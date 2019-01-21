@@ -27,6 +27,42 @@ namespace Library.Android
 		public partial class Attribute
 		{
 			
+			// aapt resource value: 0x7f010000
+			public static int alpha = 2130771968;
+			
+			// aapt resource value: 0x7f010008
+			public static int font = 2130771976;
+			
+			// aapt resource value: 0x7f010001
+			public static int fontProviderAuthority = 2130771969;
+			
+			// aapt resource value: 0x7f010004
+			public static int fontProviderCerts = 2130771972;
+			
+			// aapt resource value: 0x7f010005
+			public static int fontProviderFetchStrategy = 2130771973;
+			
+			// aapt resource value: 0x7f010006
+			public static int fontProviderFetchTimeout = 2130771974;
+			
+			// aapt resource value: 0x7f010002
+			public static int fontProviderPackage = 2130771970;
+			
+			// aapt resource value: 0x7f010003
+			public static int fontProviderQuery = 2130771971;
+			
+			// aapt resource value: 0x7f010007
+			public static int fontStyle = 2130771975;
+			
+			// aapt resource value: 0x7f01000a
+			public static int fontVariationSettings = 2130771978;
+			
+			// aapt resource value: 0x7f010009
+			public static int fontWeight = 2130771977;
+			
+			// aapt resource value: 0x7f01000b
+			public static int ttcIndex = 2130771979;
+			
 			static Attribute()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -37,14 +73,314 @@ namespace Library.Android
 			}
 		}
 		
-		public partial class String
+		public partial class Color
+		{
+			
+			// aapt resource value: 0x7f060000
+			public static int notification_action_color_filter = 2131099648;
+			
+			// aapt resource value: 0x7f060001
+			public static int notification_icon_bg_color = 2131099649;
+			
+			// aapt resource value: 0x7f060002
+			public static int ripple_material_light = 2131099650;
+			
+			// aapt resource value: 0x7f060003
+			public static int secondary_text_default_material_light = 2131099651;
+			
+			static Color()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Color()
+			{
+			}
+		}
+		
+		public partial class Dimension
+		{
+			
+			// aapt resource value: 0x7f050004
+			public static int compat_button_inset_horizontal_material = 2131034116;
+			
+			// aapt resource value: 0x7f050005
+			public static int compat_button_inset_vertical_material = 2131034117;
+			
+			// aapt resource value: 0x7f050006
+			public static int compat_button_padding_horizontal_material = 2131034118;
+			
+			// aapt resource value: 0x7f050007
+			public static int compat_button_padding_vertical_material = 2131034119;
+			
+			// aapt resource value: 0x7f050008
+			public static int compat_control_corner_material = 2131034120;
+			
+			// aapt resource value: 0x7f050009
+			public static int compat_notification_large_icon_max_height = 2131034121;
+			
+			// aapt resource value: 0x7f05000a
+			public static int compat_notification_large_icon_max_width = 2131034122;
+			
+			// aapt resource value: 0x7f05000b
+			public static int notification_action_icon_size = 2131034123;
+			
+			// aapt resource value: 0x7f05000c
+			public static int notification_action_text_size = 2131034124;
+			
+			// aapt resource value: 0x7f05000d
+			public static int notification_big_circle_margin = 2131034125;
+			
+			// aapt resource value: 0x7f050001
+			public static int notification_content_margin_start = 2131034113;
+			
+			// aapt resource value: 0x7f05000e
+			public static int notification_large_icon_height = 2131034126;
+			
+			// aapt resource value: 0x7f05000f
+			public static int notification_large_icon_width = 2131034127;
+			
+			// aapt resource value: 0x7f050002
+			public static int notification_main_column_padding_top = 2131034114;
+			
+			// aapt resource value: 0x7f050003
+			public static int notification_media_narrow_margin = 2131034115;
+			
+			// aapt resource value: 0x7f050010
+			public static int notification_right_icon_size = 2131034128;
+			
+			// aapt resource value: 0x7f050000
+			public static int notification_right_side_padding_top = 2131034112;
+			
+			// aapt resource value: 0x7f050011
+			public static int notification_small_icon_background_padding = 2131034129;
+			
+			// aapt resource value: 0x7f050012
+			public static int notification_small_icon_size_as_large = 2131034130;
+			
+			// aapt resource value: 0x7f050013
+			public static int notification_subtext_size = 2131034131;
+			
+			// aapt resource value: 0x7f050014
+			public static int notification_top_pad = 2131034132;
+			
+			// aapt resource value: 0x7f050015
+			public static int notification_top_pad_large_text = 2131034133;
+			
+			static Dimension()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Dimension()
+			{
+			}
+		}
+		
+		public partial class Drawable
 		{
 			
 			// aapt resource value: 0x7f020000
-			public static int app_name = 2130837504;
+			public static int notification_action_background = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public static int library_name = 2130837505;
+			public static int notification_bg = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public static int notification_bg_low = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public static int notification_bg_low_normal = 2130837507;
+			
+			// aapt resource value: 0x7f020004
+			public static int notification_bg_low_pressed = 2130837508;
+			
+			// aapt resource value: 0x7f020005
+			public static int notification_bg_normal = 2130837509;
+			
+			// aapt resource value: 0x7f020006
+			public static int notification_bg_normal_pressed = 2130837510;
+			
+			// aapt resource value: 0x7f020007
+			public static int notification_icon_background = 2130837511;
+			
+			// aapt resource value: 0x7f02000a
+			public static int notification_template_icon_bg = 2130837514;
+			
+			// aapt resource value: 0x7f02000b
+			public static int notification_template_icon_low_bg = 2130837515;
+			
+			// aapt resource value: 0x7f020008
+			public static int notification_tile_bg = 2130837512;
+			
+			// aapt resource value: 0x7f020009
+			public static int notify_panel_notification_icon_bg = 2130837513;
+			
+			static Drawable()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Drawable()
+			{
+			}
+		}
+		
+		public partial class Id
+		{
+			
+			// aapt resource value: 0x7f08000d
+			public static int action_container = 2131230733;
+			
+			// aapt resource value: 0x7f080019
+			public static int action_divider = 2131230745;
+			
+			// aapt resource value: 0x7f08000e
+			public static int action_image = 2131230734;
+			
+			// aapt resource value: 0x7f08000f
+			public static int action_text = 2131230735;
+			
+			// aapt resource value: 0x7f08001a
+			public static int actions = 2131230746;
+			
+			// aapt resource value: 0x7f080008
+			public static int async = 2131230728;
+			
+			// aapt resource value: 0x7f080009
+			public static int blocking = 2131230729;
+			
+			// aapt resource value: 0x7f080018
+			public static int chronometer = 2131230744;
+			
+			// aapt resource value: 0x7f08000a
+			public static int forever = 2131230730;
+			
+			// aapt resource value: 0x7f080011
+			public static int icon = 2131230737;
+			
+			// aapt resource value: 0x7f08001b
+			public static int icon_group = 2131230747;
+			
+			// aapt resource value: 0x7f080014
+			public static int info = 2131230740;
+			
+			// aapt resource value: 0x7f08000b
+			public static int italic = 2131230731;
+			
+			// aapt resource value: 0x7f080000
+			public static int line1 = 2131230720;
+			
+			// aapt resource value: 0x7f080001
+			public static int line3 = 2131230721;
+			
+			// aapt resource value: 0x7f08000c
+			public static int normal = 2131230732;
+			
+			// aapt resource value: 0x7f080016
+			public static int notification_background = 2131230742;
+			
+			// aapt resource value: 0x7f080012
+			public static int notification_main_column = 2131230738;
+			
+			// aapt resource value: 0x7f080010
+			public static int notification_main_column_container = 2131230736;
+			
+			// aapt resource value: 0x7f080015
+			public static int right_icon = 2131230741;
+			
+			// aapt resource value: 0x7f080013
+			public static int right_side = 2131230739;
+			
+			// aapt resource value: 0x7f080002
+			public static int tag_transition_group = 2131230722;
+			
+			// aapt resource value: 0x7f080003
+			public static int tag_unhandled_key_event_manager = 2131230723;
+			
+			// aapt resource value: 0x7f080004
+			public static int tag_unhandled_key_listeners = 2131230724;
+			
+			// aapt resource value: 0x7f080005
+			public static int text = 2131230725;
+			
+			// aapt resource value: 0x7f080006
+			public static int text2 = 2131230726;
+			
+			// aapt resource value: 0x7f080017
+			public static int time = 2131230743;
+			
+			// aapt resource value: 0x7f080007
+			public static int title = 2131230727;
+			
+			static Id()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Id()
+			{
+			}
+		}
+		
+		public partial class Integer
+		{
+			
+			// aapt resource value: 0x7f090000
+			public static int status_bar_notification_info_maxnum = 2131296256;
+			
+			static Integer()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Integer()
+			{
+			}
+		}
+		
+		public partial class Layout
+		{
+			
+			// aapt resource value: 0x7f030000
+			public static int notification_action = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public static int notification_action_tombstone = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public static int notification_template_custom_big = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public static int notification_template_icon_group = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public static int notification_template_part_chronometer = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public static int notification_template_part_time = 2130903045;
+			
+			static Layout()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Layout()
+			{
+			}
+		}
+		
+		public partial class String
+		{
+			
+			// aapt resource value: 0x7f040001
+			public static int app_name = 2130968577;
+			
+			// aapt resource value: 0x7f040002
+			public static int library_name = 2130968578;
+			
+			// aapt resource value: 0x7f040000
+			public static int status_bar_notification_info_overflow = 2130968576;
 			
 			static String()
 			{
@@ -52,6 +388,195 @@ namespace Library.Android
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7f070000
+			public static int TextAppearance_Compat_Notification = 2131165184;
+			
+			// aapt resource value: 0x7f070001
+			public static int TextAppearance_Compat_Notification_Info = 2131165185;
+			
+			// aapt resource value: 0x7f070006
+			public static int TextAppearance_Compat_Notification_Line2 = 2131165190;
+			
+			// aapt resource value: 0x7f070002
+			public static int TextAppearance_Compat_Notification_Time = 2131165186;
+			
+			// aapt resource value: 0x7f070003
+			public static int TextAppearance_Compat_Notification_Title = 2131165187;
+			
+			// aapt resource value: 0x7f070004
+			public static int Widget_Compat_NotificationActionContainer = 2131165188;
+			
+			// aapt resource value: 0x7f070005
+			public static int Widget_Compat_NotificationActionText = 2131165189;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
+			{
+			}
+		}
+		
+		public partial class Styleable
+		{
+			
+			public static int[] ColorStateListItem = new int[] {
+					16843173,
+					16843551,
+					2130771968};
+			
+			// aapt resource value: 2
+			public static int ColorStateListItem_alpha = 2;
+			
+			// aapt resource value: 1
+			public static int ColorStateListItem_android_alpha = 1;
+			
+			// aapt resource value: 0
+			public static int ColorStateListItem_android_color = 0;
+			
+			public static int[] FontFamily = new int[] {
+					2130771969,
+					2130771970,
+					2130771971,
+					2130771972,
+					2130771973,
+					2130771974};
+			
+			// aapt resource value: 0
+			public static int FontFamily_fontProviderAuthority = 0;
+			
+			// aapt resource value: 3
+			public static int FontFamily_fontProviderCerts = 3;
+			
+			// aapt resource value: 4
+			public static int FontFamily_fontProviderFetchStrategy = 4;
+			
+			// aapt resource value: 5
+			public static int FontFamily_fontProviderFetchTimeout = 5;
+			
+			// aapt resource value: 1
+			public static int FontFamily_fontProviderPackage = 1;
+			
+			// aapt resource value: 2
+			public static int FontFamily_fontProviderQuery = 2;
+			
+			public static int[] FontFamilyFont = new int[] {
+					16844082,
+					16844083,
+					16844095,
+					16844143,
+					16844144,
+					2130771975,
+					2130771976,
+					2130771977,
+					2130771978,
+					2130771979};
+			
+			// aapt resource value: 0
+			public static int FontFamilyFont_android_font = 0;
+			
+			// aapt resource value: 2
+			public static int FontFamilyFont_android_fontStyle = 2;
+			
+			// aapt resource value: 4
+			public static int FontFamilyFont_android_fontVariationSettings = 4;
+			
+			// aapt resource value: 1
+			public static int FontFamilyFont_android_fontWeight = 1;
+			
+			// aapt resource value: 3
+			public static int FontFamilyFont_android_ttcIndex = 3;
+			
+			// aapt resource value: 6
+			public static int FontFamilyFont_font = 6;
+			
+			// aapt resource value: 5
+			public static int FontFamilyFont_fontStyle = 5;
+			
+			// aapt resource value: 8
+			public static int FontFamilyFont_fontVariationSettings = 8;
+			
+			// aapt resource value: 7
+			public static int FontFamilyFont_fontWeight = 7;
+			
+			// aapt resource value: 9
+			public static int FontFamilyFont_ttcIndex = 9;
+			
+			public static int[] GradientColor = new int[] {
+					16843165,
+					16843166,
+					16843169,
+					16843170,
+					16843171,
+					16843172,
+					16843265,
+					16843275,
+					16844048,
+					16844049,
+					16844050,
+					16844051};
+			
+			// aapt resource value: 7
+			public static int GradientColor_android_centerColor = 7;
+			
+			// aapt resource value: 3
+			public static int GradientColor_android_centerX = 3;
+			
+			// aapt resource value: 4
+			public static int GradientColor_android_centerY = 4;
+			
+			// aapt resource value: 1
+			public static int GradientColor_android_endColor = 1;
+			
+			// aapt resource value: 10
+			public static int GradientColor_android_endX = 10;
+			
+			// aapt resource value: 11
+			public static int GradientColor_android_endY = 11;
+			
+			// aapt resource value: 5
+			public static int GradientColor_android_gradientRadius = 5;
+			
+			// aapt resource value: 0
+			public static int GradientColor_android_startColor = 0;
+			
+			// aapt resource value: 8
+			public static int GradientColor_android_startX = 8;
+			
+			// aapt resource value: 9
+			public static int GradientColor_android_startY = 9;
+			
+			// aapt resource value: 6
+			public static int GradientColor_android_tileMode = 6;
+			
+			// aapt resource value: 2
+			public static int GradientColor_android_type = 2;
+			
+			public static int[] GradientColorItem = new int[] {
+					16843173,
+					16844052};
+			
+			// aapt resource value: 0
+			public static int GradientColorItem_android_color = 0;
+			
+			// aapt resource value: 1
+			public static int GradientColorItem_android_offset = 1;
+			
+			static Styleable()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Styleable()
 			{
 			}
 		}

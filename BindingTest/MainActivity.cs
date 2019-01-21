@@ -6,10 +6,12 @@ using System;
 using System.Collections.Generic;
 using Android.Runtime;
 using Permutive.Xamarin;
+using Android.Gms.Ads.DoubleClick;
+//using Com.Permutive.Android.Ads;
 
 namespace BindingTest
 {
-    [Activity(Label = "BindingTest", MainLauncher = true, Icon = "@mipmap/icon")]
+    [Activity(Label = "BindingTest", MainLauncher = true, Icon = "@mipmap/icon", ScreenOrientation = Android.Content.PM.ScreenOrientation.Sensor)]
     public class MainActivity : Activity
     {
         private Permutive.Xamarin.Permutive permutive;
@@ -22,6 +24,7 @@ namespace BindingTest
 
             Button sendEventButton = FindViewById<Button>(Resource.Id.SendEventButton);
             Button setIdentityButton = FindViewById<Button>(Resource.Id.setIdentityButton);
+            PublisherAdView publisherAdView = FindViewById<PublisherAdView>(Resource.Id.publisherAdView);
 
             BindingTestApplication application = (BindingTestApplication)Application;
 
@@ -61,6 +64,13 @@ namespace BindingTest
 
             sendEventButton.Click += delegate { trackEvent(); };
             setIdentityButton.Click += delegate { permutive.SetIdentity("testIdentity1@test.com"); };
+
+            publisherAdView.LoadAd(
+                new PublisherAdRequest.Builder()
+                    .AddTestDevice(PublisherAdRequest.DeviceIdEmulator)
+                    //.AddPermutiveTargeting(permutive)
+                    .Build()
+            );
         }
 
         private void trackEvent()
@@ -94,7 +104,8 @@ namespace BindingTest
                 )
                 .Build();
 
-            permutive.EventTracker().TrackEvent("Pageview", eventProperties);
+            //permutive.EventTracker().TrackEvent("Pageview", eventProperties);
+            permutive.EventTracker().TrackEvent("Pageview");
         }
     }
 }

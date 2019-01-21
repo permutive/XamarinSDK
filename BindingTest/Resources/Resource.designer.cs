@@ -26,48 +26,428 @@ namespace BindingTest
 		
 		public static void UpdateIdValues()
 		{
+			global::Library.Android.Resource.Attribute.alpha = global::BindingTest.Resource.Attribute.alpha;
+			global::Library.Android.Resource.Attribute.font = global::BindingTest.Resource.Attribute.font;
+			global::Library.Android.Resource.Attribute.fontProviderAuthority = global::BindingTest.Resource.Attribute.fontProviderAuthority;
+			global::Library.Android.Resource.Attribute.fontProviderCerts = global::BindingTest.Resource.Attribute.fontProviderCerts;
+			global::Library.Android.Resource.Attribute.fontProviderFetchStrategy = global::BindingTest.Resource.Attribute.fontProviderFetchStrategy;
+			global::Library.Android.Resource.Attribute.fontProviderFetchTimeout = global::BindingTest.Resource.Attribute.fontProviderFetchTimeout;
+			global::Library.Android.Resource.Attribute.fontProviderPackage = global::BindingTest.Resource.Attribute.fontProviderPackage;
+			global::Library.Android.Resource.Attribute.fontProviderQuery = global::BindingTest.Resource.Attribute.fontProviderQuery;
+			global::Library.Android.Resource.Attribute.fontStyle = global::BindingTest.Resource.Attribute.fontStyle;
+			global::Library.Android.Resource.Attribute.fontVariationSettings = global::BindingTest.Resource.Attribute.fontVariationSettings;
+			global::Library.Android.Resource.Attribute.fontWeight = global::BindingTest.Resource.Attribute.fontWeight;
+			global::Library.Android.Resource.Attribute.ttcIndex = global::BindingTest.Resource.Attribute.ttcIndex;
+			global::Library.Android.Resource.Color.notification_action_color_filter = global::BindingTest.Resource.Color.notification_action_color_filter;
+			global::Library.Android.Resource.Color.notification_icon_bg_color = global::BindingTest.Resource.Color.notification_icon_bg_color;
+			global::Library.Android.Resource.Color.ripple_material_light = global::BindingTest.Resource.Color.ripple_material_light;
+			global::Library.Android.Resource.Color.secondary_text_default_material_light = global::BindingTest.Resource.Color.secondary_text_default_material_light;
+			global::Library.Android.Resource.Dimension.compat_button_inset_horizontal_material = global::BindingTest.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::Library.Android.Resource.Dimension.compat_button_inset_vertical_material = global::BindingTest.Resource.Dimension.compat_button_inset_vertical_material;
+			global::Library.Android.Resource.Dimension.compat_button_padding_horizontal_material = global::BindingTest.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::Library.Android.Resource.Dimension.compat_button_padding_vertical_material = global::BindingTest.Resource.Dimension.compat_button_padding_vertical_material;
+			global::Library.Android.Resource.Dimension.compat_control_corner_material = global::BindingTest.Resource.Dimension.compat_control_corner_material;
+			global::Library.Android.Resource.Dimension.compat_notification_large_icon_max_height = global::BindingTest.Resource.Dimension.compat_notification_large_icon_max_height;
+			global::Library.Android.Resource.Dimension.compat_notification_large_icon_max_width = global::BindingTest.Resource.Dimension.compat_notification_large_icon_max_width;
+			global::Library.Android.Resource.Dimension.notification_action_icon_size = global::BindingTest.Resource.Dimension.notification_action_icon_size;
+			global::Library.Android.Resource.Dimension.notification_action_text_size = global::BindingTest.Resource.Dimension.notification_action_text_size;
+			global::Library.Android.Resource.Dimension.notification_big_circle_margin = global::BindingTest.Resource.Dimension.notification_big_circle_margin;
+			global::Library.Android.Resource.Dimension.notification_content_margin_start = global::BindingTest.Resource.Dimension.notification_content_margin_start;
+			global::Library.Android.Resource.Dimension.notification_large_icon_height = global::BindingTest.Resource.Dimension.notification_large_icon_height;
+			global::Library.Android.Resource.Dimension.notification_large_icon_width = global::BindingTest.Resource.Dimension.notification_large_icon_width;
+			global::Library.Android.Resource.Dimension.notification_main_column_padding_top = global::BindingTest.Resource.Dimension.notification_main_column_padding_top;
+			global::Library.Android.Resource.Dimension.notification_media_narrow_margin = global::BindingTest.Resource.Dimension.notification_media_narrow_margin;
+			global::Library.Android.Resource.Dimension.notification_right_icon_size = global::BindingTest.Resource.Dimension.notification_right_icon_size;
+			global::Library.Android.Resource.Dimension.notification_right_side_padding_top = global::BindingTest.Resource.Dimension.notification_right_side_padding_top;
+			global::Library.Android.Resource.Dimension.notification_small_icon_background_padding = global::BindingTest.Resource.Dimension.notification_small_icon_background_padding;
+			global::Library.Android.Resource.Dimension.notification_small_icon_size_as_large = global::BindingTest.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Library.Android.Resource.Dimension.notification_subtext_size = global::BindingTest.Resource.Dimension.notification_subtext_size;
+			global::Library.Android.Resource.Dimension.notification_top_pad = global::BindingTest.Resource.Dimension.notification_top_pad;
+			global::Library.Android.Resource.Dimension.notification_top_pad_large_text = global::BindingTest.Resource.Dimension.notification_top_pad_large_text;
+			global::Library.Android.Resource.Drawable.notification_action_background = global::BindingTest.Resource.Drawable.notification_action_background;
+			global::Library.Android.Resource.Drawable.notification_bg = global::BindingTest.Resource.Drawable.notification_bg;
+			global::Library.Android.Resource.Drawable.notification_bg_low = global::BindingTest.Resource.Drawable.notification_bg_low;
+			global::Library.Android.Resource.Drawable.notification_bg_low_normal = global::BindingTest.Resource.Drawable.notification_bg_low_normal;
+			global::Library.Android.Resource.Drawable.notification_bg_low_pressed = global::BindingTest.Resource.Drawable.notification_bg_low_pressed;
+			global::Library.Android.Resource.Drawable.notification_bg_normal = global::BindingTest.Resource.Drawable.notification_bg_normal;
+			global::Library.Android.Resource.Drawable.notification_bg_normal_pressed = global::BindingTest.Resource.Drawable.notification_bg_normal_pressed;
+			global::Library.Android.Resource.Drawable.notification_icon_background = global::BindingTest.Resource.Drawable.notification_icon_background;
+			global::Library.Android.Resource.Drawable.notification_template_icon_bg = global::BindingTest.Resource.Drawable.notification_template_icon_bg;
+			global::Library.Android.Resource.Drawable.notification_template_icon_low_bg = global::BindingTest.Resource.Drawable.notification_template_icon_low_bg;
+			global::Library.Android.Resource.Drawable.notification_tile_bg = global::BindingTest.Resource.Drawable.notification_tile_bg;
+			global::Library.Android.Resource.Drawable.notify_panel_notification_icon_bg = global::BindingTest.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Library.Android.Resource.Id.action_container = global::BindingTest.Resource.Id.action_container;
+			global::Library.Android.Resource.Id.action_divider = global::BindingTest.Resource.Id.action_divider;
+			global::Library.Android.Resource.Id.action_image = global::BindingTest.Resource.Id.action_image;
+			global::Library.Android.Resource.Id.action_text = global::BindingTest.Resource.Id.action_text;
+			global::Library.Android.Resource.Id.actions = global::BindingTest.Resource.Id.actions;
+			global::Library.Android.Resource.Id.async = global::BindingTest.Resource.Id.async;
+			global::Library.Android.Resource.Id.blocking = global::BindingTest.Resource.Id.blocking;
+			global::Library.Android.Resource.Id.chronometer = global::BindingTest.Resource.Id.chronometer;
+			global::Library.Android.Resource.Id.forever = global::BindingTest.Resource.Id.forever;
+			global::Library.Android.Resource.Id.icon = global::BindingTest.Resource.Id.icon;
+			global::Library.Android.Resource.Id.icon_group = global::BindingTest.Resource.Id.icon_group;
+			global::Library.Android.Resource.Id.info = global::BindingTest.Resource.Id.info;
+			global::Library.Android.Resource.Id.italic = global::BindingTest.Resource.Id.italic;
+			global::Library.Android.Resource.Id.line1 = global::BindingTest.Resource.Id.line1;
+			global::Library.Android.Resource.Id.line3 = global::BindingTest.Resource.Id.line3;
+			global::Library.Android.Resource.Id.normal = global::BindingTest.Resource.Id.normal;
+			global::Library.Android.Resource.Id.notification_background = global::BindingTest.Resource.Id.notification_background;
+			global::Library.Android.Resource.Id.notification_main_column = global::BindingTest.Resource.Id.notification_main_column;
+			global::Library.Android.Resource.Id.notification_main_column_container = global::BindingTest.Resource.Id.notification_main_column_container;
+			global::Library.Android.Resource.Id.right_icon = global::BindingTest.Resource.Id.right_icon;
+			global::Library.Android.Resource.Id.right_side = global::BindingTest.Resource.Id.right_side;
+			global::Library.Android.Resource.Id.tag_transition_group = global::BindingTest.Resource.Id.tag_transition_group;
+			global::Library.Android.Resource.Id.tag_unhandled_key_event_manager = global::BindingTest.Resource.Id.tag_unhandled_key_event_manager;
+			global::Library.Android.Resource.Id.tag_unhandled_key_listeners = global::BindingTest.Resource.Id.tag_unhandled_key_listeners;
+			global::Library.Android.Resource.Id.text = global::BindingTest.Resource.Id.text;
+			global::Library.Android.Resource.Id.text2 = global::BindingTest.Resource.Id.text2;
+			global::Library.Android.Resource.Id.time = global::BindingTest.Resource.Id.time;
+			global::Library.Android.Resource.Id.title = global::BindingTest.Resource.Id.title;
+			global::Library.Android.Resource.Integer.status_bar_notification_info_maxnum = global::BindingTest.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Library.Android.Resource.Layout.notification_action = global::BindingTest.Resource.Layout.notification_action;
+			global::Library.Android.Resource.Layout.notification_action_tombstone = global::BindingTest.Resource.Layout.notification_action_tombstone;
+			global::Library.Android.Resource.Layout.notification_template_custom_big = global::BindingTest.Resource.Layout.notification_template_custom_big;
+			global::Library.Android.Resource.Layout.notification_template_icon_group = global::BindingTest.Resource.Layout.notification_template_icon_group;
+			global::Library.Android.Resource.Layout.notification_template_part_chronometer = global::BindingTest.Resource.Layout.notification_template_part_chronometer;
+			global::Library.Android.Resource.Layout.notification_template_part_time = global::BindingTest.Resource.Layout.notification_template_part_time;
 			global::Library.Android.Resource.String.app_name = global::BindingTest.Resource.String.app_name;
 			global::Library.Android.Resource.String.library_name = global::BindingTest.Resource.String.library_name;
+			global::Library.Android.Resource.String.status_bar_notification_info_overflow = global::BindingTest.Resource.String.status_bar_notification_info_overflow;
+			global::Library.Android.Resource.Style.TextAppearance_Compat_Notification = global::BindingTest.Resource.Style.TextAppearance_Compat_Notification;
+			global::Library.Android.Resource.Style.TextAppearance_Compat_Notification_Info = global::BindingTest.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::Library.Android.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::BindingTest.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::Library.Android.Resource.Style.TextAppearance_Compat_Notification_Time = global::BindingTest.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::Library.Android.Resource.Style.TextAppearance_Compat_Notification_Title = global::BindingTest.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::Library.Android.Resource.Style.Widget_Compat_NotificationActionContainer = global::BindingTest.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::Library.Android.Resource.Style.Widget_Compat_NotificationActionText = global::BindingTest.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Library.Android.Resource.Styleable.ColorStateListItem = global::BindingTest.Resource.Styleable.ColorStateListItem;
+			global::Library.Android.Resource.Styleable.ColorStateListItem_alpha = global::BindingTest.Resource.Styleable.ColorStateListItem_alpha;
+			global::Library.Android.Resource.Styleable.ColorStateListItem_android_alpha = global::BindingTest.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Library.Android.Resource.Styleable.ColorStateListItem_android_color = global::BindingTest.Resource.Styleable.ColorStateListItem_android_color;
+			global::Library.Android.Resource.Styleable.FontFamily = global::BindingTest.Resource.Styleable.FontFamily;
+			global::Library.Android.Resource.Styleable.FontFamily_fontProviderAuthority = global::BindingTest.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Library.Android.Resource.Styleable.FontFamily_fontProviderCerts = global::BindingTest.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Library.Android.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::BindingTest.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Library.Android.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::BindingTest.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Library.Android.Resource.Styleable.FontFamily_fontProviderPackage = global::BindingTest.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Library.Android.Resource.Styleable.FontFamily_fontProviderQuery = global::BindingTest.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::Library.Android.Resource.Styleable.FontFamilyFont = global::BindingTest.Resource.Styleable.FontFamilyFont;
+			global::Library.Android.Resource.Styleable.FontFamilyFont_android_font = global::BindingTest.Resource.Styleable.FontFamilyFont_android_font;
+			global::Library.Android.Resource.Styleable.FontFamilyFont_android_fontStyle = global::BindingTest.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::Library.Android.Resource.Styleable.FontFamilyFont_android_fontVariationSettings = global::BindingTest.Resource.Styleable.FontFamilyFont_android_fontVariationSettings;
+			global::Library.Android.Resource.Styleable.FontFamilyFont_android_fontWeight = global::BindingTest.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::Library.Android.Resource.Styleable.FontFamilyFont_android_ttcIndex = global::BindingTest.Resource.Styleable.FontFamilyFont_android_ttcIndex;
+			global::Library.Android.Resource.Styleable.FontFamilyFont_font = global::BindingTest.Resource.Styleable.FontFamilyFont_font;
+			global::Library.Android.Resource.Styleable.FontFamilyFont_fontStyle = global::BindingTest.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::Library.Android.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::BindingTest.Resource.Styleable.FontFamilyFont_fontVariationSettings;
+			global::Library.Android.Resource.Styleable.FontFamilyFont_fontWeight = global::BindingTest.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::Library.Android.Resource.Styleable.FontFamilyFont_ttcIndex = global::BindingTest.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::Library.Android.Resource.Styleable.GradientColor = global::BindingTest.Resource.Styleable.GradientColor;
+			global::Library.Android.Resource.Styleable.GradientColor_android_centerColor = global::BindingTest.Resource.Styleable.GradientColor_android_centerColor;
+			global::Library.Android.Resource.Styleable.GradientColor_android_centerX = global::BindingTest.Resource.Styleable.GradientColor_android_centerX;
+			global::Library.Android.Resource.Styleable.GradientColor_android_centerY = global::BindingTest.Resource.Styleable.GradientColor_android_centerY;
+			global::Library.Android.Resource.Styleable.GradientColor_android_endColor = global::BindingTest.Resource.Styleable.GradientColor_android_endColor;
+			global::Library.Android.Resource.Styleable.GradientColor_android_endX = global::BindingTest.Resource.Styleable.GradientColor_android_endX;
+			global::Library.Android.Resource.Styleable.GradientColor_android_endY = global::BindingTest.Resource.Styleable.GradientColor_android_endY;
+			global::Library.Android.Resource.Styleable.GradientColor_android_gradientRadius = global::BindingTest.Resource.Styleable.GradientColor_android_gradientRadius;
+			global::Library.Android.Resource.Styleable.GradientColor_android_startColor = global::BindingTest.Resource.Styleable.GradientColor_android_startColor;
+			global::Library.Android.Resource.Styleable.GradientColor_android_startX = global::BindingTest.Resource.Styleable.GradientColor_android_startX;
+			global::Library.Android.Resource.Styleable.GradientColor_android_startY = global::BindingTest.Resource.Styleable.GradientColor_android_startY;
+			global::Library.Android.Resource.Styleable.GradientColor_android_tileMode = global::BindingTest.Resource.Styleable.GradientColor_android_tileMode;
+			global::Library.Android.Resource.Styleable.GradientColor_android_type = global::BindingTest.Resource.Styleable.GradientColor_android_type;
+			global::Library.Android.Resource.Styleable.GradientColorItem = global::BindingTest.Resource.Styleable.GradientColorItem;
+			global::Library.Android.Resource.Styleable.GradientColorItem_android_color = global::BindingTest.Resource.Styleable.GradientColorItem_android_color;
+			global::Library.Android.Resource.Styleable.GradientColorItem_android_offset = global::BindingTest.Resource.Styleable.GradientColorItem_android_offset;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.adSize = global::BindingTest.Resource.Attribute.adSize;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.adSizes = global::BindingTest.Resource.Attribute.adSizes;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.adUnitId = global::BindingTest.Resource.Attribute.adUnitId;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.alpha = global::BindingTest.Resource.Attribute.alpha;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.coordinatorLayoutStyle = global::BindingTest.Resource.Attribute.coordinatorLayoutStyle;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.font = global::BindingTest.Resource.Attribute.font;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.fontProviderAuthority = global::BindingTest.Resource.Attribute.fontProviderAuthority;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.fontProviderCerts = global::BindingTest.Resource.Attribute.fontProviderCerts;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.fontProviderFetchStrategy = global::BindingTest.Resource.Attribute.fontProviderFetchStrategy;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.fontProviderFetchTimeout = global::BindingTest.Resource.Attribute.fontProviderFetchTimeout;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.fontProviderPackage = global::BindingTest.Resource.Attribute.fontProviderPackage;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.fontProviderQuery = global::BindingTest.Resource.Attribute.fontProviderQuery;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.fontStyle = global::BindingTest.Resource.Attribute.fontStyle;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.fontVariationSettings = global::BindingTest.Resource.Attribute.fontVariationSettings;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.fontWeight = global::BindingTest.Resource.Attribute.fontWeight;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.keylines = global::BindingTest.Resource.Attribute.keylines;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.layout_anchor = global::BindingTest.Resource.Attribute.layout_anchor;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.layout_anchorGravity = global::BindingTest.Resource.Attribute.layout_anchorGravity;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.layout_behavior = global::BindingTest.Resource.Attribute.layout_behavior;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.layout_dodgeInsetEdges = global::BindingTest.Resource.Attribute.layout_dodgeInsetEdges;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.layout_insetEdge = global::BindingTest.Resource.Attribute.layout_insetEdge;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.layout_keyline = global::BindingTest.Resource.Attribute.layout_keyline;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.statusBarBackground = global::BindingTest.Resource.Attribute.statusBarBackground;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.ttcIndex = global::BindingTest.Resource.Attribute.ttcIndex;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Color.notification_action_color_filter = global::BindingTest.Resource.Color.notification_action_color_filter;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Color.notification_icon_bg_color = global::BindingTest.Resource.Color.notification_icon_bg_color;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Color.notification_material_background_media_default_color = global::BindingTest.Resource.Color.notification_material_background_media_default_color;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Color.primary_text_default_material_dark = global::BindingTest.Resource.Color.primary_text_default_material_dark;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Color.ripple_material_light = global::BindingTest.Resource.Color.ripple_material_light;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Color.secondary_text_default_material_dark = global::BindingTest.Resource.Color.secondary_text_default_material_dark;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Color.secondary_text_default_material_light = global::BindingTest.Resource.Color.secondary_text_default_material_light;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.compat_button_inset_horizontal_material = global::BindingTest.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.compat_button_inset_vertical_material = global::BindingTest.Resource.Dimension.compat_button_inset_vertical_material;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.compat_button_padding_horizontal_material = global::BindingTest.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.compat_button_padding_vertical_material = global::BindingTest.Resource.Dimension.compat_button_padding_vertical_material;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.compat_control_corner_material = global::BindingTest.Resource.Dimension.compat_control_corner_material;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.compat_notification_large_icon_max_height = global::BindingTest.Resource.Dimension.compat_notification_large_icon_max_height;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.compat_notification_large_icon_max_width = global::BindingTest.Resource.Dimension.compat_notification_large_icon_max_width;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_action_icon_size = global::BindingTest.Resource.Dimension.notification_action_icon_size;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_action_text_size = global::BindingTest.Resource.Dimension.notification_action_text_size;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_big_circle_margin = global::BindingTest.Resource.Dimension.notification_big_circle_margin;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_content_margin_start = global::BindingTest.Resource.Dimension.notification_content_margin_start;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_large_icon_height = global::BindingTest.Resource.Dimension.notification_large_icon_height;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_large_icon_width = global::BindingTest.Resource.Dimension.notification_large_icon_width;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_main_column_padding_top = global::BindingTest.Resource.Dimension.notification_main_column_padding_top;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_media_narrow_margin = global::BindingTest.Resource.Dimension.notification_media_narrow_margin;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_right_icon_size = global::BindingTest.Resource.Dimension.notification_right_icon_size;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_right_side_padding_top = global::BindingTest.Resource.Dimension.notification_right_side_padding_top;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_small_icon_background_padding = global::BindingTest.Resource.Dimension.notification_small_icon_background_padding;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_small_icon_size_as_large = global::BindingTest.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_subtext_size = global::BindingTest.Resource.Dimension.notification_subtext_size;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_top_pad = global::BindingTest.Resource.Dimension.notification_top_pad;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_top_pad_large_text = global::BindingTest.Resource.Dimension.notification_top_pad_large_text;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.subtitle_corner_radius = global::BindingTest.Resource.Dimension.subtitle_corner_radius;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.subtitle_outline_width = global::BindingTest.Resource.Dimension.subtitle_outline_width;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.subtitle_shadow_offset = global::BindingTest.Resource.Dimension.subtitle_shadow_offset;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.subtitle_shadow_radius = global::BindingTest.Resource.Dimension.subtitle_shadow_radius;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Drawable.notification_action_background = global::BindingTest.Resource.Drawable.notification_action_background;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Drawable.notification_bg = global::BindingTest.Resource.Drawable.notification_bg;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Drawable.notification_bg_low = global::BindingTest.Resource.Drawable.notification_bg_low;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Drawable.notification_bg_low_normal = global::BindingTest.Resource.Drawable.notification_bg_low_normal;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Drawable.notification_bg_low_pressed = global::BindingTest.Resource.Drawable.notification_bg_low_pressed;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Drawable.notification_bg_normal = global::BindingTest.Resource.Drawable.notification_bg_normal;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Drawable.notification_bg_normal_pressed = global::BindingTest.Resource.Drawable.notification_bg_normal_pressed;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Drawable.notification_icon_background = global::BindingTest.Resource.Drawable.notification_icon_background;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Drawable.notification_template_icon_bg = global::BindingTest.Resource.Drawable.notification_template_icon_bg;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Drawable.notification_template_icon_low_bg = global::BindingTest.Resource.Drawable.notification_template_icon_low_bg;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Drawable.notification_tile_bg = global::BindingTest.Resource.Drawable.notification_tile_bg;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Drawable.notify_panel_notification_icon_bg = global::BindingTest.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.action0 = global::BindingTest.Resource.Id.action0;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.action_container = global::BindingTest.Resource.Id.action_container;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.action_divider = global::BindingTest.Resource.Id.action_divider;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.action_image = global::BindingTest.Resource.Id.action_image;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.action_text = global::BindingTest.Resource.Id.action_text;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.actions = global::BindingTest.Resource.Id.actions;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.all = global::BindingTest.Resource.Id.all;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.async = global::BindingTest.Resource.Id.async;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.blocking = global::BindingTest.Resource.Id.blocking;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.bottom = global::BindingTest.Resource.Id.bottom;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.cancel_action = global::BindingTest.Resource.Id.cancel_action;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.center = global::BindingTest.Resource.Id.center;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.center_horizontal = global::BindingTest.Resource.Id.center_horizontal;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.center_vertical = global::BindingTest.Resource.Id.center_vertical;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.chronometer = global::BindingTest.Resource.Id.chronometer;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.clip_horizontal = global::BindingTest.Resource.Id.clip_horizontal;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.clip_vertical = global::BindingTest.Resource.Id.clip_vertical;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.end = global::BindingTest.Resource.Id.end;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.end_padder = global::BindingTest.Resource.Id.end_padder;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.fill = global::BindingTest.Resource.Id.fill;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.fill_horizontal = global::BindingTest.Resource.Id.fill_horizontal;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.fill_vertical = global::BindingTest.Resource.Id.fill_vertical;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.forever = global::BindingTest.Resource.Id.forever;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.icon = global::BindingTest.Resource.Id.icon;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.icon_group = global::BindingTest.Resource.Id.icon_group;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.info = global::BindingTest.Resource.Id.info;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.italic = global::BindingTest.Resource.Id.italic;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.left = global::BindingTest.Resource.Id.left;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.line1 = global::BindingTest.Resource.Id.line1;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.line3 = global::BindingTest.Resource.Id.line3;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.media_actions = global::BindingTest.Resource.Id.media_actions;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.none = global::BindingTest.Resource.Id.none;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.normal = global::BindingTest.Resource.Id.normal;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.notification_background = global::BindingTest.Resource.Id.notification_background;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.notification_main_column = global::BindingTest.Resource.Id.notification_main_column;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.notification_main_column_container = global::BindingTest.Resource.Id.notification_main_column_container;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.right = global::BindingTest.Resource.Id.right;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.right_icon = global::BindingTest.Resource.Id.right_icon;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.right_side = global::BindingTest.Resource.Id.right_side;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.start = global::BindingTest.Resource.Id.start;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.status_bar_latest_event_content = global::BindingTest.Resource.Id.status_bar_latest_event_content;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.tag_transition_group = global::BindingTest.Resource.Id.tag_transition_group;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.tag_unhandled_key_event_manager = global::BindingTest.Resource.Id.tag_unhandled_key_event_manager;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.tag_unhandled_key_listeners = global::BindingTest.Resource.Id.tag_unhandled_key_listeners;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.text = global::BindingTest.Resource.Id.text;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.text2 = global::BindingTest.Resource.Id.text2;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.time = global::BindingTest.Resource.Id.time;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.title = global::BindingTest.Resource.Id.title;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.top = global::BindingTest.Resource.Id.top;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Integer.cancel_button_image_alpha = global::BindingTest.Resource.Integer.cancel_button_image_alpha;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Integer.google_play_services_version = global::BindingTest.Resource.Integer.google_play_services_version;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Integer.status_bar_notification_info_maxnum = global::BindingTest.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_action = global::BindingTest.Resource.Layout.notification_action;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_action_tombstone = global::BindingTest.Resource.Layout.notification_action_tombstone;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_media_action = global::BindingTest.Resource.Layout.notification_media_action;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_media_cancel_action = global::BindingTest.Resource.Layout.notification_media_cancel_action;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_template_big_media = global::BindingTest.Resource.Layout.notification_template_big_media;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_template_big_media_custom = global::BindingTest.Resource.Layout.notification_template_big_media_custom;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_template_big_media_narrow = global::BindingTest.Resource.Layout.notification_template_big_media_narrow;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_template_big_media_narrow_custom = global::BindingTest.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_template_custom_big = global::BindingTest.Resource.Layout.notification_template_custom_big;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_template_icon_group = global::BindingTest.Resource.Layout.notification_template_icon_group;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_template_lines_media = global::BindingTest.Resource.Layout.notification_template_lines_media;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_template_media = global::BindingTest.Resource.Layout.notification_template_media;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_template_media_custom = global::BindingTest.Resource.Layout.notification_template_media_custom;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_template_part_chronometer = global::BindingTest.Resource.Layout.notification_template_part_chronometer;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_template_part_time = global::BindingTest.Resource.Layout.notification_template_part_time;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.String.app_name = global::BindingTest.Resource.String.app_name;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.String.common_google_play_services_unknown_issue = global::BindingTest.Resource.String.common_google_play_services_unknown_issue;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.String.library_name = global::BindingTest.Resource.String.library_name;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.String.s1 = global::BindingTest.Resource.String.s1;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.String.s2 = global::BindingTest.Resource.String.s2;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.String.s3 = global::BindingTest.Resource.String.s3;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.String.s4 = global::BindingTest.Resource.String.s4;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.String.s5 = global::BindingTest.Resource.String.s5;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.String.s6 = global::BindingTest.Resource.String.s6;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.String.status_bar_notification_info_overflow = global::BindingTest.Resource.String.status_bar_notification_info_overflow;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Style.TextAppearance_Compat_Notification = global::BindingTest.Resource.Style.TextAppearance_Compat_Notification;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Style.TextAppearance_Compat_Notification_Info = global::BindingTest.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Style.TextAppearance_Compat_Notification_Info_Media = global::BindingTest.Resource.Style.TextAppearance_Compat_Notification_Info_Media;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::BindingTest.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Style.TextAppearance_Compat_Notification_Line2_Media = global::BindingTest.Resource.Style.TextAppearance_Compat_Notification_Line2_Media;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Style.TextAppearance_Compat_Notification_Media = global::BindingTest.Resource.Style.TextAppearance_Compat_Notification_Media;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Style.TextAppearance_Compat_Notification_Time = global::BindingTest.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Style.TextAppearance_Compat_Notification_Time_Media = global::BindingTest.Resource.Style.TextAppearance_Compat_Notification_Time_Media;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Style.TextAppearance_Compat_Notification_Title = global::BindingTest.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Style.TextAppearance_Compat_Notification_Title_Media = global::BindingTest.Resource.Style.TextAppearance_Compat_Notification_Title_Media;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Style.Theme_IAPTheme = global::BindingTest.Resource.Style.Theme_IAPTheme;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Style.Widget_Compat_NotificationActionContainer = global::BindingTest.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Style.Widget_Compat_NotificationActionText = global::BindingTest.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Style.Widget_Support_CoordinatorLayout = global::BindingTest.Resource.Style.Widget_Support_CoordinatorLayout;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.AdsAttrs = global::BindingTest.Resource.Styleable.AdsAttrs;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.AdsAttrs_adSize = global::BindingTest.Resource.Styleable.AdsAttrs_adSize;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.AdsAttrs_adSizes = global::BindingTest.Resource.Styleable.AdsAttrs_adSizes;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.AdsAttrs_adUnitId = global::BindingTest.Resource.Styleable.AdsAttrs_adUnitId;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.ColorStateListItem = global::BindingTest.Resource.Styleable.ColorStateListItem;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.ColorStateListItem_alpha = global::BindingTest.Resource.Styleable.ColorStateListItem_alpha;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.ColorStateListItem_android_alpha = global::BindingTest.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.ColorStateListItem_android_color = global::BindingTest.Resource.Styleable.ColorStateListItem_android_color;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.CoordinatorLayout = global::BindingTest.Resource.Styleable.CoordinatorLayout;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.CoordinatorLayout_keylines = global::BindingTest.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::BindingTest.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.CoordinatorLayout_Layout = global::BindingTest.Resource.Styleable.CoordinatorLayout_Layout;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::BindingTest.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::BindingTest.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::BindingTest.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::BindingTest.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::BindingTest.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::BindingTest.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::BindingTest.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamily = global::BindingTest.Resource.Styleable.FontFamily;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamily_fontProviderAuthority = global::BindingTest.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamily_fontProviderCerts = global::BindingTest.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::BindingTest.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::BindingTest.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamily_fontProviderPackage = global::BindingTest.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamily_fontProviderQuery = global::BindingTest.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamilyFont = global::BindingTest.Resource.Styleable.FontFamilyFont;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamilyFont_android_font = global::BindingTest.Resource.Styleable.FontFamilyFont_android_font;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamilyFont_android_fontStyle = global::BindingTest.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamilyFont_android_fontVariationSettings = global::BindingTest.Resource.Styleable.FontFamilyFont_android_fontVariationSettings;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamilyFont_android_fontWeight = global::BindingTest.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamilyFont_android_ttcIndex = global::BindingTest.Resource.Styleable.FontFamilyFont_android_ttcIndex;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamilyFont_font = global::BindingTest.Resource.Styleable.FontFamilyFont_font;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamilyFont_fontStyle = global::BindingTest.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::BindingTest.Resource.Styleable.FontFamilyFont_fontVariationSettings;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamilyFont_fontWeight = global::BindingTest.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamilyFont_ttcIndex = global::BindingTest.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColor = global::BindingTest.Resource.Styleable.GradientColor;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColor_android_centerColor = global::BindingTest.Resource.Styleable.GradientColor_android_centerColor;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColor_android_centerX = global::BindingTest.Resource.Styleable.GradientColor_android_centerX;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColor_android_centerY = global::BindingTest.Resource.Styleable.GradientColor_android_centerY;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColor_android_endColor = global::BindingTest.Resource.Styleable.GradientColor_android_endColor;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColor_android_endX = global::BindingTest.Resource.Styleable.GradientColor_android_endX;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColor_android_endY = global::BindingTest.Resource.Styleable.GradientColor_android_endY;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColor_android_gradientRadius = global::BindingTest.Resource.Styleable.GradientColor_android_gradientRadius;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColor_android_startColor = global::BindingTest.Resource.Styleable.GradientColor_android_startColor;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColor_android_startX = global::BindingTest.Resource.Styleable.GradientColor_android_startX;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColor_android_startY = global::BindingTest.Resource.Styleable.GradientColor_android_startY;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColor_android_tileMode = global::BindingTest.Resource.Styleable.GradientColor_android_tileMode;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColor_android_type = global::BindingTest.Resource.Styleable.GradientColor_android_type;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColorItem = global::BindingTest.Resource.Styleable.GradientColorItem;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColorItem_android_color = global::BindingTest.Resource.Styleable.GradientColorItem_android_color;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColorItem_android_offset = global::BindingTest.Resource.Styleable.GradientColorItem_android_offset;
 		}
 		
 		public partial class Attribute
 		{
 			
 			// aapt resource value: 0x7f010000
-			public const int alpha = 2130771968;
-			
-			// aapt resource value: 0x7f010008
-			public const int font = 2130771976;
+			public const int adSize = 2130771968;
 			
 			// aapt resource value: 0x7f010001
-			public const int fontProviderAuthority = 2130771969;
-			
-			// aapt resource value: 0x7f010004
-			public const int fontProviderCerts = 2130771972;
-			
-			// aapt resource value: 0x7f010005
-			public const int fontProviderFetchStrategy = 2130771973;
-			
-			// aapt resource value: 0x7f010006
-			public const int fontProviderFetchTimeout = 2130771974;
+			public const int adSizes = 2130771969;
 			
 			// aapt resource value: 0x7f010002
-			public const int fontProviderPackage = 2130771970;
+			public const int adUnitId = 2130771970;
+			
+			// aapt resource value: 0x7f01000c
+			public const int alpha = 2130771980;
 			
 			// aapt resource value: 0x7f010003
-			public const int fontProviderQuery = 2130771971;
+			public const int coordinatorLayoutStyle = 2130771971;
+			
+			// aapt resource value: 0x7f010014
+			public const int font = 2130771988;
+			
+			// aapt resource value: 0x7f01000d
+			public const int fontProviderAuthority = 2130771981;
+			
+			// aapt resource value: 0x7f010010
+			public const int fontProviderCerts = 2130771984;
+			
+			// aapt resource value: 0x7f010011
+			public const int fontProviderFetchStrategy = 2130771985;
+			
+			// aapt resource value: 0x7f010012
+			public const int fontProviderFetchTimeout = 2130771986;
+			
+			// aapt resource value: 0x7f01000e
+			public const int fontProviderPackage = 2130771982;
+			
+			// aapt resource value: 0x7f01000f
+			public const int fontProviderQuery = 2130771983;
+			
+			// aapt resource value: 0x7f010013
+			public const int fontStyle = 2130771987;
+			
+			// aapt resource value: 0x7f010016
+			public const int fontVariationSettings = 2130771990;
+			
+			// aapt resource value: 0x7f010015
+			public const int fontWeight = 2130771989;
+			
+			// aapt resource value: 0x7f010004
+			public const int keylines = 2130771972;
 			
 			// aapt resource value: 0x7f010007
-			public const int fontStyle = 2130771975;
-			
-			// aapt resource value: 0x7f01000a
-			public const int fontVariationSettings = 2130771978;
+			public const int layout_anchor = 2130771975;
 			
 			// aapt resource value: 0x7f010009
-			public const int fontWeight = 2130771977;
+			public const int layout_anchorGravity = 2130771977;
+			
+			// aapt resource value: 0x7f010006
+			public const int layout_behavior = 2130771974;
 			
 			// aapt resource value: 0x7f01000b
-			public const int ttcIndex = 2130771979;
+			public const int layout_dodgeInsetEdges = 2130771979;
+			
+			// aapt resource value: 0x7f01000a
+			public const int layout_insetEdge = 2130771978;
+			
+			// aapt resource value: 0x7f010008
+			public const int layout_keyline = 2130771976;
+			
+			// aapt resource value: 0x7f010005
+			public const int statusBarBackground = 2130771973;
+			
+			// aapt resource value: 0x7f010017
+			public const int ttcIndex = 2130771991;
 			
 			static Attribute()
 			{
@@ -82,17 +462,26 @@ namespace BindingTest
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f070000
-			public const int notification_action_color_filter = 2131165184;
+			// aapt resource value: 0x7f080003
+			public const int notification_action_color_filter = 2131230723;
 			
-			// aapt resource value: 0x7f070001
-			public const int notification_icon_bg_color = 2131165185;
+			// aapt resource value: 0x7f080004
+			public const int notification_icon_bg_color = 2131230724;
 			
-			// aapt resource value: 0x7f070002
-			public const int ripple_material_light = 2131165186;
+			// aapt resource value: 0x7f080000
+			public const int notification_material_background_media_default_color = 2131230720;
 			
-			// aapt resource value: 0x7f070003
-			public const int secondary_text_default_material_light = 2131165187;
+			// aapt resource value: 0x7f080001
+			public const int primary_text_default_material_dark = 2131230721;
+			
+			// aapt resource value: 0x7f080005
+			public const int ripple_material_light = 2131230725;
+			
+			// aapt resource value: 0x7f080002
+			public const int secondary_text_default_material_dark = 2131230722;
+			
+			// aapt resource value: 0x7f080006
+			public const int secondary_text_default_material_light = 2131230726;
 			
 			static Color()
 			{
@@ -107,71 +496,83 @@ namespace BindingTest
 		public partial class Dimension
 		{
 			
-			// aapt resource value: 0x7f060004
-			public const int compat_button_inset_horizontal_material = 2131099652;
+			// aapt resource value: 0x7f090008
+			public const int compat_button_inset_horizontal_material = 2131296264;
 			
-			// aapt resource value: 0x7f060005
-			public const int compat_button_inset_vertical_material = 2131099653;
+			// aapt resource value: 0x7f090009
+			public const int compat_button_inset_vertical_material = 2131296265;
 			
-			// aapt resource value: 0x7f060006
-			public const int compat_button_padding_horizontal_material = 2131099654;
+			// aapt resource value: 0x7f09000a
+			public const int compat_button_padding_horizontal_material = 2131296266;
 			
-			// aapt resource value: 0x7f060007
-			public const int compat_button_padding_vertical_material = 2131099655;
+			// aapt resource value: 0x7f09000b
+			public const int compat_button_padding_vertical_material = 2131296267;
 			
-			// aapt resource value: 0x7f060008
-			public const int compat_control_corner_material = 2131099656;
+			// aapt resource value: 0x7f09000c
+			public const int compat_control_corner_material = 2131296268;
 			
-			// aapt resource value: 0x7f060009
-			public const int compat_notification_large_icon_max_height = 2131099657;
+			// aapt resource value: 0x7f09000d
+			public const int compat_notification_large_icon_max_height = 2131296269;
 			
-			// aapt resource value: 0x7f06000a
-			public const int compat_notification_large_icon_max_width = 2131099658;
+			// aapt resource value: 0x7f09000e
+			public const int compat_notification_large_icon_max_width = 2131296270;
 			
-			// aapt resource value: 0x7f06000b
-			public const int notification_action_icon_size = 2131099659;
+			// aapt resource value: 0x7f09000f
+			public const int notification_action_icon_size = 2131296271;
 			
-			// aapt resource value: 0x7f06000c
-			public const int notification_action_text_size = 2131099660;
+			// aapt resource value: 0x7f090010
+			public const int notification_action_text_size = 2131296272;
 			
-			// aapt resource value: 0x7f06000d
-			public const int notification_big_circle_margin = 2131099661;
+			// aapt resource value: 0x7f090011
+			public const int notification_big_circle_margin = 2131296273;
 			
-			// aapt resource value: 0x7f060001
-			public const int notification_content_margin_start = 2131099649;
+			// aapt resource value: 0x7f090005
+			public const int notification_content_margin_start = 2131296261;
 			
-			// aapt resource value: 0x7f06000e
-			public const int notification_large_icon_height = 2131099662;
+			// aapt resource value: 0x7f090012
+			public const int notification_large_icon_height = 2131296274;
 			
-			// aapt resource value: 0x7f06000f
-			public const int notification_large_icon_width = 2131099663;
+			// aapt resource value: 0x7f090013
+			public const int notification_large_icon_width = 2131296275;
 			
-			// aapt resource value: 0x7f060002
-			public const int notification_main_column_padding_top = 2131099650;
+			// aapt resource value: 0x7f090006
+			public const int notification_main_column_padding_top = 2131296262;
 			
-			// aapt resource value: 0x7f060003
-			public const int notification_media_narrow_margin = 2131099651;
+			// aapt resource value: 0x7f090007
+			public const int notification_media_narrow_margin = 2131296263;
 			
-			// aapt resource value: 0x7f060010
-			public const int notification_right_icon_size = 2131099664;
+			// aapt resource value: 0x7f090014
+			public const int notification_right_icon_size = 2131296276;
 			
-			// aapt resource value: 0x7f060000
-			public const int notification_right_side_padding_top = 2131099648;
+			// aapt resource value: 0x7f090004
+			public const int notification_right_side_padding_top = 2131296260;
 			
-			// aapt resource value: 0x7f060011
-			public const int notification_small_icon_background_padding = 2131099665;
+			// aapt resource value: 0x7f090015
+			public const int notification_small_icon_background_padding = 2131296277;
 			
-			// aapt resource value: 0x7f060012
-			public const int notification_small_icon_size_as_large = 2131099666;
+			// aapt resource value: 0x7f090016
+			public const int notification_small_icon_size_as_large = 2131296278;
 			
-			// aapt resource value: 0x7f060013
-			public const int notification_subtext_size = 2131099667;
+			// aapt resource value: 0x7f090017
+			public const int notification_subtext_size = 2131296279;
 			
-			// aapt resource value: 0x7f060014
-			public const int notification_top_pad = 2131099668;
+			// aapt resource value: 0x7f090018
+			public const int notification_top_pad = 2131296280;
 			
-			// aapt resource value: 0x7f060015
-			public const int notification_top_pad_large_text = 2131099669;
+			// aapt resource value: 0x7f090019
+			public const int notification_top_pad_large_text = 2131296281;
+			
+			// aapt resource value: 0x7f090000
+			public const int subtitle_corner_radius = 2131296256;
+			
+			// aapt resource value: 0x7f090001
+			public const int subtitle_outline_width = 2131296257;
+			
+			// aapt resource value: 0x7f090002
+			public const int subtitle_shadow_offset = 2131296258;
+			
+			// aapt resource value: 0x7f090003
+			public const int subtitle_shadow_radius = 2131296259;
 			
 			static Dimension()
 			{
@@ -235,95 +636,161 @@ namespace BindingTest
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f09000e
-			public const int SendEventButton = 2131296270;
+			// aapt resource value: 0x7f0a001f
+			public const int SendEventButton = 2131361823;
 			
-			// aapt resource value: 0x7f09000f
-			public const int action_container = 2131296271;
+			// aapt resource value: 0x7f0a0023
+			public const int action0 = 2131361827;
 			
-			// aapt resource value: 0x7f09001b
-			public const int action_divider = 2131296283;
+			// aapt resource value: 0x7f0a0020
+			public const int action_container = 2131361824;
 			
-			// aapt resource value: 0x7f090010
-			public const int action_image = 2131296272;
+			// aapt resource value: 0x7f0a0027
+			public const int action_divider = 2131361831;
 			
-			// aapt resource value: 0x7f090011
-			public const int action_text = 2131296273;
+			// aapt resource value: 0x7f0a0021
+			public const int action_image = 2131361825;
 			
-			// aapt resource value: 0x7f09001c
-			public const int actions = 2131296284;
+			// aapt resource value: 0x7f0a0022
+			public const int action_text = 2131361826;
 			
-			// aapt resource value: 0x7f090008
-			public const int async = 2131296264;
+			// aapt resource value: 0x7f0a0031
+			public const int actions = 2131361841;
 			
-			// aapt resource value: 0x7f090009
-			public const int blocking = 2131296265;
+			// aapt resource value: 0x7f0a0017
+			public const int all = 2131361815;
 			
-			// aapt resource value: 0x7f09001a
-			public const int chronometer = 2131296282;
+			// aapt resource value: 0x7f0a0018
+			public const int async = 2131361816;
 			
-			// aapt resource value: 0x7f09000a
-			public const int forever = 2131296266;
+			// aapt resource value: 0x7f0a0019
+			public const int blocking = 2131361817;
 			
-			// aapt resource value: 0x7f090013
-			public const int icon = 2131296275;
+			// aapt resource value: 0x7f0a0008
+			public const int bottom = 2131361800;
 			
-			// aapt resource value: 0x7f09001d
-			public const int icon_group = 2131296285;
+			// aapt resource value: 0x7f0a0024
+			public const int cancel_action = 2131361828;
 			
-			// aapt resource value: 0x7f090016
-			public const int info = 2131296278;
+			// aapt resource value: 0x7f0a0009
+			public const int center = 2131361801;
 			
-			// aapt resource value: 0x7f09000b
-			public const int italic = 2131296267;
+			// aapt resource value: 0x7f0a000a
+			public const int center_horizontal = 2131361802;
 			
-			// aapt resource value: 0x7f090000
-			public const int line1 = 2131296256;
+			// aapt resource value: 0x7f0a000b
+			public const int center_vertical = 2131361803;
 			
-			// aapt resource value: 0x7f090001
-			public const int line3 = 2131296257;
+			// aapt resource value: 0x7f0a002c
+			public const int chronometer = 2131361836;
 			
-			// aapt resource value: 0x7f09000c
-			public const int normal = 2131296268;
+			// aapt resource value: 0x7f0a000c
+			public const int clip_horizontal = 2131361804;
 			
-			// aapt resource value: 0x7f090018
-			public const int notification_background = 2131296280;
+			// aapt resource value: 0x7f0a000d
+			public const int clip_vertical = 2131361805;
 			
-			// aapt resource value: 0x7f090014
-			public const int notification_main_column = 2131296276;
+			// aapt resource value: 0x7f0a000e
+			public const int end = 2131361806;
 			
-			// aapt resource value: 0x7f090012
-			public const int notification_main_column_container = 2131296274;
+			// aapt resource value: 0x7f0a0033
+			public const int end_padder = 2131361843;
 			
-			// aapt resource value: 0x7f090017
-			public const int right_icon = 2131296279;
+			// aapt resource value: 0x7f0a000f
+			public const int fill = 2131361807;
 			
-			// aapt resource value: 0x7f090015
-			public const int right_side = 2131296277;
+			// aapt resource value: 0x7f0a0010
+			public const int fill_horizontal = 2131361808;
 			
-			// aapt resource value: 0x7f09000d
-			public const int setIdentityButton = 2131296269;
+			// aapt resource value: 0x7f0a0011
+			public const int fill_vertical = 2131361809;
 			
-			// aapt resource value: 0x7f090002
-			public const int tag_transition_group = 2131296258;
+			// aapt resource value: 0x7f0a001a
+			public const int forever = 2131361818;
 			
-			// aapt resource value: 0x7f090003
-			public const int tag_unhandled_key_event_manager = 2131296259;
+			// aapt resource value: 0x7f0a002e
+			public const int icon = 2131361838;
 			
-			// aapt resource value: 0x7f090004
-			public const int tag_unhandled_key_listeners = 2131296260;
+			// aapt resource value: 0x7f0a0032
+			public const int icon_group = 2131361842;
 			
-			// aapt resource value: 0x7f090005
-			public const int text = 2131296261;
+			// aapt resource value: 0x7f0a002d
+			public const int info = 2131361837;
 			
-			// aapt resource value: 0x7f090006
-			public const int text2 = 2131296262;
+			// aapt resource value: 0x7f0a001b
+			public const int italic = 2131361819;
 			
-			// aapt resource value: 0x7f090019
-			public const int time = 2131296281;
+			// aapt resource value: 0x7f0a0012
+			public const int left = 2131361810;
 			
-			// aapt resource value: 0x7f090007
-			public const int title = 2131296263;
+			// aapt resource value: 0x7f0a0000
+			public const int line1 = 2131361792;
+			
+			// aapt resource value: 0x7f0a0001
+			public const int line3 = 2131361793;
+			
+			// aapt resource value: 0x7f0a0026
+			public const int media_actions = 2131361830;
+			
+			// aapt resource value: 0x7f0a0016
+			public const int none = 2131361814;
+			
+			// aapt resource value: 0x7f0a001c
+			public const int normal = 2131361820;
+			
+			// aapt resource value: 0x7f0a0030
+			public const int notification_background = 2131361840;
+			
+			// aapt resource value: 0x7f0a0029
+			public const int notification_main_column = 2131361833;
+			
+			// aapt resource value: 0x7f0a0028
+			public const int notification_main_column_container = 2131361832;
+			
+			// aapt resource value: 0x7f0a001d
+			public const int publisherAdView = 2131361821;
+			
+			// aapt resource value: 0x7f0a0013
+			public const int right = 2131361811;
+			
+			// aapt resource value: 0x7f0a002f
+			public const int right_icon = 2131361839;
+			
+			// aapt resource value: 0x7f0a002a
+			public const int right_side = 2131361834;
+			
+			// aapt resource value: 0x7f0a001e
+			public const int setIdentityButton = 2131361822;
+			
+			// aapt resource value: 0x7f0a0014
+			public const int start = 2131361812;
+			
+			// aapt resource value: 0x7f0a0025
+			public const int status_bar_latest_event_content = 2131361829;
+			
+			// aapt resource value: 0x7f0a0002
+			public const int tag_transition_group = 2131361794;
+			
+			// aapt resource value: 0x7f0a0003
+			public const int tag_unhandled_key_event_manager = 2131361795;
+			
+			// aapt resource value: 0x7f0a0004
+			public const int tag_unhandled_key_listeners = 2131361796;
+			
+			// aapt resource value: 0x7f0a0005
+			public const int text = 2131361797;
+			
+			// aapt resource value: 0x7f0a0006
+			public const int text2 = 2131361798;
+			
+			// aapt resource value: 0x7f0a002b
+			public const int time = 2131361835;
+			
+			// aapt resource value: 0x7f0a0007
+			public const int title = 2131361799;
+			
+			// aapt resource value: 0x7f0a0015
+			public const int top = 2131361813;
 			
 			static Id()
 			{
@@ -338,8 +805,14 @@ namespace BindingTest
 		public partial class Integer
 		{
 			
-			// aapt resource value: 0x7f0a0000
-			public const int status_bar_notification_info_maxnum = 2131361792;
+			// aapt resource value: 0x7f050001
+			public const int cancel_button_image_alpha = 2131034113;
+			
+			// aapt resource value: 0x7f050000
+			public const int google_play_services_version = 2131034112;
+			
+			// aapt resource value: 0x7f050002
+			public const int status_bar_notification_info_maxnum = 2131034114;
 			
 			static Integer()
 			{
@@ -364,16 +837,43 @@ namespace BindingTest
 			public const int notification_action_tombstone = 2130968578;
 			
 			// aapt resource value: 0x7f040003
-			public const int notification_template_custom_big = 2130968579;
+			public const int notification_media_action = 2130968579;
 			
 			// aapt resource value: 0x7f040004
-			public const int notification_template_icon_group = 2130968580;
+			public const int notification_media_cancel_action = 2130968580;
 			
 			// aapt resource value: 0x7f040005
-			public const int notification_template_part_chronometer = 2130968581;
+			public const int notification_template_big_media = 2130968581;
 			
 			// aapt resource value: 0x7f040006
-			public const int notification_template_part_time = 2130968582;
+			public const int notification_template_big_media_custom = 2130968582;
+			
+			// aapt resource value: 0x7f040007
+			public const int notification_template_big_media_narrow = 2130968583;
+			
+			// aapt resource value: 0x7f040008
+			public const int notification_template_big_media_narrow_custom = 2130968584;
+			
+			// aapt resource value: 0x7f040009
+			public const int notification_template_custom_big = 2130968585;
+			
+			// aapt resource value: 0x7f04000a
+			public const int notification_template_icon_group = 2130968586;
+			
+			// aapt resource value: 0x7f04000b
+			public const int notification_template_lines_media = 2130968587;
+			
+			// aapt resource value: 0x7f04000c
+			public const int notification_template_media = 2130968588;
+			
+			// aapt resource value: 0x7f04000d
+			public const int notification_template_media_custom = 2130968589;
+			
+			// aapt resource value: 0x7f04000e
+			public const int notification_template_part_chronometer = 2130968590;
+			
+			// aapt resource value: 0x7f04000f
+			public const int notification_template_part_time = 2130968591;
 			
 			static Layout()
 			{
@@ -404,17 +904,38 @@ namespace BindingTest
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f050001
-			public const int app_name = 2131034113;
+			// aapt resource value: 0x7f060009
+			public const int app_name = 2131099657;
 			
-			// aapt resource value: 0x7f050003
-			public const int hello = 2131034115;
+			// aapt resource value: 0x7f060000
+			public const int common_google_play_services_unknown_issue = 2131099648;
 			
-			// aapt resource value: 0x7f050002
-			public const int library_name = 2131034114;
+			// aapt resource value: 0x7f06000a
+			public const int hello = 2131099658;
 			
-			// aapt resource value: 0x7f050000
-			public const int status_bar_notification_info_overflow = 2131034112;
+			// aapt resource value: 0x7f060008
+			public const int library_name = 2131099656;
+			
+			// aapt resource value: 0x7f060001
+			public const int s1 = 2131099649;
+			
+			// aapt resource value: 0x7f060002
+			public const int s2 = 2131099650;
+			
+			// aapt resource value: 0x7f060003
+			public const int s3 = 2131099651;
+			
+			// aapt resource value: 0x7f060004
+			public const int s4 = 2131099652;
+			
+			// aapt resource value: 0x7f060005
+			public const int s5 = 2131099653;
+			
+			// aapt resource value: 0x7f060006
+			public const int s6 = 2131099654;
+			
+			// aapt resource value: 0x7f060007
+			public const int status_bar_notification_info_overflow = 2131099655;
 			
 			static String()
 			{
@@ -429,26 +950,47 @@ namespace BindingTest
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f080000
-			public const int TextAppearance_Compat_Notification = 2131230720;
+			// aapt resource value: 0x7f070007
+			public const int TextAppearance_Compat_Notification = 2131165191;
 			
-			// aapt resource value: 0x7f080001
-			public const int TextAppearance_Compat_Notification_Info = 2131230721;
+			// aapt resource value: 0x7f070008
+			public const int TextAppearance_Compat_Notification_Info = 2131165192;
 			
-			// aapt resource value: 0x7f080006
-			public const int TextAppearance_Compat_Notification_Line2 = 2131230726;
+			// aapt resource value: 0x7f070001
+			public const int TextAppearance_Compat_Notification_Info_Media = 2131165185;
 			
-			// aapt resource value: 0x7f080002
-			public const int TextAppearance_Compat_Notification_Time = 2131230722;
+			// aapt resource value: 0x7f07000d
+			public const int TextAppearance_Compat_Notification_Line2 = 2131165197;
 			
-			// aapt resource value: 0x7f080003
-			public const int TextAppearance_Compat_Notification_Title = 2131230723;
+			// aapt resource value: 0x7f070005
+			public const int TextAppearance_Compat_Notification_Line2_Media = 2131165189;
 			
-			// aapt resource value: 0x7f080004
-			public const int Widget_Compat_NotificationActionContainer = 2131230724;
+			// aapt resource value: 0x7f070002
+			public const int TextAppearance_Compat_Notification_Media = 2131165186;
 			
-			// aapt resource value: 0x7f080005
-			public const int Widget_Compat_NotificationActionText = 2131230725;
+			// aapt resource value: 0x7f070009
+			public const int TextAppearance_Compat_Notification_Time = 2131165193;
+			
+			// aapt resource value: 0x7f070003
+			public const int TextAppearance_Compat_Notification_Time_Media = 2131165187;
+			
+			// aapt resource value: 0x7f07000a
+			public const int TextAppearance_Compat_Notification_Title = 2131165194;
+			
+			// aapt resource value: 0x7f070004
+			public const int TextAppearance_Compat_Notification_Title_Media = 2131165188;
+			
+			// aapt resource value: 0x7f070000
+			public const int Theme_IAPTheme = 2131165184;
+			
+			// aapt resource value: 0x7f07000b
+			public const int Widget_Compat_NotificationActionContainer = 2131165195;
+			
+			// aapt resource value: 0x7f07000c
+			public const int Widget_Compat_NotificationActionText = 2131165196;
+			
+			// aapt resource value: 0x7f070006
+			public const int Widget_Support_CoordinatorLayout = 2131165190;
 			
 			static Style()
 			{
@@ -463,10 +1005,24 @@ namespace BindingTest
 		public partial class Styleable
 		{
 			
+			public static int[] AdsAttrs = new int[] {
+					2130771968,
+					2130771969,
+					2130771970};
+			
+			// aapt resource value: 0
+			public const int AdsAttrs_adSize = 0;
+			
+			// aapt resource value: 1
+			public const int AdsAttrs_adSizes = 1;
+			
+			// aapt resource value: 2
+			public const int AdsAttrs_adUnitId = 2;
+			
 			public static int[] ColorStateListItem = new int[] {
 					16843173,
 					16843551,
-					2130771968};
+					2130771980};
 			
 			// aapt resource value: 2
 			public const int ColorStateListItem_alpha = 2;
@@ -477,13 +1033,53 @@ namespace BindingTest
 			// aapt resource value: 0
 			public const int ColorStateListItem_android_color = 0;
 			
-			public static int[] FontFamily = new int[] {
-					2130771969,
-					2130771970,
-					2130771971,
+			public static int[] CoordinatorLayout = new int[] {
 					2130771972,
-					2130771973,
-					2130771974};
+					2130771973};
+			
+			// aapt resource value: 0
+			public const int CoordinatorLayout_keylines = 0;
+			
+			// aapt resource value: 1
+			public const int CoordinatorLayout_statusBarBackground = 1;
+			
+			public static int[] CoordinatorLayout_Layout = new int[] {
+					16842931,
+					2130771974,
+					2130771975,
+					2130771976,
+					2130771977,
+					2130771978,
+					2130771979};
+			
+			// aapt resource value: 0
+			public const int CoordinatorLayout_Layout_android_layout_gravity = 0;
+			
+			// aapt resource value: 2
+			public const int CoordinatorLayout_Layout_layout_anchor = 2;
+			
+			// aapt resource value: 4
+			public const int CoordinatorLayout_Layout_layout_anchorGravity = 4;
+			
+			// aapt resource value: 1
+			public const int CoordinatorLayout_Layout_layout_behavior = 1;
+			
+			// aapt resource value: 6
+			public const int CoordinatorLayout_Layout_layout_dodgeInsetEdges = 6;
+			
+			// aapt resource value: 5
+			public const int CoordinatorLayout_Layout_layout_insetEdge = 5;
+			
+			// aapt resource value: 3
+			public const int CoordinatorLayout_Layout_layout_keyline = 3;
+			
+			public static int[] FontFamily = new int[] {
+					2130771981,
+					2130771982,
+					2130771983,
+					2130771984,
+					2130771985,
+					2130771986};
 			
 			// aapt resource value: 0
 			public const int FontFamily_fontProviderAuthority = 0;
@@ -509,11 +1105,11 @@ namespace BindingTest
 					16844095,
 					16844143,
 					16844144,
-					2130771975,
-					2130771976,
-					2130771977,
-					2130771978,
-					2130771979};
+					2130771987,
+					2130771988,
+					2130771989,
+					2130771990,
+					2130771991};
 			
 			// aapt resource value: 0
 			public const int FontFamilyFont_android_font = 0;

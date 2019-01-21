@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Android.App;
 using Android.Runtime;
 using Android.Util;
@@ -37,6 +38,10 @@ namespace BindingTest
             PermutiveOptions options = new PermutiveOptions();
             options.ApiKey = "da4d09b5-843a-4bd5-bd79-8cea7f69f730";
             options.ProjectId = "e0039147-51e7-4224-a814-0e2d438aabcd";
+            options.AliasProviders = new List<IAliasProvider>
+            {
+                //new AliasAaidProvider(this)
+            };
 
             var newPermutive = new PermutiveImpl(this);
             newPermutive.Initialize(options);
