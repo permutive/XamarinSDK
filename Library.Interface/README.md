@@ -58,7 +58,7 @@ You can start the Permutive SDK with an optional identity, if you have this:
 Or you can call setIdentity at any point after the Permutive SDK has been created.
 
 ```cs
-permutive.SetIdentity("xamarin@permutive.com")
+permutive.SetIdentity("xamarin@permutive.com");
 ```
 
 
@@ -93,7 +93,7 @@ permutive.SetReferrer(
     new Uri("http://www.permutive.com/android/tutorials?referrer=johnDoe"));
 
 //contains url/title/referrer & domain context implicitly
-EventTracker.TrackEvent("page viewed") 
+EventTracker.TrackEvent("page viewed");
 
 ```
 
@@ -111,7 +111,7 @@ final EventProperties eventProperties =
         .With("my_isp_info", EventProperties.ISP_INFO)
         .Build()
 
-eventTracker.TrackEvent("eventX" , eventProperties)
+eventTracker.TrackEvent("eventX" , eventProperties);
 ```
 
 The event will be enriched to (for example):
@@ -219,7 +219,7 @@ using Permutive.Xamarin;
     options.AliasProviders = new List<IAliasProvider>
     {
         new AliasProvider(this)
-    } 
+    };
 	
 
     var permutive = new PermutiveImpl(this);
@@ -237,10 +237,10 @@ We provide an easy way to add custom targeting of your Permutive reactions to yo
 val adRequest1 = 
             new PublisherAdRequest.Builder()
                 .AddPermutiveTargeting(permutive)
-                .build()
+                .Build();
 
 //Or simply without the build call:
 val adRequest2 = 
         new PublisherAdRequest.Builder()
-            .BuildWithPermutiveTargeting(permutive)
+            .BuildWithPermutiveTargeting(permutive);
 ```
