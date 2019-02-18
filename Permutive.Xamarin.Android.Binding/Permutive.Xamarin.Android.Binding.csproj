@@ -14,9 +14,9 @@
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <PackageId>Permutive.Xamarin.Android.Binding</PackageId>
-    <PackageVersion>0.1.1</PackageVersion>
+    <PackageVersion>0.2.2</PackageVersion>
     <Authors>Tom Hall</Authors>
-    <PackageReleaseNotes>Permutive Android SDK v0.1.0</PackageReleaseNotes>
+    <PackageReleaseNotes>Permutive Android SDK v0.2.2</PackageReleaseNotes>
     <Summary>Xamarin Android Binding Library - Permutive Android SDK </Summary>
     <Title>Xamarin Android Binding Library - Permutive Android SDK </Title>
     <Description>Xamarin Android Binding Library - Permutive Android SDK </Description>
@@ -112,6 +112,12 @@
     <Reference Include="Permutive.Xamarin.Android.Ducktape">
       <HintPath>..\packages\Permutive.Xamarin.Android.Duktape.1.3.0\lib\monoandroid90\Permutive.Xamarin.Android.Ducktape.dll</HintPath>
     </Reference>
+    <Reference Include="Square.OkIO">
+      <HintPath>..\packages\Square.OkIO.1.13.0\lib\MonoAndroid\Square.OkIO.dll</HintPath>
+    </Reference>
+    <Reference Include="Square.OkHttp3">
+      <HintPath>..\packages\Square.OkHttp3.3.8.1\lib\MonoAndroid\Square.OkHttp3.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -138,15 +144,13 @@
     <EmbeddedReferenceJar Include="Jars\kotlin-stdlib-common-1.3.10.jar" />
     <EmbeddedReferenceJar Include="Jars\kotlin-stdlib-jdk7-1.3.10.jar" />
     <EmbeddedReferenceJar Include="Jars\moshi-1.7.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\okhttp-3.12.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\okio-1.15.0.jar" />
     <EmbeddedReferenceJar Include="Jars\reactive-streams-1.0.2.jar" />
     <EmbeddedReferenceJar Include="Jars\retrofit-2.5.0.jar" />
     <EmbeddedReferenceJar Include="Jars\rxjava-2.2.4.jar" />
     <EmbeddedReferenceJar Include="Jars\rxkotlin-2.2.0.jar" />
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\core-0.2.1.aar" />
+    <LibraryProjectZip Include="Jars\core-0.2.2.aar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <Import Project="..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.targets" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.targets')" />
