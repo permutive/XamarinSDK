@@ -1,21 +1,17 @@
-﻿<Properties StartupConfiguration="{69853924-B7B8-4F3F-8706-0BC0799B84AE}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.ItemProperties.BindingTest PreferredExecutionTarget="Android.Android_Accelerated_Pie" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../Library/Frameworks/Xamarin.Android.framework/Versions/9.1.5-1/lib/xamarin.android/xbuild/Xamarin/Android/Xamarin.Android.Common.targets">
+﻿<Properties StartupConfiguration="{69853924-B7B8-4F3F-8706-0BC0799B84AE}|Default">
+  <MonoDevelop.Ide.ItemProperties.BindingTest PreferredExecutionTarget="Android.Nexus_5X_API_28_x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BindingTest/BindingTestApplication.cs">
     <Files>
-      <File FileName="Permutive.Xamarin.Interface/PermutiveSDK.cs" Line="1" Column="1" />
-      <File FileName="BindingTest/BindingTestApplication.cs" Line="40" Column="71" />
-      <File FileName="Permutive.Xamarin.Android/PermutiveSDKImpl.cs" Line="1" Column="1" />
       <File FileName="BindingTest/MainActivity.cs" Line="1" Column="1" />
-      <File FileName="BindingTest/Resources/Resource.designer.cs" Line="1" Column="1" />
-      <File FileName="BindingTest/Properties/AndroidManifest.xml" Line="1" Column="1" />
-      <File FileName="Permutive.Xamarin.Android.Arch.Persistence.DB/packages.config" Line="1" Column="1" />
-      <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1327" Column="2" />
+      <File FileName="BindingTest/BindingTestApplication.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Permutive.Xamarin" expanded="True">
-            <Node name="BindingTest" selected="True" />
+            <Node name="Permutive.Xamarin.Android.GoogleAds" expanded="True" selected="True">
+              <Node name="Packages" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -30,7 +26,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
