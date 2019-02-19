@@ -9,7 +9,7 @@ Using multiple kit libraries enables feature-rich integration with minimal effor
 To include in your Xamarin (Android) application, you should add the NuGet package. [See here](https://developer.xamarin.com/guides/cross-platform/xamarin-studio/nuget_walkthrough/)
 
 ```bash
-Install-Package Permutive.Xamarin.Android -Version 0.2.2
+Install-Package Permutive.Xamarin.Android -Version 0.2.2.2
 ```
 
 
@@ -202,7 +202,7 @@ We have provided an easy way to add targeting for google ads requests. See the *
 
 In addition to identifying your user via a custom identity, you can also automatically track a user by their AAID. To do this, just include the google-ads dependency in your gradle build:
 ```bash
-Install-Package Permutive.Xamarin.Android.GoogleAds -Version 0.2.2
+Install-Package Permutive.Xamarin.Android.GoogleAds -Version 0.2.2.2
 ```
 
 When creating the permutive object, simply add the **AliasAaidProvider** to the alias providers
