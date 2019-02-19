@@ -9,8 +9,8 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Permutive.Xamarin" expanded="True">
-            <Node name="BindingTest" expanded="True">
-              <Node name="BindingTestApplication.cs" selected="True" />
+            <Node name="Permutive.Xamarin.Android.GoogleAds" expanded="True" selected="True">
+              <Node name="Packages" expanded="True" />
             </Node>
           </Node>
         </State>

@@ -88,7 +88,7 @@
       <HintPath>..\packages\Permutive.Xamarin.Android.Arch.Persistence.Room.RxJava.1.1.1.1\lib\monoandroid90\Permutive.Xamarin.Android.Arch.Persistence.Room.RxJava.dll</HintPath>
     </Reference>
     <Reference Include="Permutive.Xamarin.Android.Binding">
-      <HintPath>..\packages\Permutive.Xamarin.Android.Binding.0.2.2\lib\monoandroid90\Permutive.Xamarin.Android.Binding.dll</HintPath>
+      <HintPath>..\packages\Permutive.Xamarin.Android.Binding.0.2.2.2\lib\monoandroid90\Permutive.Xamarin.Android.Binding.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Arch.Lifecycle.LiveData.Core">
       <HintPath>..\packages\Xamarin.Android.Arch.Lifecycle.LiveData.Core.1.1.1.1\lib\monoandroid90\Xamarin.Android.Arch.Lifecycle.LiveData.Core.dll</HintPath>
@@ -166,19 +166,22 @@
       <HintPath>..\packages\Permutive.Xamarin.Interface.0.1.1\lib\portable45-net45+win8+wpa81\Permutive.Xamarin.Interface.dll</HintPath>
     </Reference>
     <Reference Include="Library.Android">
-      <HintPath>..\packages\Permutive.Xamarin.Android.0.2.2\lib\monoandroid90\Library.Android.dll</HintPath>
+      <HintPath>..\packages\Permutive.Xamarin.Android.0.2.2.2\lib\monoandroid90\Library.Android.dll</HintPath>
     </Reference>
     <Reference Include="Permutive.Xamarin.Android.GoogleAds.Binding">
-      <HintPath>..\packages\Permutive.Xamarin.Android.GoogleAds.Binding.0.2.2\lib\monoandroid90\Permutive.Xamarin.Android.GoogleAds.Binding.dll</HintPath>
+      <HintPath>..\packages\Permutive.Xamarin.Android.GoogleAds.Binding.0.2.2.2\lib\monoandroid90\Permutive.Xamarin.Android.GoogleAds.Binding.dll</HintPath>
     </Reference>
     <Reference Include="Permutive.Xamarin.Android.GoogleAds">
-      <HintPath>..\packages\Permutive.Xamarin.Android.GoogleAds.0.2.2\lib\monoandroid90\Permutive.Xamarin.Android.GoogleAds.dll</HintPath>
+      <HintPath>..\packages\Permutive.Xamarin.Android.GoogleAds.0.2.2.2\lib\monoandroid90\Permutive.Xamarin.Android.GoogleAds.dll</HintPath>
     </Reference>
     <Reference Include="Square.OkIO">
       <HintPath>..\packages\Square.OkIO.1.13.0\lib\MonoAndroid\Square.OkIO.dll</HintPath>
     </Reference>
     <Reference Include="Square.OkHttp3">
       <HintPath>..\packages\Square.OkHttp3.3.8.1\lib\MonoAndroid\Square.OkHttp3.dll</HintPath>
+    </Reference>
+    <Reference Include="Square.Retrofit2">
+      <HintPath>..\packages\Square.Retrofit2.2.3.0\lib\MonoAndroid\Square.Retrofit2.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
