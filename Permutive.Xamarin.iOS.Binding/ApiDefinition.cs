@@ -3,7 +3,7 @@ using CoreFoundation;
 using Foundation;
 using ObjCRuntime;
 
-namespace PermutiveX.Xamarin.iOS.Binding
+namespace Permutive.Xamarin.iOS.Binding
 {
     // @interface PermutiveEventPropertyValueConsts : NSObject
     [BaseType(typeof(NSObject))]
@@ -223,7 +223,7 @@ namespace PermutiveX.Xamarin.iOS.Binding
 
     // @interface Permutive : NSObject
     [BaseType(typeof(NSObject))]
-    interface Permutive
+    interface PermutiveInterface
     {
         // +(PermutiveEventActionContext * _Nonnull)context;
         // +(void)setContext:(PermutiveEventActionContext * _Nonnull)context;

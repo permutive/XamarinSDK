@@ -5,15 +5,21 @@
       <File FileName="BindingTest/MainActivity.cs" Line="1" Column="1" />
       <File FileName="BindingTest/BindingTestApplication.cs" Line="26" Column="9" />
       <File FileName="../../../../../Library/Frameworks/Mono.framework/Versions/5.16.0/lib/mono/msbuild/15.0/bin/Microsoft.Common.CurrentVersion.targets" Line="3292" Column="5" />
-      <File FileName="Permutive.Xamarin.iOS.Binding/ApiDefinition.cs" Line="73" Column="5" />
-      <File FileName="Permutive.Xamarin.iOS.Binding/Structs.cs" Line="9" Column="12" />
+      <File FileName="Permutive.Xamarin.iOS.Binding/ApiDefinition.cs" Line="226" Column="19" />
+      <File FileName="Permutive.Xamarin.iOS.Binding/Structs.cs" Line="7" Column="20" />
       <File FileName="Permutive.Xamarin.iOS.Binding/Properties/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="Permutive.Xamarin.iOS.Binding/obj/Debug/ios/PermutiveXamariniOSBinding/PermutiveProviderInterface.g.cs" Line="47" Column="158" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Permutive.Xamarin" expanded="True">
+            <Node name="Permutive.Xamarin.Android" expanded="True">
+              <Node name="References" expanded="True" />
+            </Node>
+            <Node name="Permutive.Xamarin.Android.Binding" expanded="True" />
             <Node name="Permutive.Xamarin.iOS.Binding" expanded="True">
+              <Node name="Properties" expanded="True" />
               <Node name="ApiDefinition.cs" selected="True" />
             </Node>
           </Node>
