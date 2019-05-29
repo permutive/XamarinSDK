@@ -1,66 +1,267 @@
 ﻿using System;
-
-using UIKit;
+using CoreFoundation;
 using Foundation;
 using ObjCRuntime;
-using CoreGraphics;
 
-namespace Permutive.Xamarin.iOS.Binding
+namespace PermutiveX.Xamarin.iOS.Binding
 {
-    // The first step to creating a binding is to add your native library ("libNativeLibrary.a")
-    // to the project by right-clicking (or Control-clicking) the folder containing this source
-    // file and clicking "Add files..." and then simply select the native library (or libraries)
-    // that you want to bind.
-    //
-    // When you do that, you'll notice that MonoDevelop generates a code-behind file for each
-    // native library which will contain a [LinkWith] attribute. MonoDevelop auto-detects the
-    // architectures that the native library supports and fills in that information for you,
-    // however, it cannot auto-detect any Frameworks or other system libraries that the
-    // native library may depend on, so you'll need to fill in that information yourself.
-    //
-    // Once you've done that, you're ready to move on to binding the API...
-    //
-    //
-    // Here is where you'd define your API definition for the native Objective-C library.
-    //
-    // For example, to bind the following Objective-C class:
-    //
-    //     @interface Widget : NSObject {
-    //     }
-    //
-    // The C# binding would look like this:
-    //
-    //     [BaseType (typeof (NSObject))]
-    //     interface Widget {
-    //     }
-    //
-    // To bind Objective-C properties, such as:
-    //
-    //     @property (nonatomic, readwrite, assign) CGPoint center;
-    //
-    // You would add a property definition in the C# interface like so:
-    //
-    //     [Export ("center")]
-    //     CGPoint Center { get; set; }
-    //
-    // To bind an Objective-C method, such as:
-    //
-    //     -(void) doSomething:(NSObject *)object atIndex:(NSInteger)index;
-    //
-    // You would add a method definition to the C# interface like so:
-    //
-    //     [Export ("doSomething:atIndex:")]
-    //     void DoSomething (NSObject object, int index);
-    //
-    // Objective-C "constructors" such as:
-    //
-    //     -(id)initWithElmo:(ElmoMuppet *)elmo;
-    //
-    // Can be bound as:
-    //
-    //     [Export ("initWithElmo:")]
-    //     IntPtr Constructor (ElmoMuppet elmo);
-    //
-    // For more information, see http://developer.xamarin.com/guides/ios/advanced_topics/binding_objective-c/
-    //
+    // @interface PermutiveEventPropertyValueConsts : NSObject
+    [BaseType(typeof(NSObject))]
+    interface PermutiveEventPropertyValueConsts
+    {
+        // @property (readonly, copy, nonatomic, class) NSString * _Nonnull geo_info;
+        [Static]
+        [Export("geo_info")]
+        string Geo_info { get; }
+
+        // @property (readonly, copy, nonatomic, class) NSString * _Nonnull isp_info;
+        [Static]
+        [Export("isp_info")]
+        string Isp_info { get; }
+    }
+
+    // typedef void (^PermutiveEventCallback)(NSError * _Nullable, NSString * _Nonnull, NSDictionary<NSString *,id> * _Nonnull);
+    delegate void PermutiveEventCallback([NullAllowed] NSError arg0, string arg1, NSDictionary<NSString, NSObject> arg2);
+
+    // @protocol PermutiveEventActionInterface
+    [Protocol, Model]
+    [BaseType(typeof(NSObject))] //me!
+    interface PermutiveEventActionInterface
+    {
+        // @required -(void)track:(NSString * _Nonnull)eventName properties:(NSDictionary<NSString *,id> * _Nonnull)properties;
+        [Abstract]
+        [Export("track:properties:")]
+        void Properties(string eventName, NSDictionary<NSString, NSObject> properties);
+
+        // @required -(void)track:(NSString * _Nonnull)eventName;
+        [Abstract]
+        [Export("track:")]
+        void Track(string eventName);
+    }
+
+    // typedef void (^PermutiveTriggerActionBlock)(NSUInteger, NSNumber * _Nullable, NSNumber * _Nullable);
+    delegate void PermutiveTriggerActionBlock(nuint arg0, [NullAllowed] NSNumber arg1, [NullAllowed] NSNumber arg2);
+
+    // @protocol PermutiveTriggerAction <NSObject>
+    [Protocol, Model]
+    [BaseType(typeof(NSObject))]
+    interface PermutiveTriggerAction
+    {
+        // @required -(void)setTriggerBlock:(PermutiveTriggerActionBlock _Nonnull)triggerBlock __attribute__((deprecated("")));
+        [Abstract]
+        [Export("setTriggerBlock:")]
+        void SetTriggerBlock(PermutiveTriggerActionBlock triggerBlock);
+    }
+
+
+    // @protocol PermutiveTriggersProvider <NSObject>
+    [Protocol, Model]
+    [BaseType(typeof(NSObject))]
+    interface PermutiveTriggersProvider
+    {
+        // @required @property (readonly, copy, nonatomic) NSArray<NSNumber *> * _Nonnull querySegments;
+        [Abstract]
+        [Export("querySegments", ArgumentSemantic.Copy)]
+        NSNumber[] QuerySegments { get; }
+
+        // @required @property (readonly, copy, nonatomic) NSDictionary<NSString *,NSArray<NSNumber *> *> * _Nonnull dfpRequestCustomTargeting;
+        [Abstract]
+        [Export("dfpRequestCustomTargeting", ArgumentSemantic.Copy)]
+        NSDictionary<NSString, NSArray<NSNumber>> DfpRequestCustomTargeting { get; }
+
+        // @required -(id<PermutiveTriggerAction> _Nullable)triggerActionForSegments:(NSArray<NSNumber *> * _Nonnull)segments triggerType:(PermutiveTriggerType)triggerType __attribute__((deprecated("")));
+        [Abstract]
+        [Export("triggerActionForSegments:triggerType:")]
+        [return: NullAllowed]
+        PermutiveTriggerAction TriggerActionForSegments(NSNumber[] segments, PermutiveTriggerType triggerType);
+
+        // @required -(id<PermutiveTriggerAction> _Nullable)triggerActionForAllSegmentsWithTriggerType:(PermutiveTriggerType)triggerType __attribute__((deprecated("")));
+        [Abstract]
+        [Export("triggerActionForAllSegmentsWithTriggerType:")]
+        [return: NullAllowed]
+        PermutiveTriggerAction TriggerActionForAllSegmentsWithTriggerType(PermutiveTriggerType triggerType);
+
+        // @required -(id<PermutiveTriggerAction> _Nullable)triggerActionForSegment:(NSNumber * _Nonnull)segment callback:(void (^ _Nonnull)(BOOL))callback;
+        [Abstract]
+        [Export("triggerActionForSegment:callback:")]
+        [return: NullAllowed]
+        PermutiveTriggerAction TriggerActionForSegment(NSNumber segment, Action<bool> callback);
+
+        // @required -(id<PermutiveTriggerAction> _Nullable)triggerActionForSegments:(NSArray<NSNumber *> * _Nonnull)segments callback:(void (^ _Nonnull)(NSNumber * _Nonnull, BOOL))callback;
+        [Abstract]
+        [Export("triggerActionForSegments:callback:")]
+        [return: NullAllowed]
+        PermutiveTriggerAction TriggerActionForSegments(NSNumber[] segments, Action<NSNumber, bool> callback);
+
+        // @required -(id<PermutiveTriggerAction> _Nullable)triggerActionForAllSegmentsWithCallback:(void (^ _Nonnull)(NSNumber * _Nonnull, BOOL))callback;
+        [Abstract]
+        [Export("triggerActionForAllSegmentsWithCallback:")]
+        [return: NullAllowed]
+        PermutiveTriggerAction TriggerActionForAllSegmentsWithCallback(Action<NSNumber, bool> callback);
+
+        // @required -(id<PermutiveTriggerAction> _Nullable)triggerActionForMapQueryIDs:(NSArray<NSNumber *> * _Nonnull)queryIDs callback:(void (^ _Nonnull)(NSNumber * _Nonnull, NSDictionary<NSString *,id> * _Nonnull))callback;
+        [Abstract]
+        [Export("triggerActionForMapQueryIDs:callback:")]
+        [return: NullAllowed]
+        PermutiveTriggerAction TriggerActionForMapQueryIDs(NSNumber[] queryIDs, Action<NSNumber, NSDictionary<NSString, NSObject>> callback);
+
+        // @required -(id<PermutiveTriggerAction> _Nullable)triggerActionForObjectQueryID:(NSNumber * _Nonnull)queryID callback:(void (^ _Nonnull)(id _Nonnull))callback;
+        [Abstract]
+        [Export("triggerActionForObjectQueryID:callback:")]
+        [return: NullAllowed]
+        PermutiveTriggerAction TriggerActionForObjectQueryID(NSNumber queryID, Action<NSObject> callback);
+
+        // @required -(id<PermutiveTriggerAction> _Nullable)triggerActionForObjectQueryIDs:(NSArray<NSNumber *> * _Nonnull)queryIDs callback:(void (^ _Nonnull)(NSNumber * _Nonnull, id _Nonnull))callback;
+        [Abstract]
+        [Export("triggerActionForObjectQueryIDs:callback:")]
+        [return: NullAllowed]
+        PermutiveTriggerAction TriggerActionForObjectQueryIDs(NSNumber[] queryIDs, Action<NSNumber, NSObject> callback);
+
+        // @required -(id<PermutiveTriggerAction> _Nullable)triggerActionForStringQueryID:(NSNumber * _Nonnull)queryID callback:(void (^ _Nonnull)(NSString * _Nonnull))callback;
+        [Abstract]
+        [Export("triggerActionForStringQueryID:callback:")]
+        [return: NullAllowed]
+        PermutiveTriggerAction TriggerActionForStringQueryID(NSNumber queryID, Action<NSString> callback);
+
+        // @required -(id<PermutiveTriggerAction> _Nullable)triggerActionForStringQueryIDs:(NSArray<NSNumber *> * _Nonnull)queryIDs callback:(void (^ _Nonnull)(NSNumber * _Nonnull, NSString * _Nonnull))callback;
+        [Abstract]
+        [Export("triggerActionForStringQueryIDs:callback:")]
+        [return: NullAllowed]
+        PermutiveTriggerAction TriggerActionForStringQueryIDs(NSNumber[] queryIDs, Action<NSNumber, NSString> callback);
+
+        // @required -(id<PermutiveTriggerAction> _Nullable)triggerActionForDoubleQueryID:(NSNumber * _Nonnull)queryID callback:(void (^ _Nonnull)(double))callback;
+        [Abstract]
+        [Export("triggerActionForDoubleQueryID:callback:")]
+        [return: NullAllowed]
+        PermutiveTriggerAction TriggerActionForDoubleQueryID(NSNumber queryID, Action<double> callback);
+
+        // @required -(id<PermutiveTriggerAction> _Nullable)triggerActionForDoubleQueryIDs:(NSArray<NSNumber *> * _Nonnull)queryIDs callback:(void (^ _Nonnull)(NSNumber * _Nonnull, double))callback;
+        [Abstract]
+        [Export("triggerActionForDoubleQueryIDs:callback:")]
+        [return: NullAllowed]
+        PermutiveTriggerAction TriggerActionForDoubleQueryIDs(NSNumber[] queryIDs, Action<NSNumber, double> callback);
+
+        // @required -(id<PermutiveTriggerAction> _Nullable)triggerActionForIntegerQueryID:(NSNumber * _Nonnull)queryID callback:(void (^ _Nonnull)(NSInteger))callback;
+        [Abstract]
+        [Export("triggerActionForIntegerQueryID:callback:")]
+        [return: NullAllowed]
+        PermutiveTriggerAction TriggerActionForIntegerQueryID(NSNumber queryID, Action<nint> callback);
+
+        // @required -(id<PermutiveTriggerAction> _Nullable)triggerActionForIntegerQueryIDs:(NSArray<NSNumber *> * _Nonnull)queryIDs callback:(void (^ _Nonnull)(NSNumber * _Nonnull, NSInteger))callback;
+        [Abstract]
+        [Export("triggerActionForIntegerQueryIDs:callback:")]
+        [return: NullAllowed]
+        PermutiveTriggerAction TriggerActionForIntegerQueryIDs(NSNumber[] queryIDs, Action<NSNumber, nint> callback);
+
+        // @required -(id<PermutiveTriggerAction> _Nullable)triggerActionForBooleanQueryID:(NSNumber * _Nonnull)queryID callback:(void (^ _Nonnull)(BOOL))callback;
+        [Abstract]
+        [Export("triggerActionForBooleanQueryID:callback:")]
+        [return: NullAllowed]
+        PermutiveTriggerAction TriggerActionForBooleanQueryID(NSNumber queryID, Action<bool> callback);
+
+        // @required -(id<PermutiveTriggerAction> _Nullable)triggerActionForBooleanQueryIDs:(NSArray<NSNumber *> * _Nonnull)queryIDs callback:(void (^ _Nonnull)(NSNumber * _Nonnull, BOOL))callback;
+        [Abstract]
+        [Export("triggerActionForBooleanQueryIDs:callback:")]
+        [return: NullAllowed]
+        PermutiveTriggerAction TriggerActionForBooleanQueryIDs(NSNumber[] queryIDs, Action<NSNumber, bool> callback);
+    }
+
+
+    // @interface PermutiveEventActionContext : NSObject <NSCopying>
+    [BaseType(typeof(NSObject))]
+    interface PermutiveEventActionContext : INSCopying
+    {
+        // @property (copy, nonatomic) NSURL * _Nullable domain;
+        [NullAllowed, Export("domain", ArgumentSemantic.Copy)]
+        NSUrl Domain { get; set; }
+
+        // @property (copy, nonatomic) NSURL * _Nullable url;
+        [NullAllowed, Export("url", ArgumentSemantic.Copy)]
+        NSUrl Url { get; set; }
+
+        // @property (copy, nonatomic) NSURL * _Nullable referrer;
+        [NullAllowed, Export("referrer", ArgumentSemantic.Copy)]
+        NSUrl Referrer { get; set; }
+
+        // @property (copy, nonatomic) NSString * _Nullable title;
+        [NullAllowed, Export("title")]
+        string Title { get; set; }
+    }
+
+
+    // @protocol PermutiveProviderInterface <NSObject>
+    [Protocol, Model]
+    [BaseType(typeof(NSObject))]
+    interface PermutiveProviderInterface
+    {
+        // @required @property (readonly, nonatomic, strong) id<PermutiveEventActionInterface> _Nonnull eventTracker;
+        [Abstract]
+        [Export("eventTracker", ArgumentSemantic.Strong)]
+        PermutiveEventActionInterface EventTracker { get; }
+
+        // @required @property (readonly, nonatomic, strong) id<PermutiveTriggersProvider> _Nonnull triggersProvider;
+        [Abstract]
+        [Export("triggersProvider", ArgumentSemantic.Strong)]
+        PermutiveTriggersProvider TriggersProvider { get; }
+    }
+
+    // @interface PermutiveOptions : NSObject <NSCopying>
+    [BaseType(typeof(NSObject))]
+    [DisableDefaultCtor]
+    interface PermutiveOptions : INSCopying
+    {
+        // +(instancetype _Nullable)optionsWithProjectId:(NSUUID * _Nonnull)projectId apiKey:(NSUUID * _Nonnull)apiKey;
+        [Static]
+        [Export("optionsWithProjectId:apiKey:")]
+        [return: NullAllowed]
+        PermutiveOptions OptionsWithProjectId(NSUuid projectId, NSUuid apiKey);
+
+        // @property (copy, nonatomic) NSString * _Nullable userIdentity;
+        [NullAllowed, Export("userIdentity")]
+        string UserIdentity { get; set; }
+    }
+
+    // @interface Permutive : NSObject
+    [BaseType(typeof(NSObject))]
+    interface Permutive
+    {
+        // +(PermutiveEventActionContext * _Nonnull)context;
+        // +(void)setContext:(PermutiveEventActionContext * _Nonnull)context;
+        [Static]
+        [Export("context")]
+        PermutiveEventActionContext Context { get; set; }
+
+        // +(NSString * _Nonnull)userId;
+        [Static]
+        [Export("userId")]
+        string UserId();
+
+        // +(void)configureWithOptions:(PermutiveOptions * _Nonnull)options;
+        [Static]
+        [Export("configureWithOptions:")]
+        void ConfigureWithOptions(PermutiveOptions options);
+
+        // +(id<PermutiveProviderInterface> _Nullable)permutive;
+        [Static]
+        [Export("permutive")]
+        [return: NullAllowed]
+        PermutiveProviderInterface GetPermutive();
+
+        // +(void)setIdentity:(NSString * _Nonnull)identity;
+        [Static]
+        [Export("setIdentity:")]
+        void SetIdentity(string identity);
+
+        // +(void)reset;
+        [Static]
+        [Export("reset")]
+        void Reset();
+
+        /*
+        // +(void)setBackendType:(PermutiveInterfaceBackendType)backendType;
+        [Static]
+        [Export("setBackendType:")]
+        void SetBackendType(PermutiveInterfaceBackendType backendType);
+        */
+    }
 }

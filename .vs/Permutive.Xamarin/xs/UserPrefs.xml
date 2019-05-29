@@ -1,20 +1,20 @@
 ﻿<Properties StartupConfiguration="{69853924-B7B8-4F3F-8706-0BC0799B84AE}|Default">
   <MonoDevelop.Ide.ItemProperties.BindingTest PreferredExecutionTarget="Android.Nexus_5_API_21" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../Library/Frameworks/Mono.framework/Versions/5.16.0/lib/mono/msbuild/15.0/bin/Microsoft.Common.CurrentVersion.targets">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Permutive.Xamarin.iOS.Binding/ApiDefinition.cs">
     <Files>
       <File FileName="BindingTest/MainActivity.cs" Line="1" Column="1" />
-      <File FileName="BindingTest/BindingTestApplication.cs" Line="1" Column="1" />
+      <File FileName="BindingTest/BindingTestApplication.cs" Line="26" Column="9" />
       <File FileName="../../../../../Library/Frameworks/Mono.framework/Versions/5.16.0/lib/mono/msbuild/15.0/bin/Microsoft.Common.CurrentVersion.targets" Line="3292" Column="5" />
+      <File FileName="Permutive.Xamarin.iOS.Binding/ApiDefinition.cs" Line="73" Column="5" />
+      <File FileName="Permutive.Xamarin.iOS.Binding/Structs.cs" Line="9" Column="12" />
+      <File FileName="Permutive.Xamarin.iOS.Binding/Properties/AssemblyInfo.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Permutive.Xamarin" expanded="True">
-            <Node name="Permutive.Xamarin.Android" expanded="True" />
-            <Node name="Permutive.Xamarin.iOS.Binding" expanded="True" selected="True">
-              <Node name="References" expanded="True" />
-              <Node name="NativeReferenceFolder" expanded="True" />
-              <Node name="Properties" expanded="True" />
+            <Node name="Permutive.Xamarin.iOS.Binding" expanded="True">
+              <Node name="ApiDefinition.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -29,8 +29,12 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.XamarinTest.iOS FirstBuild="True">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.XamarinTest.iOS>
+  <MonoDevelop.Ide.ItemProperties.XamarinTest FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
