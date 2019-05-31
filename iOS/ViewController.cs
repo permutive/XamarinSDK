@@ -4,8 +4,7 @@ using UIKit;
 
 
 
-//using PermutiveiOSBinding;
-using PermutiveX.Xamarin.iOS.Binding;
+using Permutive.Xamarin.iOS.Binding;
 using Foundation;
 
 namespace SharedSample.iOS
@@ -64,7 +63,7 @@ namespace SharedSample.iOS
             //    }
             //});
 
-            Permutive.ConfigureWithOptions(options);
+            PermutiveSdk.ConfigureWithOptions(options);
 
             Console.WriteLine("Permutive: setting context...");
 
@@ -73,7 +72,7 @@ namespace SharedSample.iOS
             context.Url = NSUrl.FromString("http://www.what.com");
 
 
-            Permutive.Context = new PermutiveEventActionContext();
+            PermutiveSdk.Context = new PermutiveEventActionContext();
 
 
 
