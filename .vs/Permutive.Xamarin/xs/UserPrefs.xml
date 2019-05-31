@@ -1,25 +1,31 @@
 ﻿<Properties StartupConfiguration="{DAA2FDAD-587C-4C3A-8733-26069AA4C27C}|Default">
   <MonoDevelop.Ide.ItemProperties.BindingTest PreferredExecutionTarget="Android.Nexus_5_API_21" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/ViewController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Permutive.Xamarin.iOS/PermutiveSDKImpl.cs">
     <Files>
-      <File FileName="iOS/ViewController.cs" Line="80" Column="1" />
+      <File FileName="iOS/ViewController.cs" Line="77" Column="1" />
       <File FileName="BindingTest/BindingTestApplication.cs" Line="41" Column="2" />
       <File FileName="SharedSample/MyClass.cs" Line="7" Column="9" />
-      <File FileName="Permutive.Xamarin.iOS.Binding/ApiDefinition.cs" Line="229" Column="5" />
+      <File FileName="Permutive.Xamarin.iOS.Binding/ApiDefinition.cs" Line="39" Column="26" />
       <File FileName="Permutive.Xamarin.iOS.Binding/Permutive.linkwith.cs" Line="9" Column="1" />
       <File FileName="iOS/AppDelegate.cs" Line="27" Column="74" />
       <File FileName="iOS/Main.cs" Line="1" Column="1" />
       <File FileName="BindingTest/MainActivity.cs" Line="37" Column="15" />
-      <File FileName="Permutive.Xamarin.iOS.Binding/Structs.cs" Line="17" Column="1" />
+      <File FileName="Permutive.Xamarin.iOS.Binding/Structs.cs" Line="7" Column="20" />
+      <File FileName="Permutive.Xamarin.Android/PermutiveSDKImpl.cs" Line="339" Column="1" />
+      <File FileName="Permutive.Xamarin.iOS/PermutiveSDKImpl.cs" Line="237" Column="17" />
+      <File FileName="Permutive.Xamarin.Interface/PermutiveSDK.cs" Line="11" Column="25" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Permutive.Xamarin" expanded="True">
-            <Node name="Permutive.Xamarin.iOS.Binding" expanded="True" />
-            <Node name="SharedSample.iOS" expanded="True">
+            <Node name="Permutive.Xamarin.Android" expanded="True" />
+            <Node name="Permutive.Xamarin.Interface" expanded="True" />
+            <Node name="Permutive.Xamarin.iOS" expanded="True">
               <Node name="References" expanded="True" />
+              <Node name="PermutiveSDKImpl.cs" selected="True" />
             </Node>
+            <Node name="Permutive.Xamarin.iOS.Binding" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -29,15 +35,7 @@
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>PermutiveInterface</Value>
-          <Value>PermutiveInterface.UserId()</Value>
-          <Value>options.UserIdentity</Value>
-          <Value>PermutiveInterface.Context</Value>
-          <Value>context.Url</Value>
-          <Value>PermutiveInterface.Context</Value>
-          <Value>Permutive.Context</Value>
-        </State>
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
