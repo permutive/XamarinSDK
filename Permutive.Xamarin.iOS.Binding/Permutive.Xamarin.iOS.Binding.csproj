@@ -6,7 +6,7 @@
     <ProjectGuid>{C3FEAE7C-447E-4EAF-B05C-6F64BA6095C1}</ProjectGuid>
     <ProjectTypeGuids>{8FFB629D-F513-41CE-95D2-7ECE97B6EEEC};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>Permutive.Xamarin.iOS.Binding</RootNamespace>
+    <RootNamespace>PermutiveX.Xamarin.iOS.Binding</RootNamespace>
     <AssemblyName>Permutive.Xamarin.iOS.Binding</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
   </PropertyGroup>
@@ -34,6 +34,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Permutive.linkwith.cs" />
   </ItemGroup>
   <ItemGroup>
     <ObjcBindingApiDefinition Include="ApiDefinition.cs">
@@ -46,11 +47,9 @@
     </ObjcBindingCoreSource>
   </ItemGroup>
   <ItemGroup>
-    <NativeReference Include="NativeLibBuild\libPermutiveStatic.a">
-      <Kind>Static</Kind>
+    <NativeReference Include="Permutive.framework">
+      <Kind>Framework</Kind>
       <SmartLink>False</SmartLink>
-      <ForceLoad>True</ForceLoad>
-      <IsCxx>True</IsCxx>
     </NativeReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />

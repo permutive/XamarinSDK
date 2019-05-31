@@ -3,9 +3,10 @@ using CoreFoundation;
 using Foundation;
 using ObjCRuntime;
 
-namespace Permutive.Xamarin.iOS.Binding
+namespace PermutiveX.Xamarin.iOS.Binding
 {
     // @interface PermutiveEventPropertyValueConsts : NSObject
+    [Protocol]
     [BaseType(typeof(NSObject))]
     interface PermutiveEventPropertyValueConsts
     {
@@ -168,6 +169,7 @@ namespace Permutive.Xamarin.iOS.Binding
 
 
     // @interface PermutiveEventActionContext : NSObject <NSCopying>
+    [Protocol]
     [BaseType(typeof(NSObject))]
     interface PermutiveEventActionContext : INSCopying
     {
@@ -206,6 +208,7 @@ namespace Permutive.Xamarin.iOS.Binding
     }
 
     // @interface PermutiveOptions : NSObject <NSCopying>
+    [Protocol]
     [BaseType(typeof(NSObject))]
     [DisableDefaultCtor]
     interface PermutiveOptions : INSCopying
@@ -222,8 +225,9 @@ namespace Permutive.Xamarin.iOS.Binding
     }
 
     // @interface Permutive : NSObject
+    [Protocol]
     [BaseType(typeof(NSObject))]
-    interface PermutiveInterface
+    interface Permutive
     {
         // +(PermutiveEventActionContext * _Nonnull)context;
         // +(void)setContext:(PermutiveEventActionContext * _Nonnull)context;

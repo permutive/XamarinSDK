@@ -4,7 +4,7 @@ using CoreFoundation;
 using Foundation;
 using ObjCRuntime;
 
-namespace Permutive.Xamarin.iOS.Binding
+namespace PermutiveX.Xamarin.iOS.Binding
 {
     [Native]
     public enum PermutiveTriggerType : long 
@@ -14,11 +14,4 @@ namespace Permutive.Xamarin.iOS.Binding
         OnChange,
         Always
     }
-
-    //[Native]
-    //public enum PermutiveInterfaceBackendType : long 
-    //{
-    //    Production,
-    //    Staging
-    //}
 }
