@@ -66,6 +66,5 @@
   <ItemGroup>
     <AndroidAsset Include="Assets\AboutAssets.txt" />
   </ItemGroup>
-  <Import Project="..\SharedSample\SharedSample.projitems" Label="Shared" Condition="Exists('..\SharedSample\SharedSample.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

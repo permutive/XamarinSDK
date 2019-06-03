@@ -12,7 +12,7 @@ namespace Permutive.Xamarin
     {
         public string ProjectId;
         public string ApiKey;
-        public List<IAliasProvider> AliasProviders = new List<IAliasProvider>();
+        public IList<IAliasProvider> AliasProviders = new List<IAliasProvider>();
         public string identity = null;
     }
 

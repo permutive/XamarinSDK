@@ -16,11 +16,45 @@ namespace SharedSample.iOS
         [Outlet]
         UIKit.UIButton Button { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton sendEventButton { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton setIdentityButton { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton StartButton { get; set; }
+
+        [Action ("SendEvent_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void SendEvent_TouchUpInside (UIKit.UIButton sender);
+
+        [Action ("SetIdentityButton_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void SetIdentityButton_TouchUpInside (UIKit.UIButton sender);
+
+        [Action ("StartButton_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void StartButton_TouchUpInside (UIKit.UIButton sender);
+
         void ReleaseDesignerOutlets ()
         {
-            if (Button != null) {
-                Button.Dispose ();
-                Button = null;
+            if (sendEventButton != null) {
+                sendEventButton.Dispose ();
+                sendEventButton = null;
+            }
+
+            if (setIdentityButton != null) {
+                setIdentityButton.Dispose ();
+                setIdentityButton = null;
+            }
+
+            if (StartButton != null) {
+                StartButton.Dispose ();
+                StartButton = null;
             }
         }
     }

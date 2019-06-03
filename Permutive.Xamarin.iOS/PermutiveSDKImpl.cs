@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using Permutive.Xamarin.iOS.Binding;
 using Foundation;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Permutive.Xamarin
 {
@@ -72,10 +74,25 @@ namespace Permutive.Xamarin
         {
             if (reaction == "dfp")
             {
-                //do something...
-                //callback()
-                //triggersProvider.DfpRequestCustomTargeting
+                Action<int> callbackWrapper = new Action<int>(a => {
+                    NSDictionary<NSString, NSArray<NSNumber>> dictionary = triggersProvider.DfpRequestCustomTargeting;
 
+                    NSArray<NSNumber> numbers = dictionary.ObjectForKey((NSString) NSObject.FromObject("permutive"));
+                    List<int> list = new List<int>();
+                    if (numbers != null)
+                    {
+                        foreach (var num in numbers)
+                        {
+                            list.Add(num.Int32Value);
+                        }
+                    }
+
+                    callback(list);
+                });
+
+                Action<int> debouncedCallbackWrapper = callbackWrapper.Debounce(300);
+
+                triggersProvider.TriggerActionForAllSegmentsWithCallback((segmentCode, active) => { debouncedCallbackWrapper(segmentCode.Int32Value); });
             }
             else
             {
@@ -87,106 +104,81 @@ namespace Permutive.Xamarin
 
         public override IDisposable QuerySegments(Action<List<int>> callback)
         {
-            //Action<NSNumber, bool> action = new Action<NSNumber, bool>();
-            //triggersProvider.TriggerActionForAllSegmentsWithCallback()
-            //MethodListWrapper<int> methodWrapper = new MethodListWrapper<int>(callback);
-            //Com.Permutive.Android.TriggersProvider.TriggerAction action = triggersProvider.QuerySegments(methodWrapper);
-            //return new TriggerActionWrapper(action);
+            Action<int> callbackWrapper = new Action<int>(a => {
+                NSNumber[] number = triggersProvider.QuerySegments;
+                List<int> list = new List<int>(number.Length);
+                foreach (var num in number)
+                {
+                    list.Add(num.Int32Value);
+                }
+
+                callback(list);
+            });
+
+            Action<int> debouncedCallbackWrapper = callbackWrapper.Debounce(300);
+
+            triggersProvider.TriggerActionForAllSegmentsWithCallback((segmentCode, active) => { debouncedCallbackWrapper(segmentCode.Int32Value); });
             return null;
         }
 
         public override IDisposable TriggerAction<T>(int queryId, Action<T> callback)
         {
-            /*
-            MethodWrapper<T> methodWrapper = new MethodWrapper<T>(callback);
-
-
             Type type = typeof(T);
             PermutiveTriggerAction triggerAction;
-
 
             NSNumber queryIdAsNsNumber = NSNumber.FromInt32(queryId);
 
             if (type == typeof(bool))
             {
-                triggerAction = triggersProvider.TriggerActionForBooleanQueryID(queryIdAsNsNumber, (Action<bool>)(object)callback);
+                triggerAction = triggersProvider.TriggerActionForBooleanQueryID(queryIdAsNsNumber, (Action<bool>)(object)callback); //TEST this
             }
             else if (type == typeof(string))
             {
-                new Action<NSString>
-                {
-
-                };
-                triggerAction = triggersProvider.TriggerActionForStringQueryID(NSNumber.FromInt32(queryId), (Action<string>)(object)callback);
-                //triggerAction = triggersProvider.TriggerActionForStringQueryID(NSNumber.FromInt32(queryId), (Action<string>)(object)callback);
-
-            }
-            */
-
-
-            /*
-            T returns;
-
-            if (type == typeof(bool))
-            {
-                Java.Lang.Boolean value = obj.JavaCast<Java.Lang.Boolean>();
-                returns = (T)(object)value.BooleanValue();
-            }
-            else if (type == typeof(string))
-            {
-                Java.Lang.String value = obj.JavaCast<Java.Lang.String>();
-                returns = (T)(object)value.ToString();
+                Action<NSString> actionWrapper = new Action<NSString> (a => callback((T)(object)a.ToString()));
+                triggerAction = triggersProvider.TriggerActionForStringQueryID(queryIdAsNsNumber, actionWrapper);
             }
             else if (type == typeof(int))
             {
-                Java.Lang.Integer value = obj.JavaCast<Java.Lang.Integer>();
-                returns = (T)(object)value.IntValue();
+                triggerAction = triggersProvider.TriggerActionForIntegerQueryID(queryIdAsNsNumber, (Action<nint>)(object)callback); //TEST this
             }
             else if (type == typeof(long))
             {
-                Java.Lang.Long value = obj.JavaCast<Java.Lang.Long>();
-                returns = (T)(object)value.LongValue();
+                triggerAction = triggersProvider.TriggerActionForIntegerQueryID(queryIdAsNsNumber, (Action<nint>)(object)callback); //TEST this
             }
             else if (type == typeof(float))
             {
-                Java.Lang.Float value = obj.JavaCast<Java.Lang.Float>();
-                returns = (T)(object)value.FloatValue();
+                Action<double> actionWrapper = new Action<double>(a => callback((T)(object)Convert.ToSingle(a)));
+                triggerAction = triggersProvider.TriggerActionForDoubleQueryID(queryIdAsNsNumber, (Action<double>)(object)callback); //TEST this
             }
             else if (type == typeof(double))
             {
-                Java.Lang.Double value = obj.JavaCast<Java.Lang.Double>();
-                returns = (T)(object)value.DoubleValue();
+                triggerAction = triggersProvider.TriggerActionForDoubleQueryID(queryIdAsNsNumber, (Action<double>)(object)callback); //TEST this
             }
             else
             {
-                //throw new IllegalArgumentException($"Type parameter must be: bool/string/int/long/float/double but was {type}");
+                throw new ArgumentException($"Type parameter must be: bool/string/int/long/float/double but was {type}");
             }
-*/
 
-
-
-            //Com.Permutive.Android.TriggersProvider.TriggerAction action = triggersProvider.InvokeTriggerAction(queryId, methodWrapper);
-            //return new TriggerActionWrapper(action);
-            return null;
+            return new TriggerActionWrapper(triggerAction);
         }
     }
 
     public class EventPropertiesImpl : EventProperties
     {
-        internal NSDictionary<NSString,NSObject> eventProperties;
+        internal NSDictionary /*<NSString,NSObject>*/ eventProperties;
 
-        internal EventPropertiesImpl(NSDictionary<NSString, NSObject> eventProperties)
+        internal EventPropertiesImpl(NSDictionary/*<NSString, NSObject>*/ eventProperties)
         {
             this.eventProperties = eventProperties;
         }
 
         public class BuilderImpl : EventProperties.Builder
         {
-            private NSDictionary<NSString, NSObject> builder;
+            private NSMutableDictionary<NSString, NSObject> builder;
 
             internal BuilderImpl()
             {
-                this.builder = new NSDictionary<NSString, NSObject>();
+                this.builder = new NSMutableDictionary<NSString, NSObject>();
             }
 
             public override Builder With(string key, bool value)
@@ -281,7 +273,9 @@ namespace Permutive.Xamarin
 
             public override EventProperties Build()
             {
-                return new EventPropertiesImpl(builder);
+                //NSMutableDictionary<NSString, NSObject > copy = (NSMutableDictionary<NSString, NSObject>)(object) builder.Copy();
+                NSDictionary copy = (NSDictionary)(object)builder.Copy();
+                return new EventPropertiesImpl(copy);
             }
 
             static private NSArray convertToArray<T>(IList<T> list)
@@ -366,7 +360,7 @@ namespace Permutive.Xamarin
     }
     */
 
-    class Utils
+    static class Utils
     {
         /*
         internal class ActionConverter<T> : Action<T>
@@ -432,6 +426,21 @@ namespace Permutive.Xamarin
 
         //    return returnList; 
         //}
+
+        //lifted from: https://stackoverflow.com/questions/28472205/c-sharp-event-debounce - note this is simple solution but is not super robust (see comments).
+        internal static Action<T> Debounce<T>(this Action<T> func, int milliseconds = 300)
+        {
+            var last = 0;
+            return arg =>
+            {
+                var current = Interlocked.Increment(ref last);
+                Task.Delay(milliseconds).ContinueWith(task =>
+                {
+                    if (current == last) func(arg);
+                    task.Dispose();
+                });
+            };
+        }
     }
 }
 

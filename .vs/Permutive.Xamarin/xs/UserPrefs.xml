@@ -1,31 +1,37 @@
 ﻿<Properties StartupConfiguration="{DAA2FDAD-587C-4C3A-8733-26069AA4C27C}|Default">
   <MonoDevelop.Ide.ItemProperties.BindingTest PreferredExecutionTarget="Android.Nexus_5_API_21" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Permutive.Xamarin.iOS/PermutiveSDKImpl.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Permutive.Xamarin.iOS.Binding/ApiDefinition.cs">
     <Files>
-      <File FileName="iOS/ViewController.cs" Line="77" Column="1" />
-      <File FileName="BindingTest/BindingTestApplication.cs" Line="41" Column="2" />
-      <File FileName="SharedSample/MyClass.cs" Line="7" Column="9" />
-      <File FileName="Permutive.Xamarin.iOS.Binding/ApiDefinition.cs" Line="39" Column="26" />
-      <File FileName="Permutive.Xamarin.iOS.Binding/Permutive.linkwith.cs" Line="9" Column="1" />
-      <File FileName="iOS/AppDelegate.cs" Line="27" Column="74" />
-      <File FileName="iOS/Main.cs" Line="1" Column="1" />
-      <File FileName="BindingTest/MainActivity.cs" Line="37" Column="15" />
-      <File FileName="Permutive.Xamarin.iOS.Binding/Structs.cs" Line="7" Column="20" />
-      <File FileName="Permutive.Xamarin.Android/PermutiveSDKImpl.cs" Line="339" Column="1" />
-      <File FileName="Permutive.Xamarin.iOS/PermutiveSDKImpl.cs" Line="237" Column="17" />
-      <File FileName="Permutive.Xamarin.Interface/PermutiveSDK.cs" Line="11" Column="25" />
+      <File FileName="BindingTest/MainActivity.cs" Line="56" Column="15" />
+      <File FileName="SharedSample/SharedSample.cs" Line="97" Column="24" />
+      <File FileName="Permutive.Xamarin.Interface/PermutiveSDK.cs" Line="16" Column="16" />
+      <File FileName="iOS/ViewController.cs" Line="36" Column="1" />
+      <File FileName="BindingTest/BindingTestApplication.cs" Line="38" Column="14" />
+      <File FileName="Permutive.Xamarin.iOS/PermutiveSDKImpl.cs" Line="307" Column="40" />
+      <File FileName="Permutive.Xamarin.iOS.Binding/obj/Debug/ios/PermutiveXamariniOSBinding/PermutiveSdk.g.cs" Line="115" Column="3" />
+      <File FileName="iOS/LaunchScreen.storyboard" />
+      <File FileName="iOS/Main.storyboard" />
+      <File FileName="iOS/ViewController.designer.cs" Line="1" Column="1" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="Permutive.Xamarin.iOS.Binding/ApiDefinition.cs" Line="35" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Permutive.Xamarin" expanded="True">
-            <Node name="Permutive.Xamarin.Android" expanded="True" />
+            <Node name="BindingTest" expanded="True" />
             <Node name="Permutive.Xamarin.Interface" expanded="True" />
-            <Node name="Permutive.Xamarin.iOS" expanded="True">
-              <Node name="References" expanded="True" />
-              <Node name="PermutiveSDKImpl.cs" selected="True" />
+            <Node name="Permutive.Xamarin.iOS" expanded="True" />
+            <Node name="Permutive.Xamarin.iOS.Binding" expanded="True">
+              <Node name="ApiDefinition.cs" selected="True" />
             </Node>
-            <Node name="Permutive.Xamarin.iOS.Binding" expanded="True" />
+            <Node name="SharedSample" expanded="True">
+              <Node name="References" expanded="True" />
+            </Node>
+            <Node name="SharedSample.iOS" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="ViewController.cs" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -35,7 +41,10 @@
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
+        <State>
+          <Value>builder</Value>
+          <Value>(NSDictionary&lt;NSString, NSObject&gt;) builder.Copy()</Value>
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
@@ -52,5 +61,4 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.SharedSample FirstBuild="True" />
 </Properties>

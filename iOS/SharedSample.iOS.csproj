@@ -115,7 +115,18 @@
       <Project>{C3FEAE7C-447E-4EAF-B05C-6F64BA6095C1}</Project>
       <Name>Permutive.Xamarin.iOS.Binding</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SharedSample\SharedSample.csproj">
+      <Project>{E88803BA-B081-4E75-B64F-AEDD789D0E02}</Project>
+      <Name>SharedSample</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Permutive.Xamarin.iOS\Permutive.Xamarin.iOS.csproj">
+      <Project>{85ED9D69-68F9-4095-9102-F2961D1E9791}</Project>
+      <Name>Permutive.Xamarin.iOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Permutive.Xamarin.Interface\Permutive.Xamarin.Interface.csproj">
+      <Project>{096455FA-AD61-4A3B-9133-C12B1F3B3800}</Project>
+      <Name>Permutive.Xamarin.Interface</Name>
+    </ProjectReference>
   </ItemGroup>
-  <Import Project="..\SharedSample\SharedSample.projitems" Label="Shared" Condition="Exists('..\SharedSample\SharedSample.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
