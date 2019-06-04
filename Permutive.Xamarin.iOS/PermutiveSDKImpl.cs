@@ -17,10 +17,7 @@ namespace Permutive.Xamarin
 
         public override EventTracker EventTracker()
         {
-            IPermutiveProviderInterface i = PermutiveIosSdk.GetPermutive();
-            IPermutiveEventActionInterface b = i.EventTracker;
-            //return new EventTrackerImpl(PermutiveIosSdk.GetPermutive().EventTracker);
-            return new EventTrackerImpl(i.EventTracker);
+            return new EventTrackerImpl(PermutiveIosSdk.GetPermutive().EventTracker);
         }
 
         public override PermutiveSdk Initialize(PermutiveOptions options)
@@ -55,9 +52,6 @@ namespace Permutive.Xamarin
 
         public override TriggersProvider TriggersProvider()
         {
-            IPermutiveProviderInterface i = PermutiveIosSdk.GetPermutive();
-            IPermutiveTriggersProvider b = i.TriggersProvider;
-
             return new TriggersProviderImpl(PermutiveIosSdk.GetPermutive().TriggersProvider);
         }
 
@@ -285,7 +279,7 @@ namespace Permutive.Xamarin
                     index++;
                 }
 
-                NSDictionary < NSString, NSObject> dictionary = NSDictionary<NSString, NSObject>.FromObjectsAndKeys(keys,values);
+                NSDictionary < NSString, NSObject> dictionary = NSDictionary<NSString, NSObject>.FromObjectsAndKeys(values,keys);
                 return new EventPropertiesImpl(dictionary);
             }
 

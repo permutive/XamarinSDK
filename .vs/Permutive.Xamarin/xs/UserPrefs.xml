@@ -1,23 +1,24 @@
 ﻿<Properties StartupConfiguration="{DAA2FDAD-587C-4C3A-8733-26069AA4C27C}|Default">
   <MonoDevelop.Ide.ItemProperties.BindingTest PreferredExecutionTarget="Android.Nexus_5_API_21" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Permutive.Xamarin.iOS.Binding/ApiDefinition.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Permutive.Xamarin.iOS.Binding/obj/Debug/ios/PermutiveXamariniOSBinding/PermutiveEventActionInterface.g.cs">
     <Files>
       <File FileName="BindingTest/MainActivity.cs" Line="56" Column="15" />
-      <File FileName="SharedSample/SharedSample.cs" Line="53" Column="1" />
-      <File FileName="Permutive.Xamarin.Interface/PermutiveSDK.cs" Line="70" Column="5" />
+      <File FileName="SharedSample/SharedSample.cs" Line="95" Column="49" />
+      <File FileName="Permutive.Xamarin.Interface/PermutiveSDK.cs" Line="1" Column="1" />
       <File FileName="iOS/ViewController.cs" Line="46" Column="1" />
       <File FileName="BindingTest/BindingTestApplication.cs" Line="38" Column="14" />
-      <File FileName="Permutive.Xamarin.iOS/PermutiveSDKImpl.cs" Line="21" Column="55" />
+      <File FileName="Permutive.Xamarin.iOS/PermutiveSDKImpl.cs" Line="20" Column="1" />
       <File FileName="iOS/LaunchScreen.storyboard" />
       <File FileName="iOS/Main.storyboard" />
       <File FileName="iOS/ViewController.designer.cs" Line="1" Column="1" />
       <File FileName="iOS/Main.cs" Line="17" Column="1" />
-      <File FileName="Permutive.Xamarin.iOS.Binding/ApiDefinition.cs" Line="65" Column="21" />
+      <File FileName="Permutive.Xamarin.iOS.Binding/ApiDefinition.cs" Line="25" Column="11" />
       <File FileName="Permutive.Xamarin.iOS.Binding/Structs.cs" Line="7" Column="20" />
       <File FileName="../../../../../Library/Frameworks/Mono.framework/Versions/5.16.0/lib/mono/msbuild/15.0/bin/Microsoft.Common.CurrentVersion.targets" Line="1899" Column="5" />
       <File FileName="Permutive.Xamarin.iOS.Binding/obj/Debug/ios/PermutiveXamariniOSBinding/PermutiveIosSdk.g.cs" Line="1" Column="1" />
-      <File FileName="Permutive.Xamarin.iOS.Binding/obj/Debug/ios/PermutiveXamariniOSBinding/PermutiveProviderInterface.g.cs" Line="76" Column="1" />
+      <File FileName="Permutive.Xamarin.iOS.Binding/obj/Debug/ios/PermutiveXamariniOSBinding/PermutiveProviderInterface.g.cs" Line="1" Column="1" />
       <File FileName="Permutive.Xamarin.iOS.Binding/obj/Debug/ios/PermutiveXamariniOSBinding/PermutiveTriggersProvider.g.cs" Line="1" Column="1" />
+      <File FileName="Permutive.Xamarin.iOS.Binding/obj/Debug/ios/PermutiveXamariniOSBinding/PermutiveEventActionInterface.g.cs" Line="66" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -26,12 +27,11 @@
             <Node name="BindingTest" expanded="True" />
             <Node name="Permutive.Xamarin.Interface" expanded="True" />
             <Node name="Permutive.Xamarin.iOS" expanded="True" />
-            <Node name="Permutive.Xamarin.iOS.Binding" expanded="True">
-              <Node name="ApiDefinition.cs" selected="True" />
-            </Node>
+            <Node name="Permutive.Xamarin.iOS.Binding" expanded="True" />
             <Node name="SharedSample" expanded="True" />
             <Node name="SharedSample.iOS" expanded="True">
               <Node name="References" expanded="True" />
+              <Node name="Main.cs" selected="True" />
               <Node name="ViewController.cs" expanded="True" />
             </Node>
           </Node>
@@ -59,13 +59,7 @@
   </MonoDevelop.Ide.ItemProperties.SharedSample.iOS>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/tomhall/workspace/xamarin/Permutive/Permutive.Xamarin.iOS/PermutiveSDKImpl.cs" relfile="Permutive.Xamarin.iOS/PermutiveSDKImpl.cs" line="20" column="1" />
-      <Breakpoint file="/Users/tomhall/workspace/xamarin/Permutive/Permutive.Xamarin.iOS/PermutiveSDKImpl.cs" relfile="Permutive.Xamarin.iOS/PermutiveSDKImpl.cs" line="58" column="47" />
-      <Breakpoint file="/Users/tomhall/workspace/xamarin/Permutive/SharedSample/SharedSample.cs" relfile="SharedSample/SharedSample.cs" line="39" column="1" />
-      <Breakpoint file="/Users/tomhall/workspace/xamarin/Permutive/SharedSample/SharedSample.cs" relfile="SharedSample/SharedSample.cs" line="43" column="1" />
-      <Breakpoint file="/Users/tomhall/workspace/xamarin/Permutive/SharedSample/SharedSample.cs" relfile="SharedSample/SharedSample.cs" line="53" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
