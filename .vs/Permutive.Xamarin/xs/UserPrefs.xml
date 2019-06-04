@@ -1,16 +1,38 @@
-﻿<Properties StartupConfiguration="{69853924-B7B8-4F3F-8706-0BC0799B84AE}|Default">
-  <MonoDevelop.Ide.ItemProperties.BindingTest PreferredExecutionTarget="Android.Nexus_5X_API_28_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BindingTest/BindingTestApplication.cs">
+﻿<Properties StartupConfiguration="{DAA2FDAD-587C-4C3A-8733-26069AA4C27C}|Default">
+  <MonoDevelop.Ide.ItemProperties.BindingTest PreferredExecutionTarget="Android.Nexus_5_API_21" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Permutive.Xamarin.iOS.Binding/obj/Debug/ios/PermutiveXamariniOSBinding/PermutiveEventActionInterface.g.cs">
     <Files>
-      <File FileName="BindingTest/MainActivity.cs" Line="1" Column="1" />
-      <File FileName="BindingTest/BindingTestApplication.cs" Line="1" Column="1" />
+      <File FileName="BindingTest/MainActivity.cs" Line="56" Column="15" />
+      <File FileName="SharedSample/SharedSample.cs" Line="95" Column="49" />
+      <File FileName="Permutive.Xamarin.Interface/PermutiveSDK.cs" Line="1" Column="1" />
+      <File FileName="iOS/ViewController.cs" Line="46" Column="1" />
+      <File FileName="BindingTest/BindingTestApplication.cs" Line="38" Column="14" />
+      <File FileName="Permutive.Xamarin.iOS/PermutiveSDKImpl.cs" Line="20" Column="1" />
+      <File FileName="iOS/LaunchScreen.storyboard" />
+      <File FileName="iOS/Main.storyboard" />
+      <File FileName="iOS/ViewController.designer.cs" Line="1" Column="1" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="Permutive.Xamarin.iOS.Binding/ApiDefinition.cs" Line="25" Column="11" />
+      <File FileName="Permutive.Xamarin.iOS.Binding/Structs.cs" Line="7" Column="20" />
+      <File FileName="../../../../../Library/Frameworks/Mono.framework/Versions/5.16.0/lib/mono/msbuild/15.0/bin/Microsoft.Common.CurrentVersion.targets" Line="1899" Column="5" />
+      <File FileName="Permutive.Xamarin.iOS.Binding/obj/Debug/ios/PermutiveXamariniOSBinding/PermutiveIosSdk.g.cs" Line="1" Column="1" />
+      <File FileName="Permutive.Xamarin.iOS.Binding/obj/Debug/ios/PermutiveXamariniOSBinding/PermutiveProviderInterface.g.cs" Line="1" Column="1" />
+      <File FileName="Permutive.Xamarin.iOS.Binding/obj/Debug/ios/PermutiveXamariniOSBinding/PermutiveTriggersProvider.g.cs" Line="1" Column="1" />
+      <File FileName="Permutive.Xamarin.iOS.Binding/obj/Debug/ios/PermutiveXamariniOSBinding/PermutiveEventActionInterface.g.cs" Line="66" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Permutive.Xamarin" expanded="True">
-            <Node name="Permutive.Xamarin.Android.GoogleAds" expanded="True" selected="True">
-              <Node name="Packages" expanded="True" />
+            <Node name="BindingTest" expanded="True" />
+            <Node name="Permutive.Xamarin.Interface" expanded="True" />
+            <Node name="Permutive.Xamarin.iOS" expanded="True" />
+            <Node name="Permutive.Xamarin.iOS.Binding" expanded="True" />
+            <Node name="SharedSample" expanded="True" />
+            <Node name="SharedSample.iOS" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="Main.cs" selected="True" />
+              <Node name="ViewController.cs" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -21,12 +43,21 @@
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
+        <State>
+          <Value>eventProperties</Value>
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.XamarinTest.iOS FirstBuild="True">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.XamarinTest.iOS>
+  <MonoDevelop.Ide.ItemProperties.XamarinTest FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.ItemProperties.SharedSample.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7FB21D88-4CB7-42BA-AB11-68982C58368C">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.SharedSample.iOS>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
