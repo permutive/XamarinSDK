@@ -17,7 +17,10 @@ namespace Permutive.Xamarin
 
         public override EventTracker EventTracker()
         {
-            return new EventTrackerImpl(PermutiveIosSdk.GetPermutive().EventTracker);
+            IPermutiveProviderInterface i = PermutiveIosSdk.GetPermutive();
+            IPermutiveEventActionInterface b = i.EventTracker;
+            //return new EventTrackerImpl(PermutiveIosSdk.GetPermutive().EventTracker);
+            return new EventTrackerImpl(i.EventTracker);
         }
 
         public override PermutiveSdk Initialize(PermutiveOptions options)
@@ -52,6 +55,9 @@ namespace Permutive.Xamarin
 
         public override TriggersProvider TriggersProvider()
         {
+            IPermutiveProviderInterface i = PermutiveIosSdk.GetPermutive();
+            IPermutiveTriggersProvider b = i.TriggersProvider;
+
             return new TriggersProviderImpl(PermutiveIosSdk.GetPermutive().TriggersProvider);
         }
 
@@ -63,9 +69,9 @@ namespace Permutive.Xamarin
 
     internal class TriggersProviderImpl : TriggersProvider
     {
-        private Permutive.Xamarin.iOS.Binding.PermutiveTriggersProvider triggersProvider;
+        private Permutive.Xamarin.iOS.Binding.IPermutiveTriggersProvider triggersProvider;
 
-        internal TriggersProviderImpl(Permutive.Xamarin.iOS.Binding.PermutiveTriggersProvider triggersProvider)
+        internal TriggersProviderImpl(Permutive.Xamarin.iOS.Binding.IPermutiveTriggersProvider triggersProvider)
         {
             this.triggersProvider = triggersProvider;
         }
@@ -124,7 +130,7 @@ namespace Permutive.Xamarin
         public override IDisposable TriggerAction<T>(int queryId, Action<T> callback)
         {
             Type type = typeof(T);
-            PermutiveTriggerAction triggerAction;
+            IPermutiveTriggerAction triggerAction;
 
             NSNumber queryIdAsNsNumber = NSNumber.FromInt32(queryId);
 
@@ -298,9 +304,9 @@ namespace Permutive.Xamarin
 
     internal class EventTrackerImpl : EventTracker
     {
-        private PermutiveEventActionInterface eventTracker;
+        private IPermutiveEventActionInterface eventTracker;
 
-        internal EventTrackerImpl(PermutiveEventActionInterface eventTracker)
+        internal EventTrackerImpl(IPermutiveEventActionInterface eventTracker)
         {
             this.eventTracker = eventTracker;
         }
@@ -320,9 +326,9 @@ namespace Permutive.Xamarin
 
     internal class TriggerActionWrapper : IDisposable
     {
-        private PermutiveTriggerAction triggerAction;
+        private IPermutiveTriggerAction triggerAction;
 
-        internal TriggerActionWrapper(PermutiveTriggerAction triggerAction)
+        internal TriggerActionWrapper(IPermutiveTriggerAction triggerAction)
         {
             this.triggerAction = triggerAction;
         }

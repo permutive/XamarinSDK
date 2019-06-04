@@ -36,7 +36,6 @@ namespace SharedSample
             permutive.SetUrl(new Uri("http://permutive.com/tutorials"));
             permutive.SetReferrer(new Uri("http://permutive.com/tutorials?referrer=johnDoe"));
 
-            /*
             TriggersProvider triggersProvider = permutive.TriggersProvider();
 
             var querySegmentsDisposable = triggersProvider.QuerySegments(result =>
@@ -60,7 +59,6 @@ namespace SharedSample
 
 
             var triggerDisposable = triggersProvider.TriggerAction<bool>(1068, result => logger.Log( $"Is user in segment 1068? {result}"));
-            */
         }
 
         public void SetIdentity()
