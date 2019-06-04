@@ -1,19 +1,21 @@
 ﻿<Properties StartupConfiguration="{DAA2FDAD-587C-4C3A-8733-26069AA4C27C}|Default">
   <MonoDevelop.Ide.ItemProperties.BindingTest PreferredExecutionTarget="Android.Nexus_5_API_21" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Permutive.Xamarin.iOS.Binding/ApiDefinition.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Permutive.Xamarin.iOS.Binding/obj/Debug/ios/PermutiveXamariniOSBinding/PermutiveIosSdk.g.cs">
     <Files>
       <File FileName="BindingTest/MainActivity.cs" Line="56" Column="15" />
-      <File FileName="SharedSample/SharedSample.cs" Line="97" Column="24" />
-      <File FileName="Permutive.Xamarin.Interface/PermutiveSDK.cs" Line="16" Column="16" />
+      <File FileName="SharedSample/SharedSample.cs" Line="16" Column="1" />
+      <File FileName="Permutive.Xamarin.Interface/PermutiveSDK.cs" Line="70" Column="5" />
       <File FileName="iOS/ViewController.cs" Line="36" Column="1" />
       <File FileName="BindingTest/BindingTestApplication.cs" Line="38" Column="14" />
-      <File FileName="Permutive.Xamarin.iOS/PermutiveSDKImpl.cs" Line="307" Column="40" />
-      <File FileName="Permutive.Xamarin.iOS.Binding/obj/Debug/ios/PermutiveXamariniOSBinding/PermutiveSdk.g.cs" Line="115" Column="3" />
+      <File FileName="Permutive.Xamarin.iOS/PermutiveSDKImpl.cs" Line="272" Column="1" />
       <File FileName="iOS/LaunchScreen.storyboard" />
       <File FileName="iOS/Main.storyboard" />
       <File FileName="iOS/ViewController.designer.cs" Line="1" Column="1" />
       <File FileName="iOS/Main.cs" Line="17" Column="1" />
-      <File FileName="Permutive.Xamarin.iOS.Binding/ApiDefinition.cs" Line="35" Column="14" />
+      <File FileName="Permutive.Xamarin.iOS.Binding/ApiDefinition.cs" Line="232" Column="25" />
+      <File FileName="Permutive.Xamarin.iOS.Binding/Structs.cs" Line="7" Column="20" />
+      <File FileName="../../../../../Library/Frameworks/Mono.framework/Versions/5.16.0/lib/mono/msbuild/15.0/bin/Microsoft.Common.CurrentVersion.targets" Line="1899" Column="5" />
+      <File FileName="Permutive.Xamarin.iOS.Binding/obj/Debug/ios/PermutiveXamariniOSBinding/PermutiveIosSdk.g.cs" Line="104" Column="3" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,13 +23,11 @@
           <Node name="Permutive.Xamarin" expanded="True">
             <Node name="BindingTest" expanded="True" />
             <Node name="Permutive.Xamarin.Interface" expanded="True" />
-            <Node name="Permutive.Xamarin.iOS" expanded="True" />
-            <Node name="Permutive.Xamarin.iOS.Binding" expanded="True">
-              <Node name="ApiDefinition.cs" selected="True" />
+            <Node name="Permutive.Xamarin.iOS" expanded="True">
+              <Node name="PermutiveSDKImpl.cs" selected="True" />
             </Node>
-            <Node name="SharedSample" expanded="True">
-              <Node name="References" expanded="True" />
-            </Node>
+            <Node name="Permutive.Xamarin.iOS.Binding" expanded="True" />
+            <Node name="SharedSample" expanded="True" />
             <Node name="SharedSample.iOS" expanded="True">
               <Node name="References" expanded="True" />
               <Node name="ViewController.cs" expanded="True" />
@@ -42,8 +42,7 @@
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State>
-          <Value>builder</Value>
-          <Value>(NSDictionary&lt;NSString, NSObject&gt;) builder.Copy()</Value>
+          <Value>eventProperties</Value>
         </State>
       </Pad>
     </Pads>

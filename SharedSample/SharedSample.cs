@@ -12,9 +12,9 @@ namespace SharedSample
     public class PermutiveSdkTester
     {
         private Logger logger;
-        private Permutive.Xamarin.Permutive permutive;
+        private PermutiveSdk permutive;
 
-        public PermutiveSdkTester(Permutive.Xamarin.Permutive permutive, Logger logger)
+        public PermutiveSdkTester(PermutiveSdk permutive, Logger logger)
         {
             this.permutive = permutive;
             this.logger = logger;

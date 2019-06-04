@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Permutive.Xamarin
 {
-    public class PermutiveImpl : Permutive
+    public class PermutiveImpl : PermutiveSdk
     {
 
         public override void Dispose()
@@ -17,42 +17,42 @@ namespace Permutive.Xamarin
 
         public override EventTracker EventTracker()
         {
-            return new EventTrackerImpl(PermutiveSdk.Permutive().EventTracker);
+            return new EventTrackerImpl(PermutiveIosSdk.GetPermutive().EventTracker);
         }
 
-        public override Permutive Initialize(PermutiveOptions options)
+        public override PermutiveSdk Initialize(PermutiveOptions options)
         {
             iOS.Binding.PermutiveOptions permutiveOptions = iOS.Binding.PermutiveOptions.OptionsWithProjectId(new NSUuid(options.ProjectId), new NSUuid(options.ApiKey));
             permutiveOptions.UserIdentity = options.identity;
 
-            PermutiveSdk.ConfigureWithOptions(permutiveOptions);
+            PermutiveIosSdk.ConfigureWithOptions(permutiveOptions);
 
             return this;
         }
 
         public override void SetIdentity(string identity)
         {
-            PermutiveSdk.SetIdentity(identity);
+            PermutiveIosSdk.SetIdentity(identity);
         }
 
         public override void SetReferrer(Uri referrer)
         {
-            PermutiveSdk.Context.SetReferrer(NSUrl.FromString(referrer.ToString()));
+            PermutiveIosSdk.Context.SetReferrer(NSUrl.FromString(referrer.ToString()));
         }
 
         public override void SetTitle(string title)
         {
-            PermutiveSdk.Context.SetTitle(title);
+            PermutiveIosSdk.Context.SetTitle(title);
         }
 
         public override void SetUrl(Uri url)
         {
-            PermutiveSdk.Context.SetUrl(NSUrl.FromString(url.ToString()));
+            PermutiveIosSdk.Context.SetUrl(NSUrl.FromString(url.ToString()));
         }
 
         public override TriggersProvider TriggersProvider()
         {
-            return new TriggersProviderImpl(PermutiveSdk.Permutive().TriggersProvider);
+            return new TriggersProviderImpl(PermutiveIosSdk.GetPermutive().TriggersProvider);
         }
 
         public override EventProperties.Builder CreateEventPropertiesBuilder()
