@@ -17,7 +17,7 @@ namespace Permutive.Xamarin
 
         public override EventTracker EventTracker()
         {
-            return new EventTrackerImpl(PermutiveSdk.GetPermutive().EventTracker);
+            return new EventTrackerImpl(PermutiveSdk.Permutive().EventTracker);
         }
 
         public override Permutive Initialize(PermutiveOptions options)
@@ -52,7 +52,7 @@ namespace Permutive.Xamarin
 
         public override TriggersProvider TriggersProvider()
         {
-            return new TriggersProviderImpl(PermutiveSdk.GetPermutive().TriggersProvider);
+            return new TriggersProviderImpl(PermutiveSdk.Permutive().TriggersProvider);
         }
 
         public override EventProperties.Builder CreateEventPropertiesBuilder()
@@ -63,9 +63,9 @@ namespace Permutive.Xamarin
 
     internal class TriggersProviderImpl : TriggersProvider
     {
-        private iOS.Binding.PermutiveTriggersProvider triggersProvider;
+        private Permutive.Xamarin.iOS.Binding.PermutiveTriggersProvider triggersProvider;
 
-        internal TriggersProviderImpl(iOS.Binding.PermutiveTriggersProvider triggersProvider)
+        internal TriggersProviderImpl(Permutive.Xamarin.iOS.Binding.PermutiveTriggersProvider triggersProvider)
         {
             this.triggersProvider = triggersProvider;
         }
@@ -165,97 +165,92 @@ namespace Permutive.Xamarin
 
     public class EventPropertiesImpl : EventProperties
     {
-        internal NSDictionary /*<NSString,NSObject>*/ eventProperties;
+        internal NSDictionary<NSString,NSObject> eventProperties;
 
-        internal EventPropertiesImpl(NSDictionary/*<NSString, NSObject>*/ eventProperties)
+        internal EventPropertiesImpl(NSDictionary<NSString, NSObject> eventProperties)
         {
             this.eventProperties = eventProperties;
         }
 
         public class BuilderImpl : EventProperties.Builder
         {
-            private NSMutableDictionary<NSString, NSObject> builder;
-
-            internal BuilderImpl()
-            {
-                this.builder = new NSMutableDictionary<NSString, NSObject>();
-            }
+            private Dictionary<string, NSObject> builder = new Dictionary<string, NSObject>();
 
             public override Builder With(string key, bool value)
             {
-                builder[key] = NSObject.FromObject(value);
+                builder.Add(key, NSObject.FromObject(value));
                 return this;
             }
 
             public override Builder With(string key, string value)
             {
-                builder[key] = NSObject.FromObject(value);
+                builder.Add(key, NSObject.FromObject(value));
                 return this;
             }
 
             public override Builder With(string key, int value)
             {
-                builder[key] = NSObject.FromObject(value);
+                builder.Add(key, NSObject.FromObject(value));
                 return this;
             }
 
             public override Builder With(string key, long value)
             {
-                builder[key] = NSObject.FromObject(value);
+                builder.Add(key, NSObject.FromObject(value));
                 return this;
             }
 
             public override Builder With(string key, float value)
             {
-                builder[key] = NSObject.FromObject(value);
+                builder.Add(key, NSObject.FromObject(value));
                 return this;
             }
 
             public override Builder With(string key, double value)
             {
-                builder[key] = NSObject.FromObject(value);
+                builder.Add(key, NSObject.FromObject(value));
                 return this;
             }
 
             public override Builder With(string key, EventProperties value)
             {
-                builder[key] = ((EventPropertiesImpl)value).eventProperties;
+                builder.Add(key, ((EventPropertiesImpl)value).eventProperties);
                 return this;
             }
 
             public override Builder With(string key, IList<bool> value)
             {
-                builder[key] = convertToArray(value);
+                builder.Add(key, convertToArray(value));
                 return this;
             }
 
             public override Builder With(string key, IList<string> value)
             {
-                builder[key] = convertToArray(value);
+                builder.Add(key, convertToArray(value));
                 return this;
             }
 
             public override Builder With(string key, IList<int> value)
             {
-                builder[key] = convertToArray(value);
+                builder.Add(key, convertToArray(value));
                 return this;
             }
 
             public override Builder With(string key, IList<long> value)
             {
-                builder[key] = convertToArray(value);
+                builder.Add(key, convertToArray(value));
                 return this;
             }
 
             public override Builder With(string key, IList<float> value)
             {
-                builder[key] = convertToArray(value);
+                builder.Add(key, convertToArray(value));
                 return this;
             }
 
             public override Builder With(string key, IList<double> value)
             {
-                builder[key] = convertToArray(value);
+                builder.Add(key, convertToArray(value));
                 return this;
             }
 
@@ -267,15 +262,25 @@ namespace Permutive.Xamarin
                     mutableArray.Add(((EventPropertiesImpl)item).eventProperties);
                 }
 
-                builder[key] = mutableArray;
+                builder.Add(key, mutableArray);
                 return this;
             }
 
             public override EventProperties Build()
             {
-                //NSMutableDictionary<NSString, NSObject > copy = (NSMutableDictionary<NSString, NSObject>)(object) builder.Copy();
-                NSDictionary copy = (NSDictionary)(object)builder.Copy();
-                return new EventPropertiesImpl(copy);
+                NSString[] keys = new NSString[builder.Count]; 
+                NSObject[] values = new NSObject[builder.Count];
+
+                var index = 0;
+                foreach (KeyValuePair<string, NSObject> entry in builder)
+                {
+                    keys.SetValue(new NSString(entry.Key), index);
+                    values.SetValue(entry.Value, index);
+                    index++;
+                }
+
+                NSDictionary < NSString, NSObject> dictionary = NSDictionary<NSString, NSObject>.FromObjectsAndKeys(keys,values);
+                return new EventPropertiesImpl(dictionary);
             }
 
             static private NSArray convertToArray<T>(IList<T> list)
