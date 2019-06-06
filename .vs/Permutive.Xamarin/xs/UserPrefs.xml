@@ -1,37 +1,10 @@
 ﻿<Properties StartupConfiguration="{DAA2FDAD-587C-4C3A-8733-26069AA4C27C}|Default">
   <MonoDevelop.Ide.ItemProperties.BindingTest PreferredExecutionTarget="Android.Nexus_5_API_21" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/Properties/AndroidManifest.xml">
-    <Files>
-      <File FileName="BindingTest/MainActivity.cs" Line="61" Column="48" />
-      <File FileName="SharedSample/SharedSample.cs" Line="12" Column="18" />
-      <File FileName="Permutive.Xamarin.Interface/PermutiveSDK.cs" Line="1" Column="1" />
-      <File FileName="iOS/ViewController.cs" Line="1" Column="1" />
-      <File FileName="BindingTest/BindingTestApplication.cs" Line="1" Column="1" />
-      <File FileName="Permutive.Xamarin.iOS/PermutiveSDKImpl.cs" Line="1" Column="1" />
-      <File FileName="iOS/ViewController.designer.cs" Line="1" Column="1" />
-      <File FileName="iOS/Main.cs" Line="17" Column="1" />
-      <File FileName="Permutive.Xamarin.iOS.Binding/ApiDefinition.cs" Line="25" Column="11" />
-      <File FileName="Permutive.Xamarin.iOS.Binding/Structs.cs" Line="7" Column="20" />
-      <File FileName="../../../../../Library/Frameworks/Mono.framework/Versions/5.16.0/lib/mono/msbuild/15.0/bin/Microsoft.Common.CurrentVersion.targets" Line="1899" Column="5" />
-      <File FileName="iOS/LaunchScreen.storyboard" />
-      <File FileName="iOS/Main.storyboard" />
-      <File FileName="Droid/MainActivity.cs" Line="28" Column="38" />
-      <File FileName="Permutive.Xamarin.Android/PermutiveSDKImpl.cs" Line="109" Column="36" />
-      <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1689" Column="2" />
-      <File FileName="Droid/Properties/AndroidManifest.xml" Line="5" Column="10" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Permutive.Xamarin" expanded="True">
-            <Node name="Permutive.Xamarin.Android" expanded="True" />
-            <Node name="SharedSample.Droid" expanded="True">
-              <Node name="Packages" expanded="True" />
-              <Node name="Properties" expanded="True">
-                <Node name="AndroidManifest.xml" selected="True" />
-              </Node>
-            </Node>
-          </Node>
+          <Node name="Permutive.Xamarin" expanded="True" />
         </State>
       </Pad>
       <Pad Id="ClassPad">
