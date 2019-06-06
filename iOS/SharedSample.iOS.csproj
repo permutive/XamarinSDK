@@ -86,6 +86,15 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
+    <Reference Include="Permutive.Xamarin.Interface">
+      <HintPath>..\packages\Permutive.Xamarin.Interface.0.2.0\lib\portable45-net45+win8+wpa81\Permutive.Xamarin.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Permutive.Xamarin.iOS.Binding">
+      <HintPath>..\packages\Permutive.Xamarin.iOS.Binding.0.18.7\lib\xamarinios10\Permutive.Xamarin.iOS.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="Permutive.Xamarin.iOS">
+      <HintPath>..\packages\Permutive.Xamarin.iOS.0.18.7\lib\xamarinios10\Permutive.Xamarin.iOS.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
@@ -101,6 +110,7 @@
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -111,21 +121,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Permutive.Xamarin.iOS.Binding\Permutive.Xamarin.iOS.Binding.csproj">
-      <Project>{C3FEAE7C-447E-4EAF-B05C-6F64BA6095C1}</Project>
-      <Name>Permutive.Xamarin.iOS.Binding</Name>
-    </ProjectReference>
     <ProjectReference Include="..\SharedSample\SharedSample.csproj">
       <Project>{E88803BA-B081-4E75-B64F-AEDD789D0E02}</Project>
       <Name>SharedSample</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Permutive.Xamarin.iOS\Permutive.Xamarin.iOS.csproj">
-      <Project>{85ED9D69-68F9-4095-9102-F2961D1E9791}</Project>
-      <Name>Permutive.Xamarin.iOS</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Permutive.Xamarin.Interface\Permutive.Xamarin.Interface.csproj">
-      <Project>{096455FA-AD61-4A3B-9133-C12B1F3B3800}</Project>
-      <Name>Permutive.Xamarin.Interface</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

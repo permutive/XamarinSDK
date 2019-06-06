@@ -28,7 +28,7 @@ namespace Permutive.Xamarin.iOS.Binding
 
     // @protocol PermutiveEventActionInterface
     [Protocol, Model]
-    [BaseType(typeof(NSObject))] //me!
+    [BaseType(typeof(NSObject))]
     interface PermutiveEventActionInterface
     {
         // @required -(void)track:(NSString * _Nonnull)eventName properties:(NSDictionary<NSString *,id> * _Nonnull)properties;

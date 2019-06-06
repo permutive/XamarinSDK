@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\NuGet.Build.Packaging.0.2.0\build\NuGet.Build.Packaging.props" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.0\build\NuGet.Build.Packaging.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -9,6 +10,13 @@
     <RootNamespace>Permutive.Xamarin.iOS</RootNamespace>
     <AssemblyName>Permutive.Xamarin.iOS</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <PackageId>Permutive.Xamarin.iOS</PackageId>
+    <PackageVersion>0.18.7</PackageVersion>
+    <Authors>Tom Hall</Authors>
+    <PackageReleaseNotes>Permutive SDK for iOS - v0.18.7</PackageReleaseNotes>
+    <Summary>Xamarin iOS Library - Permutive SDK for iOS</Summary>
+    <Title>Xamarin iOS Library - Permutive SDK for iOS</Title>
+    <Description>Xamarin iOS Library - Permutive SDK for iOS</Description>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -46,6 +54,12 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
+    <Reference Include="Permutive.Xamarin.Interface">
+      <HintPath>..\packages\Permutive.Xamarin.Interface.0.2.0\lib\portable45-net45+win8+wpa81\Permutive.Xamarin.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Permutive.Xamarin.iOS.Binding">
+      <HintPath>..\packages\Permutive.Xamarin.iOS.Binding.0.18.7\lib\xamarinios10\Permutive.Xamarin.iOS.Binding.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -55,14 +69,8 @@
     <Compile Include="PermutiveSDKImpl.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Permutive.Xamarin.iOS.Binding\Permutive.Xamarin.iOS.Binding.csproj">
-      <Project>{C3FEAE7C-447E-4EAF-B05C-6F64BA6095C1}</Project>
-      <Name>Permutive.Xamarin.iOS.Binding</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Permutive.Xamarin.Interface\Permutive.Xamarin.Interface.csproj">
-      <Project>{096455FA-AD61-4A3B-9133-C12B1F3B3800}</Project>
-      <Name>Permutive.Xamarin.Interface</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\packages\NuGet.Build.Packaging.0.2.0\build\NuGet.Build.Packaging.targets" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.0\build\NuGet.Build.Packaging.targets')" />
 </Project>
