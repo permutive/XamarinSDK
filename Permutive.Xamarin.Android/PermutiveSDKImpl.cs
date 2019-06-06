@@ -7,12 +7,12 @@ using Java.Lang;
 
 namespace Permutive.Xamarin
 {
-    public class PermutiveImpl : Permutive
+    public class PermutiveAndroid : PermutiveSdk
     {
         private Context context;
         private Com.Permutive.Android.Permutive permutive;
 
-        public PermutiveImpl(Context context)
+        public PermutiveAndroid(Context context)
         {
             this.context = context;
         }
@@ -33,18 +33,21 @@ namespace Permutive.Xamarin
             return new EventTrackerImpl(permutive.EventTracker());
         }
 
-        public override Permutive Initialize(PermutiveOptions options)
+        public override PermutiveSdk Initialize(PermutiveOptions options)
         {
             Com.Permutive.Android.Permutive.Builder builder = new Com.Permutive.Android.Permutive.Builder()
                 .Context(context)
                 .ProjectId(Java.Util.UUID.FromString(options.ProjectId))
                 .ApiKey(Java.Util.UUID.FromString(options.ApiKey));
 
-            foreach(var provider in options.AliasProviders)
+            if (options.AliasProviders != null)
             {
-                if (provider.InternalProvider() is Com.Permutive.Android.Identify.AliasProvider internalProvider)
+                foreach (var provider in options.AliasProviders)
                 {
-                    builder.AliasProvider(internalProvider);
+                    if (provider.InternalProvider() is Com.Permutive.Android.Identify.AliasProvider internalProvider)
+                    {
+                        builder.AliasProvider(internalProvider);
+                    }
                 }
             }
 
@@ -86,9 +89,9 @@ namespace Permutive.Xamarin
 
     internal class TriggersProviderImpl : TriggersProvider
     {
-        private Com.Permutive.Android.TriggersProvider triggersProvider;
+        private Com.Permutive.Android.ITriggersProvider triggersProvider;
 
-        internal TriggersProviderImpl(Com.Permutive.Android.TriggersProvider triggersProvider)
+        internal TriggersProviderImpl(Com.Permutive.Android.ITriggersProvider triggersProvider)
         {
             this.triggersProvider = triggersProvider;
         }
@@ -96,21 +99,21 @@ namespace Permutive.Xamarin
         public override IDisposable QueryReactions(string reaction, Action<List<int>> callback)
         {
             MethodListWrapper<int> methodWrapper = new MethodListWrapper<int>(callback);
-            Com.Permutive.Android.TriggersProvider.TriggerAction action = triggersProvider.QueryReactions(reaction, methodWrapper);
+            Com.Permutive.Android.ITriggerAction action = triggersProvider.QueryReactions(reaction, methodWrapper);
             return new TriggerActionWrapper(action);
         }
 
         public override IDisposable QuerySegments(Action<List<int>> callback)
         {
             MethodListWrapper<int> methodWrapper = new MethodListWrapper<int>(callback);
-            Com.Permutive.Android.TriggersProvider.TriggerAction action = triggersProvider.QuerySegments(methodWrapper);
+            Com.Permutive.Android.ITriggerAction action = triggersProvider.QuerySegments(methodWrapper);
             return new TriggerActionWrapper(action);
         }
 
         public override IDisposable TriggerAction<T>(int queryId, Action<T> callback)
         {
             MethodWrapper<T> methodWrapper = new MethodWrapper<T>(callback);
-            Com.Permutive.Android.TriggersProvider.TriggerAction action = triggersProvider.InvokeTriggerAction(queryId, methodWrapper);
+            Com.Permutive.Android.ITriggerAction action = triggersProvider.TriggerAction(queryId, methodWrapper);
             return new TriggerActionWrapper(action);
         }
     }
@@ -226,9 +229,9 @@ namespace Permutive.Xamarin
 
     internal class EventTrackerImpl : EventTracker
     {
-        private Com.Permutive.Android.EventTracker eventTracker;
+        private Com.Permutive.Android.IEventTracker eventTracker;
 
-        internal EventTrackerImpl(Com.Permutive.Android.EventTracker eventTracker)
+        internal EventTrackerImpl(Com.Permutive.Android.IEventTracker eventTracker)
         {
             this.eventTracker = eventTracker;
         }
@@ -248,9 +251,9 @@ namespace Permutive.Xamarin
 
     internal class TriggerActionWrapper : IDisposable
     {
-        private Com.Permutive.Android.TriggersProvider.TriggerAction triggerAction;
+        private Com.Permutive.Android.ITriggerAction triggerAction;
 
-        internal TriggerActionWrapper(Com.Permutive.Android.TriggersProvider.TriggerAction triggerAction)
+        internal TriggerActionWrapper(Com.Permutive.Android.ITriggerAction triggerAction)
         {
             this.triggerAction = triggerAction;
         }

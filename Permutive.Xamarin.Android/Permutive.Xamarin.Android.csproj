@@ -75,9 +75,6 @@
     <Reference Include="Permutive.Xamarin.Android.Arch.Persistence.Room.RxJava">
       <HintPath>..\packages\Permutive.Xamarin.Android.Arch.Persistence.Room.RxJava.1.1.1.1\lib\monoandroid90\Permutive.Xamarin.Android.Arch.Persistence.Room.RxJava.dll</HintPath>
     </Reference>
-    <Reference Include="Permutive.Xamarin.Android.Binding">
-      <HintPath>..\packages\Permutive.Xamarin.Android.Binding.0.2.2.2\lib\monoandroid90\Permutive.Xamarin.Android.Binding.dll</HintPath>
-    </Reference>
     <Reference Include="Xamarin.Android.Arch.Lifecycle.Common">
       <HintPath>..\packages\Xamarin.Android.Arch.Lifecycle.Common.1.1.1.1\lib\monoandroid90\Xamarin.Android.Arch.Lifecycle.Common.dll</HintPath>
     </Reference>
@@ -117,9 +114,6 @@
     <Reference Include="Xamarin.Android.Support.Core.Utils">
       <HintPath>..\packages\Xamarin.Android.Support.Core.Utils.28.0.0.1\lib\monoandroid90\Xamarin.Android.Support.Core.Utils.dll</HintPath>
     </Reference>
-    <Reference Include="Permutive.Xamarin.Interface">
-      <HintPath>..\packages\Permutive.Xamarin.Interface.0.1.1\lib\portable45-net45+win8+wpa81\Permutive.Xamarin.Interface.dll</HintPath>
-    </Reference>
     <Reference Include="Square.OkIO">
       <HintPath>..\packages\Square.OkIO.1.13.0\lib\MonoAndroid\Square.OkIO.dll</HintPath>
     </Reference>
@@ -141,6 +135,16 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Permutive.Xamarin.Interface\Permutive.Xamarin.Interface.csproj">
+      <Project>{096455FA-AD61-4A3B-9133-C12B1F3B3800}</Project>
+      <Name>Permutive.Xamarin.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Permutive.Xamarin.Android.Binding\Permutive.Xamarin.Android.Binding.csproj">
+      <Project>{C337FAE5-437A-490D-AB87-0DFEF10F42BF}</Project>
+      <Name>Permutive.Xamarin.Android.Binding</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.targets" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.targets')" />
