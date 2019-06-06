@@ -11,7 +11,7 @@
     <AssemblyName>Permutive.Xamarin.iOS</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <PackageId>Permutive.Xamarin.iOS</PackageId>
-    <PackageVersion>0.18.7</PackageVersion>
+    <PackageVersion>0.18.7.1</PackageVersion>
     <Authors>Tom Hall</Authors>
     <PackageReleaseNotes>Permutive SDK for iOS - v0.18.7</PackageReleaseNotes>
     <Summary>Xamarin iOS Library - Permutive SDK for iOS</Summary>

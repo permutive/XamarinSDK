@@ -31,10 +31,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Permutive.Xamarin.Interface\Permutive.Xamarin.Interface.csproj">
-      <Project>{096455FA-AD61-4A3B-9133-C12B1F3B3800}</Project>
-      <Name>Permutive.Xamarin.Interface</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Permutive.Xamarin.Interface">
+      <HintPath>..\packages\Permutive.Xamarin.Interface.0.2.0\lib\portable45-net45+win8+wpa81\Permutive.Xamarin.Interface.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

@@ -93,7 +93,7 @@
       <HintPath>..\packages\Permutive.Xamarin.iOS.Binding.0.18.7\lib\xamarinios10\Permutive.Xamarin.iOS.Binding.dll</HintPath>
     </Reference>
     <Reference Include="Permutive.Xamarin.iOS">
-      <HintPath>..\packages\Permutive.Xamarin.iOS.0.18.7\lib\xamarinios10\Permutive.Xamarin.iOS.dll</HintPath>
+      <HintPath>..\packages\Permutive.Xamarin.iOS.0.18.7.1\lib\xamarinios10\Permutive.Xamarin.iOS.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

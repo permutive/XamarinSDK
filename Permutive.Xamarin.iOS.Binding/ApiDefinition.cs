@@ -236,7 +236,7 @@ namespace Permutive.Xamarin.iOS.Binding
     // @interface Permutive : NSObject
     [Protocol]
     [BaseType(typeof(NSObject), Name="Permutive")]
-    interface PermutiveIosSdk
+    interface PermutiveIos
     {
         // +(PermutiveEventActionContext * _Nonnull)context;
         // +(void)setContext:(PermutiveEventActionContext * _Nonnull)context;
