@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{DAA2FDAD-587C-4C3A-8733-26069AA4C27C}|Default">
   <MonoDevelop.Ide.ItemProperties.BindingTest PreferredExecutionTarget="Android.Nexus_5_API_21" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BindingTest/MainActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/MainActivity.cs">
     <Files>
-      <File FileName="BindingTest/MainActivity.cs" Line="58" Column="60" />
+      <File FileName="BindingTest/MainActivity.cs" Line="61" Column="48" />
       <File FileName="SharedSample/SharedSample.cs" Line="95" Column="49" />
       <File FileName="Permutive.Xamarin.Interface/PermutiveSDK.cs" Line="1" Column="1" />
       <File FileName="iOS/ViewController.cs" Line="46" Column="1" />
@@ -15,14 +15,14 @@
       <File FileName="Permutive.Xamarin.iOS.Binding/ApiDefinition.cs" Line="25" Column="11" />
       <File FileName="Permutive.Xamarin.iOS.Binding/Structs.cs" Line="7" Column="20" />
       <File FileName="../../../../../Library/Frameworks/Mono.framework/Versions/5.16.0/lib/mono/msbuild/15.0/bin/Microsoft.Common.CurrentVersion.targets" Line="1899" Column="5" />
+      <File FileName="Droid/MainActivity.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Permutive.Xamarin" expanded="True">
-            <Node name="BindingTest" expanded="True" />
-            <Node name="Permutive.Xamarin.Android.Binding" expanded="True" selected="True">
-              <Node name="Jars" expanded="True" />
+            <Node name="SharedSample.Droid" expanded="True">
+              <Node name="MainActivity.cs" selected="True" />
             </Node>
           </Node>
         </State>
