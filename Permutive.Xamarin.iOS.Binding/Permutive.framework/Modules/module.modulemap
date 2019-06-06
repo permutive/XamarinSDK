@@ -1,0 +1,11 @@
+framework module Permutive {
+  umbrella header "Permutive.h"
+
+  export *
+  module * { export * }
+}
+
+module Permutive.Swift {
+    header "Permutive-Swift.h"
+    requires objc
+}

@@ -14,9 +14,9 @@
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <PackageId>Permutive.Xamarin.Android.Binding</PackageId>
-    <PackageVersion>0.2.2.2</PackageVersion>
+    <PackageVersion>0.2.8</PackageVersion>
     <Authors>Tom Hall</Authors>
-    <PackageReleaseNotes>Permutive Android SDK v0.2.2</PackageReleaseNotes>
+    <PackageReleaseNotes>Permutive Android SDK v0.2.8</PackageReleaseNotes>
     <Summary>Xamarin Android Binding Library - Permutive Android SDK </Summary>
     <Title>Xamarin Android Binding Library - Permutive Android SDK </Title>
     <Description>Xamarin Android Binding Library - Permutive Android SDK </Description>
@@ -119,7 +119,10 @@
       <HintPath>..\packages\Square.OkHttp3.3.8.1\lib\MonoAndroid\Square.OkHttp3.dll</HintPath>
     </Reference>
     <Reference Include="Square.Retrofit2">
-      <HintPath>..\packages\Square.Retrofit2.2.3.0\lib\MonoAndroid\Square.Retrofit2.dll</HintPath>
+      <HintPath>..\packages\Square.Retrofit2.2.4.0\lib\MonoAndroid\Square.Retrofit2.dll</HintPath>
+    </Reference>
+    <Reference Include="Permutive.Xamarin.Interface">
+      <HintPath>..\packages\Permutive.Xamarin.Interface.0.2.0\lib\portable45-net45+win8+wpa81\Permutive.Xamarin.Interface.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -137,24 +140,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedReferenceJar Include="Jars\annotations-13.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\arrow-annotations-0.7.3.jar" />
-    <EmbeddedReferenceJar Include="Jars\arrow-core-0.7.3.jar" />
     <EmbeddedReferenceJar Include="Jars\kindedj-1.1.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\kotlin-stdlib-1.3.10.jar" />
-    <EmbeddedReferenceJar Include="Jars\kotlin-stdlib-common-1.3.10.jar" />
-    <EmbeddedReferenceJar Include="Jars\kotlin-stdlib-jdk7-1.3.10.jar" />
     <EmbeddedReferenceJar Include="Jars\moshi-1.7.0.jar" />
     <EmbeddedReferenceJar Include="Jars\reactive-streams-1.0.2.jar" />
-    <EmbeddedReferenceJar Include="Jars\rxjava-2.2.4.jar" />
-    <EmbeddedReferenceJar Include="Jars\rxkotlin-2.2.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\kotlin-stdlib-1.3.31.jar" />
+    <EmbeddedReferenceJar Include="Jars\kotlin-stdlib-common-1.3.31.jar" />
+    <EmbeddedReferenceJar Include="Jars\kotlin-stdlib-jdk7-1.3.31.jar" />
+    <EmbeddedReferenceJar Include="Jars\rxjava-2.2.6.jar" />
+    <EmbeddedReferenceJar Include="Jars\rxkotlin-2.3.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\arrow-annotations-0.8.2.jar" />
+    <EmbeddedReferenceJar Include="Jars\arrow-core-0.8.2.jar" />
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\core-0.2.2.aar" />
+    <LibraryProjectZip Include="Jars\core-0.2.8.aar" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedJar Include="Jars\converter-moshi-2.3.0.jar" />
-    <EmbeddedJar Include="Jars\converter-scalars-2.3.0.jar" />
-    <EmbeddedJar Include="Jars\adapter-rxjava2-2.3.0.jar" />
+    <EmbeddedJar Include="Jars\converter-scalars-2.4.0.jar" />
+    <EmbeddedJar Include="Jars\converter-moshi-2.4.0.jar" />
+    <EmbeddedJar Include="Jars\adapter-rxjava2-2.4.0.jar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <Import Project="..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.targets" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.targets')" />

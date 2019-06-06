@@ -1,16 +1,29 @@
-﻿<Properties StartupConfiguration="{69853924-B7B8-4F3F-8706-0BC0799B84AE}|Default">
-  <MonoDevelop.Ide.ItemProperties.BindingTest PreferredExecutionTarget="Android.Nexus_5X_API_28_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BindingTest/BindingTestApplication.cs">
+﻿<Properties StartupConfiguration="{DAA2FDAD-587C-4C3A-8733-26069AA4C27C}|Default">
+  <MonoDevelop.Ide.ItemProperties.BindingTest PreferredExecutionTarget="Android.Nexus_5_API_21" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Permutive.Xamarin.iOS.Binding/ApiDefinition.cs">
     <Files>
-      <File FileName="BindingTest/MainActivity.cs" Line="1" Column="1" />
-      <File FileName="BindingTest/BindingTestApplication.cs" Line="1" Column="1" />
+      <File FileName="Permutive.Xamarin.Android.GoogleAds/PermutiveGoogleAdsSDK.cs" Line="29" Column="30" />
+      <File FileName="Droid/MainActivity.cs" Line="15" Column="4" />
+      <File FileName="SharedSample/SharedSample.cs" Line="12" Column="18" />
+      <File FileName="Permutive.Xamarin.iOS.Binding/ApiDefinition.cs" Line="273" Column="1" />
+      <File FileName="iOS/ViewController.cs" Line="27" Column="40" />
+      <File FileName="iOS/Main.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Permutive.Xamarin" expanded="True">
-            <Node name="Permutive.Xamarin.Android.GoogleAds" expanded="True" selected="True">
+            <Node name="Permutive.Xamarin.iOS" expanded="True" selected="True">
+              <Node name="References" expanded="True" />
               <Node name="Packages" expanded="True" />
+            </Node>
+            <Node name="SharedSample" expanded="True">
+              <Node name="References" expanded="True" />
+            </Node>
+            <Node name="SharedSample.iOS" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="Packages" expanded="True" />
+              <Node name="ViewController.cs" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -21,12 +34,20 @@
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
+        <State>
+          <Value>eventProperties</Value>
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.XamarinTest.iOS FirstBuild="True">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.XamarinTest.iOS>
+  <MonoDevelop.Ide.ItemProperties.XamarinTest FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.ItemProperties.SharedSample.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7FB21D88-4CB7-42BA-AB11-68982C58368C" />
+  <MonoDevelop.Ide.ItemProperties.SharedSample.Droid PreferredExecutionTarget="Android.Nexus_5_API_21" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

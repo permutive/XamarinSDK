@@ -24,18 +24,18 @@ namespace Permutive.Xamarin
     public static class AdRequestExtensions
     {
 
-        public static PublisherAdRequest.Builder AddPermutiveTargeting(this PublisherAdRequest.Builder builder, Permutive permutive)
+        public static PublisherAdRequest.Builder AddPermutiveTargeting(this PublisherAdRequest.Builder builder, PermutiveSdk permutive)
         {
-            if (permutive is PermutiveImpl permutiveImpl)
+            if (permutive is PermutiveAndroid permutiveImpl)
             {
                 return PublisherAdRequestUtils.AddPermutiveTargeting(builder, permutiveImpl.InternalPermutive());
             }
             return builder;
         }
 
-        public static PublisherAdRequest BuildWithPermutiveTargeting(this PublisherAdRequest.Builder builder, Permutive permutive)
+        public static PublisherAdRequest BuildWithPermutiveTargeting(this PublisherAdRequest.Builder builder, PermutiveSdk permutive)
         {
-            if (permutive is PermutiveImpl permutiveImpl)
+            if (permutive is PermutiveAndroid permutiveImpl)
             {
                 return PublisherAdRequestUtils.AddPermutiveTargeting(builder, permutiveImpl.InternalPermutive()).Build();
             }

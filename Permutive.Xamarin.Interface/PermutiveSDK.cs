@@ -12,7 +12,7 @@ namespace Permutive.Xamarin
     {
         public string ProjectId;
         public string ApiKey;
-        public List<IAliasProvider> AliasProviders = new List<IAliasProvider>();
+        public IList<IAliasProvider> AliasProviders = new List<IAliasProvider>();
         public string identity = null;
     }
 
@@ -68,11 +68,11 @@ namespace Permutive.Xamarin
     }
 
 
-    public abstract class Permutive : IDisposable
+    public abstract class PermutiveSdk : IDisposable
     {
         public abstract void Dispose();
 
-        public abstract Permutive Initialize(PermutiveOptions options);
+        public abstract PermutiveSdk Initialize(PermutiveOptions options);
 
         public abstract EventTracker EventTracker();
 
