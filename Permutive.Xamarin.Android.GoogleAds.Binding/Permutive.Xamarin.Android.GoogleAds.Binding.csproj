@@ -174,7 +174,7 @@
       <HintPath>..\packages\Square.OkHttp3.3.8.1\lib\MonoAndroid\Square.OkHttp3.dll</HintPath>
     </Reference>
     <Reference Include="Square.Retrofit2">
-      <HintPath>..\packages\Square.Retrofit2.2.3.0\lib\MonoAndroid\Square.Retrofit2.dll</HintPath>
+      <HintPath>..\packages\Square.Retrofit2.2.4.0\lib\MonoAndroid\Square.Retrofit2.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

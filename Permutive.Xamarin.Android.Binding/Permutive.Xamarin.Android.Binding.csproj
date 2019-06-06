@@ -14,9 +14,9 @@
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <PackageId>Permutive.Xamarin.Android.Binding</PackageId>
-    <PackageVersion>0.2.2.2</PackageVersion>
+    <PackageVersion>0.2.8</PackageVersion>
     <Authors>Tom Hall</Authors>
-    <PackageReleaseNotes>Permutive Android SDK v0.2.2</PackageReleaseNotes>
+    <PackageReleaseNotes>Permutive Android SDK v0.2.8</PackageReleaseNotes>
     <Summary>Xamarin Android Binding Library - Permutive Android SDK </Summary>
     <Title>Xamarin Android Binding Library - Permutive Android SDK </Title>
     <Description>Xamarin Android Binding Library - Permutive Android SDK </Description>
@@ -119,7 +119,10 @@
       <HintPath>..\packages\Square.OkHttp3.3.8.1\lib\MonoAndroid\Square.OkHttp3.dll</HintPath>
     </Reference>
     <Reference Include="Square.Retrofit2">
-      <HintPath>..\packages\Square.Retrofit2.2.3.0\lib\MonoAndroid\Square.Retrofit2.dll</HintPath>
+      <HintPath>..\packages\Square.Retrofit2.2.4.0\lib\MonoAndroid\Square.Retrofit2.dll</HintPath>
+    </Reference>
+    <Reference Include="Permutive.Xamarin.Interface">
+      <HintPath>..\packages\Permutive.Xamarin.Interface.0.2.0\lib\portable45-net45+win8+wpa81\Permutive.Xamarin.Interface.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
