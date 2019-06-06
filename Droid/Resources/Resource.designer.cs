@@ -159,46 +159,295 @@ namespace SharedSample.Droid
 			global::Library.Android.Resource.Styleable.GradientColorItem = global::SharedSample.Droid.Resource.Styleable.GradientColorItem;
 			global::Library.Android.Resource.Styleable.GradientColorItem_android_color = global::SharedSample.Droid.Resource.Styleable.GradientColorItem_android_color;
 			global::Library.Android.Resource.Styleable.GradientColorItem_android_offset = global::SharedSample.Droid.Resource.Styleable.GradientColorItem_android_offset;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.adSize = global::SharedSample.Droid.Resource.Attribute.adSize;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.adSizes = global::SharedSample.Droid.Resource.Attribute.adSizes;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.adUnitId = global::SharedSample.Droid.Resource.Attribute.adUnitId;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.alpha = global::SharedSample.Droid.Resource.Attribute.alpha;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.coordinatorLayoutStyle = global::SharedSample.Droid.Resource.Attribute.coordinatorLayoutStyle;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.font = global::SharedSample.Droid.Resource.Attribute.font;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.fontProviderAuthority = global::SharedSample.Droid.Resource.Attribute.fontProviderAuthority;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.fontProviderCerts = global::SharedSample.Droid.Resource.Attribute.fontProviderCerts;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.fontProviderFetchStrategy = global::SharedSample.Droid.Resource.Attribute.fontProviderFetchStrategy;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.fontProviderFetchTimeout = global::SharedSample.Droid.Resource.Attribute.fontProviderFetchTimeout;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.fontProviderPackage = global::SharedSample.Droid.Resource.Attribute.fontProviderPackage;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.fontProviderQuery = global::SharedSample.Droid.Resource.Attribute.fontProviderQuery;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.fontStyle = global::SharedSample.Droid.Resource.Attribute.fontStyle;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.fontVariationSettings = global::SharedSample.Droid.Resource.Attribute.fontVariationSettings;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.fontWeight = global::SharedSample.Droid.Resource.Attribute.fontWeight;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.keylines = global::SharedSample.Droid.Resource.Attribute.keylines;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.layout_anchor = global::SharedSample.Droid.Resource.Attribute.layout_anchor;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.layout_anchorGravity = global::SharedSample.Droid.Resource.Attribute.layout_anchorGravity;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.layout_behavior = global::SharedSample.Droid.Resource.Attribute.layout_behavior;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.layout_dodgeInsetEdges = global::SharedSample.Droid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.layout_insetEdge = global::SharedSample.Droid.Resource.Attribute.layout_insetEdge;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.layout_keyline = global::SharedSample.Droid.Resource.Attribute.layout_keyline;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.statusBarBackground = global::SharedSample.Droid.Resource.Attribute.statusBarBackground;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Attribute.ttcIndex = global::SharedSample.Droid.Resource.Attribute.ttcIndex;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Color.notification_action_color_filter = global::SharedSample.Droid.Resource.Color.notification_action_color_filter;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Color.notification_icon_bg_color = global::SharedSample.Droid.Resource.Color.notification_icon_bg_color;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Color.notification_material_background_media_default_color = global::SharedSample.Droid.Resource.Color.notification_material_background_media_default_color;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Color.primary_text_default_material_dark = global::SharedSample.Droid.Resource.Color.primary_text_default_material_dark;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Color.ripple_material_light = global::SharedSample.Droid.Resource.Color.ripple_material_light;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Color.secondary_text_default_material_dark = global::SharedSample.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Color.secondary_text_default_material_light = global::SharedSample.Droid.Resource.Color.secondary_text_default_material_light;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.compat_button_inset_horizontal_material = global::SharedSample.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.compat_button_inset_vertical_material = global::SharedSample.Droid.Resource.Dimension.compat_button_inset_vertical_material;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.compat_button_padding_horizontal_material = global::SharedSample.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.compat_button_padding_vertical_material = global::SharedSample.Droid.Resource.Dimension.compat_button_padding_vertical_material;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.compat_control_corner_material = global::SharedSample.Droid.Resource.Dimension.compat_control_corner_material;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.compat_notification_large_icon_max_height = global::SharedSample.Droid.Resource.Dimension.compat_notification_large_icon_max_height;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.compat_notification_large_icon_max_width = global::SharedSample.Droid.Resource.Dimension.compat_notification_large_icon_max_width;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_action_icon_size = global::SharedSample.Droid.Resource.Dimension.notification_action_icon_size;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_action_text_size = global::SharedSample.Droid.Resource.Dimension.notification_action_text_size;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_big_circle_margin = global::SharedSample.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_content_margin_start = global::SharedSample.Droid.Resource.Dimension.notification_content_margin_start;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_large_icon_height = global::SharedSample.Droid.Resource.Dimension.notification_large_icon_height;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_large_icon_width = global::SharedSample.Droid.Resource.Dimension.notification_large_icon_width;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_main_column_padding_top = global::SharedSample.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_media_narrow_margin = global::SharedSample.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_right_icon_size = global::SharedSample.Droid.Resource.Dimension.notification_right_icon_size;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_right_side_padding_top = global::SharedSample.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_small_icon_background_padding = global::SharedSample.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_small_icon_size_as_large = global::SharedSample.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_subtext_size = global::SharedSample.Droid.Resource.Dimension.notification_subtext_size;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_top_pad = global::SharedSample.Droid.Resource.Dimension.notification_top_pad;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.notification_top_pad_large_text = global::SharedSample.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.subtitle_corner_radius = global::SharedSample.Droid.Resource.Dimension.subtitle_corner_radius;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.subtitle_outline_width = global::SharedSample.Droid.Resource.Dimension.subtitle_outline_width;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.subtitle_shadow_offset = global::SharedSample.Droid.Resource.Dimension.subtitle_shadow_offset;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Dimension.subtitle_shadow_radius = global::SharedSample.Droid.Resource.Dimension.subtitle_shadow_radius;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Drawable.notification_action_background = global::SharedSample.Droid.Resource.Drawable.notification_action_background;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Drawable.notification_bg = global::SharedSample.Droid.Resource.Drawable.notification_bg;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Drawable.notification_bg_low = global::SharedSample.Droid.Resource.Drawable.notification_bg_low;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Drawable.notification_bg_low_normal = global::SharedSample.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Drawable.notification_bg_low_pressed = global::SharedSample.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Drawable.notification_bg_normal = global::SharedSample.Droid.Resource.Drawable.notification_bg_normal;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Drawable.notification_bg_normal_pressed = global::SharedSample.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Drawable.notification_icon_background = global::SharedSample.Droid.Resource.Drawable.notification_icon_background;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Drawable.notification_template_icon_bg = global::SharedSample.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Drawable.notification_template_icon_low_bg = global::SharedSample.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Drawable.notification_tile_bg = global::SharedSample.Droid.Resource.Drawable.notification_tile_bg;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Drawable.notify_panel_notification_icon_bg = global::SharedSample.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.action0 = global::SharedSample.Droid.Resource.Id.action0;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.action_container = global::SharedSample.Droid.Resource.Id.action_container;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.action_divider = global::SharedSample.Droid.Resource.Id.action_divider;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.action_image = global::SharedSample.Droid.Resource.Id.action_image;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.action_text = global::SharedSample.Droid.Resource.Id.action_text;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.actions = global::SharedSample.Droid.Resource.Id.actions;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.all = global::SharedSample.Droid.Resource.Id.all;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.async = global::SharedSample.Droid.Resource.Id.async;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.blocking = global::SharedSample.Droid.Resource.Id.blocking;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.bottom = global::SharedSample.Droid.Resource.Id.bottom;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.cancel_action = global::SharedSample.Droid.Resource.Id.cancel_action;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.center = global::SharedSample.Droid.Resource.Id.center;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.center_horizontal = global::SharedSample.Droid.Resource.Id.center_horizontal;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.center_vertical = global::SharedSample.Droid.Resource.Id.center_vertical;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.chronometer = global::SharedSample.Droid.Resource.Id.chronometer;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.clip_horizontal = global::SharedSample.Droid.Resource.Id.clip_horizontal;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.clip_vertical = global::SharedSample.Droid.Resource.Id.clip_vertical;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.end = global::SharedSample.Droid.Resource.Id.end;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.end_padder = global::SharedSample.Droid.Resource.Id.end_padder;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.fill = global::SharedSample.Droid.Resource.Id.fill;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.fill_horizontal = global::SharedSample.Droid.Resource.Id.fill_horizontal;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.fill_vertical = global::SharedSample.Droid.Resource.Id.fill_vertical;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.forever = global::SharedSample.Droid.Resource.Id.forever;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.icon = global::SharedSample.Droid.Resource.Id.icon;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.icon_group = global::SharedSample.Droid.Resource.Id.icon_group;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.info = global::SharedSample.Droid.Resource.Id.info;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.italic = global::SharedSample.Droid.Resource.Id.italic;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.left = global::SharedSample.Droid.Resource.Id.left;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.line1 = global::SharedSample.Droid.Resource.Id.line1;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.line3 = global::SharedSample.Droid.Resource.Id.line3;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.media_actions = global::SharedSample.Droid.Resource.Id.media_actions;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.none = global::SharedSample.Droid.Resource.Id.none;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.normal = global::SharedSample.Droid.Resource.Id.normal;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.notification_background = global::SharedSample.Droid.Resource.Id.notification_background;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.notification_main_column = global::SharedSample.Droid.Resource.Id.notification_main_column;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.notification_main_column_container = global::SharedSample.Droid.Resource.Id.notification_main_column_container;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.right = global::SharedSample.Droid.Resource.Id.right;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.right_icon = global::SharedSample.Droid.Resource.Id.right_icon;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.right_side = global::SharedSample.Droid.Resource.Id.right_side;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.start = global::SharedSample.Droid.Resource.Id.start;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.status_bar_latest_event_content = global::SharedSample.Droid.Resource.Id.status_bar_latest_event_content;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.tag_transition_group = global::SharedSample.Droid.Resource.Id.tag_transition_group;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.tag_unhandled_key_event_manager = global::SharedSample.Droid.Resource.Id.tag_unhandled_key_event_manager;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.tag_unhandled_key_listeners = global::SharedSample.Droid.Resource.Id.tag_unhandled_key_listeners;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.text = global::SharedSample.Droid.Resource.Id.text;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.text2 = global::SharedSample.Droid.Resource.Id.text2;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.time = global::SharedSample.Droid.Resource.Id.time;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.title = global::SharedSample.Droid.Resource.Id.title;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Id.top = global::SharedSample.Droid.Resource.Id.top;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Integer.cancel_button_image_alpha = global::SharedSample.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Integer.google_play_services_version = global::SharedSample.Droid.Resource.Integer.google_play_services_version;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Integer.status_bar_notification_info_maxnum = global::SharedSample.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_action = global::SharedSample.Droid.Resource.Layout.notification_action;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_action_tombstone = global::SharedSample.Droid.Resource.Layout.notification_action_tombstone;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_media_action = global::SharedSample.Droid.Resource.Layout.notification_media_action;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_media_cancel_action = global::SharedSample.Droid.Resource.Layout.notification_media_cancel_action;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_template_big_media = global::SharedSample.Droid.Resource.Layout.notification_template_big_media;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_template_big_media_custom = global::SharedSample.Droid.Resource.Layout.notification_template_big_media_custom;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_template_big_media_narrow = global::SharedSample.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_template_big_media_narrow_custom = global::SharedSample.Droid.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_template_custom_big = global::SharedSample.Droid.Resource.Layout.notification_template_custom_big;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_template_icon_group = global::SharedSample.Droid.Resource.Layout.notification_template_icon_group;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_template_lines_media = global::SharedSample.Droid.Resource.Layout.notification_template_lines_media;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_template_media = global::SharedSample.Droid.Resource.Layout.notification_template_media;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_template_media_custom = global::SharedSample.Droid.Resource.Layout.notification_template_media_custom;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_template_part_chronometer = global::SharedSample.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Layout.notification_template_part_time = global::SharedSample.Droid.Resource.Layout.notification_template_part_time;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.String.app_name = global::SharedSample.Droid.Resource.String.app_name;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.String.common_google_play_services_unknown_issue = global::SharedSample.Droid.Resource.String.common_google_play_services_unknown_issue;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.String.library_name = global::SharedSample.Droid.Resource.String.library_name;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.String.s1 = global::SharedSample.Droid.Resource.String.s1;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.String.s2 = global::SharedSample.Droid.Resource.String.s2;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.String.s3 = global::SharedSample.Droid.Resource.String.s3;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.String.s4 = global::SharedSample.Droid.Resource.String.s4;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.String.s5 = global::SharedSample.Droid.Resource.String.s5;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.String.s6 = global::SharedSample.Droid.Resource.String.s6;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.String.status_bar_notification_info_overflow = global::SharedSample.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Style.TextAppearance_Compat_Notification = global::SharedSample.Droid.Resource.Style.TextAppearance_Compat_Notification;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Style.TextAppearance_Compat_Notification_Info = global::SharedSample.Droid.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Style.TextAppearance_Compat_Notification_Info_Media = global::SharedSample.Droid.Resource.Style.TextAppearance_Compat_Notification_Info_Media;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::SharedSample.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Style.TextAppearance_Compat_Notification_Line2_Media = global::SharedSample.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2_Media;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Style.TextAppearance_Compat_Notification_Media = global::SharedSample.Droid.Resource.Style.TextAppearance_Compat_Notification_Media;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Style.TextAppearance_Compat_Notification_Time = global::SharedSample.Droid.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Style.TextAppearance_Compat_Notification_Time_Media = global::SharedSample.Droid.Resource.Style.TextAppearance_Compat_Notification_Time_Media;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Style.TextAppearance_Compat_Notification_Title = global::SharedSample.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Style.TextAppearance_Compat_Notification_Title_Media = global::SharedSample.Droid.Resource.Style.TextAppearance_Compat_Notification_Title_Media;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Style.Theme_IAPTheme = global::SharedSample.Droid.Resource.Style.Theme_IAPTheme;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Style.Widget_Compat_NotificationActionContainer = global::SharedSample.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Style.Widget_Compat_NotificationActionText = global::SharedSample.Droid.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Style.Widget_Support_CoordinatorLayout = global::SharedSample.Droid.Resource.Style.Widget_Support_CoordinatorLayout;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.AdsAttrs = global::SharedSample.Droid.Resource.Styleable.AdsAttrs;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.AdsAttrs_adSize = global::SharedSample.Droid.Resource.Styleable.AdsAttrs_adSize;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.AdsAttrs_adSizes = global::SharedSample.Droid.Resource.Styleable.AdsAttrs_adSizes;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.AdsAttrs_adUnitId = global::SharedSample.Droid.Resource.Styleable.AdsAttrs_adUnitId;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.ColorStateListItem = global::SharedSample.Droid.Resource.Styleable.ColorStateListItem;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.ColorStateListItem_alpha = global::SharedSample.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.ColorStateListItem_android_alpha = global::SharedSample.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.ColorStateListItem_android_color = global::SharedSample.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.CoordinatorLayout = global::SharedSample.Droid.Resource.Styleable.CoordinatorLayout;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.CoordinatorLayout_keylines = global::SharedSample.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::SharedSample.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.CoordinatorLayout_Layout = global::SharedSample.Droid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::SharedSample.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::SharedSample.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::SharedSample.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::SharedSample.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::SharedSample.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::SharedSample.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::SharedSample.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamily = global::SharedSample.Droid.Resource.Styleable.FontFamily;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamily_fontProviderAuthority = global::SharedSample.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamily_fontProviderCerts = global::SharedSample.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::SharedSample.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::SharedSample.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamily_fontProviderPackage = global::SharedSample.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamily_fontProviderQuery = global::SharedSample.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamilyFont = global::SharedSample.Droid.Resource.Styleable.FontFamilyFont;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamilyFont_android_font = global::SharedSample.Droid.Resource.Styleable.FontFamilyFont_android_font;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamilyFont_android_fontStyle = global::SharedSample.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamilyFont_android_fontVariationSettings = global::SharedSample.Droid.Resource.Styleable.FontFamilyFont_android_fontVariationSettings;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamilyFont_android_fontWeight = global::SharedSample.Droid.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamilyFont_android_ttcIndex = global::SharedSample.Droid.Resource.Styleable.FontFamilyFont_android_ttcIndex;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamilyFont_font = global::SharedSample.Droid.Resource.Styleable.FontFamilyFont_font;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamilyFont_fontStyle = global::SharedSample.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::SharedSample.Droid.Resource.Styleable.FontFamilyFont_fontVariationSettings;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamilyFont_fontWeight = global::SharedSample.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.FontFamilyFont_ttcIndex = global::SharedSample.Droid.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColor = global::SharedSample.Droid.Resource.Styleable.GradientColor;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColor_android_centerColor = global::SharedSample.Droid.Resource.Styleable.GradientColor_android_centerColor;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColor_android_centerX = global::SharedSample.Droid.Resource.Styleable.GradientColor_android_centerX;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColor_android_centerY = global::SharedSample.Droid.Resource.Styleable.GradientColor_android_centerY;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColor_android_endColor = global::SharedSample.Droid.Resource.Styleable.GradientColor_android_endColor;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColor_android_endX = global::SharedSample.Droid.Resource.Styleable.GradientColor_android_endX;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColor_android_endY = global::SharedSample.Droid.Resource.Styleable.GradientColor_android_endY;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColor_android_gradientRadius = global::SharedSample.Droid.Resource.Styleable.GradientColor_android_gradientRadius;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColor_android_startColor = global::SharedSample.Droid.Resource.Styleable.GradientColor_android_startColor;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColor_android_startX = global::SharedSample.Droid.Resource.Styleable.GradientColor_android_startX;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColor_android_startY = global::SharedSample.Droid.Resource.Styleable.GradientColor_android_startY;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColor_android_tileMode = global::SharedSample.Droid.Resource.Styleable.GradientColor_android_tileMode;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColor_android_type = global::SharedSample.Droid.Resource.Styleable.GradientColor_android_type;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColorItem = global::SharedSample.Droid.Resource.Styleable.GradientColorItem;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColorItem_android_color = global::SharedSample.Droid.Resource.Styleable.GradientColorItem_android_color;
+			global::Permutive.Xamarin.Android.GoogleAds.Resource.Styleable.GradientColorItem_android_offset = global::SharedSample.Droid.Resource.Styleable.GradientColorItem_android_offset;
 		}
 		
 		public partial class Attribute
 		{
 			
 			// aapt resource value: 0x7f010000
-			public const int alpha = 2130771968;
-			
-			// aapt resource value: 0x7f010008
-			public const int font = 2130771976;
+			public const int adSize = 2130771968;
 			
 			// aapt resource value: 0x7f010001
-			public const int fontProviderAuthority = 2130771969;
-			
-			// aapt resource value: 0x7f010004
-			public const int fontProviderCerts = 2130771972;
-			
-			// aapt resource value: 0x7f010005
-			public const int fontProviderFetchStrategy = 2130771973;
-			
-			// aapt resource value: 0x7f010006
-			public const int fontProviderFetchTimeout = 2130771974;
+			public const int adSizes = 2130771969;
 			
 			// aapt resource value: 0x7f010002
-			public const int fontProviderPackage = 2130771970;
+			public const int adUnitId = 2130771970;
+			
+			// aapt resource value: 0x7f01000c
+			public const int alpha = 2130771980;
 			
 			// aapt resource value: 0x7f010003
-			public const int fontProviderQuery = 2130771971;
+			public const int coordinatorLayoutStyle = 2130771971;
+			
+			// aapt resource value: 0x7f010014
+			public const int font = 2130771988;
+			
+			// aapt resource value: 0x7f01000d
+			public const int fontProviderAuthority = 2130771981;
+			
+			// aapt resource value: 0x7f010010
+			public const int fontProviderCerts = 2130771984;
+			
+			// aapt resource value: 0x7f010011
+			public const int fontProviderFetchStrategy = 2130771985;
+			
+			// aapt resource value: 0x7f010012
+			public const int fontProviderFetchTimeout = 2130771986;
+			
+			// aapt resource value: 0x7f01000e
+			public const int fontProviderPackage = 2130771982;
+			
+			// aapt resource value: 0x7f01000f
+			public const int fontProviderQuery = 2130771983;
+			
+			// aapt resource value: 0x7f010013
+			public const int fontStyle = 2130771987;
+			
+			// aapt resource value: 0x7f010016
+			public const int fontVariationSettings = 2130771990;
+			
+			// aapt resource value: 0x7f010015
+			public const int fontWeight = 2130771989;
+			
+			// aapt resource value: 0x7f010004
+			public const int keylines = 2130771972;
 			
 			// aapt resource value: 0x7f010007
-			public const int fontStyle = 2130771975;
-			
-			// aapt resource value: 0x7f01000a
-			public const int fontVariationSettings = 2130771978;
+			public const int layout_anchor = 2130771975;
 			
 			// aapt resource value: 0x7f010009
-			public const int fontWeight = 2130771977;
+			public const int layout_anchorGravity = 2130771977;
+			
+			// aapt resource value: 0x7f010006
+			public const int layout_behavior = 2130771974;
 			
 			// aapt resource value: 0x7f01000b
-			public const int ttcIndex = 2130771979;
+			public const int layout_dodgeInsetEdges = 2130771979;
+			
+			// aapt resource value: 0x7f01000a
+			public const int layout_insetEdge = 2130771978;
+			
+			// aapt resource value: 0x7f010008
+			public const int layout_keyline = 2130771976;
+			
+			// aapt resource value: 0x7f010005
+			public const int statusBarBackground = 2130771973;
+			
+			// aapt resource value: 0x7f010017
+			public const int ttcIndex = 2130771991;
 			
 			static Attribute()
 			{
@@ -213,17 +462,26 @@ namespace SharedSample.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f070000
-			public const int notification_action_color_filter = 2131165184;
+			// aapt resource value: 0x7f080003
+			public const int notification_action_color_filter = 2131230723;
 			
-			// aapt resource value: 0x7f070001
-			public const int notification_icon_bg_color = 2131165185;
+			// aapt resource value: 0x7f080004
+			public const int notification_icon_bg_color = 2131230724;
 			
-			// aapt resource value: 0x7f070002
-			public const int ripple_material_light = 2131165186;
+			// aapt resource value: 0x7f080000
+			public const int notification_material_background_media_default_color = 2131230720;
 			
-			// aapt resource value: 0x7f070003
-			public const int secondary_text_default_material_light = 2131165187;
+			// aapt resource value: 0x7f080001
+			public const int primary_text_default_material_dark = 2131230721;
+			
+			// aapt resource value: 0x7f080005
+			public const int ripple_material_light = 2131230725;
+			
+			// aapt resource value: 0x7f080002
+			public const int secondary_text_default_material_dark = 2131230722;
+			
+			// aapt resource value: 0x7f080006
+			public const int secondary_text_default_material_light = 2131230726;
 			
 			static Color()
 			{
@@ -238,71 +496,83 @@ namespace SharedSample.Droid
 		public partial class Dimension
 		{
 			
-			// aapt resource value: 0x7f060004
-			public const int compat_button_inset_horizontal_material = 2131099652;
+			// aapt resource value: 0x7f090008
+			public const int compat_button_inset_horizontal_material = 2131296264;
 			
-			// aapt resource value: 0x7f060005
-			public const int compat_button_inset_vertical_material = 2131099653;
+			// aapt resource value: 0x7f090009
+			public const int compat_button_inset_vertical_material = 2131296265;
 			
-			// aapt resource value: 0x7f060006
-			public const int compat_button_padding_horizontal_material = 2131099654;
+			// aapt resource value: 0x7f09000a
+			public const int compat_button_padding_horizontal_material = 2131296266;
 			
-			// aapt resource value: 0x7f060007
-			public const int compat_button_padding_vertical_material = 2131099655;
+			// aapt resource value: 0x7f09000b
+			public const int compat_button_padding_vertical_material = 2131296267;
 			
-			// aapt resource value: 0x7f060008
-			public const int compat_control_corner_material = 2131099656;
+			// aapt resource value: 0x7f09000c
+			public const int compat_control_corner_material = 2131296268;
 			
-			// aapt resource value: 0x7f060009
-			public const int compat_notification_large_icon_max_height = 2131099657;
+			// aapt resource value: 0x7f09000d
+			public const int compat_notification_large_icon_max_height = 2131296269;
 			
-			// aapt resource value: 0x7f06000a
-			public const int compat_notification_large_icon_max_width = 2131099658;
+			// aapt resource value: 0x7f09000e
+			public const int compat_notification_large_icon_max_width = 2131296270;
 			
-			// aapt resource value: 0x7f06000b
-			public const int notification_action_icon_size = 2131099659;
+			// aapt resource value: 0x7f09000f
+			public const int notification_action_icon_size = 2131296271;
 			
-			// aapt resource value: 0x7f06000c
-			public const int notification_action_text_size = 2131099660;
+			// aapt resource value: 0x7f090010
+			public const int notification_action_text_size = 2131296272;
 			
-			// aapt resource value: 0x7f06000d
-			public const int notification_big_circle_margin = 2131099661;
+			// aapt resource value: 0x7f090011
+			public const int notification_big_circle_margin = 2131296273;
 			
-			// aapt resource value: 0x7f060001
-			public const int notification_content_margin_start = 2131099649;
+			// aapt resource value: 0x7f090005
+			public const int notification_content_margin_start = 2131296261;
 			
-			// aapt resource value: 0x7f06000e
-			public const int notification_large_icon_height = 2131099662;
+			// aapt resource value: 0x7f090012
+			public const int notification_large_icon_height = 2131296274;
 			
-			// aapt resource value: 0x7f06000f
-			public const int notification_large_icon_width = 2131099663;
+			// aapt resource value: 0x7f090013
+			public const int notification_large_icon_width = 2131296275;
 			
-			// aapt resource value: 0x7f060002
-			public const int notification_main_column_padding_top = 2131099650;
+			// aapt resource value: 0x7f090006
+			public const int notification_main_column_padding_top = 2131296262;
 			
-			// aapt resource value: 0x7f060003
-			public const int notification_media_narrow_margin = 2131099651;
+			// aapt resource value: 0x7f090007
+			public const int notification_media_narrow_margin = 2131296263;
 			
-			// aapt resource value: 0x7f060010
-			public const int notification_right_icon_size = 2131099664;
+			// aapt resource value: 0x7f090014
+			public const int notification_right_icon_size = 2131296276;
 			
-			// aapt resource value: 0x7f060000
-			public const int notification_right_side_padding_top = 2131099648;
+			// aapt resource value: 0x7f090004
+			public const int notification_right_side_padding_top = 2131296260;
 			
-			// aapt resource value: 0x7f060011
-			public const int notification_small_icon_background_padding = 2131099665;
+			// aapt resource value: 0x7f090015
+			public const int notification_small_icon_background_padding = 2131296277;
 			
-			// aapt resource value: 0x7f060012
-			public const int notification_small_icon_size_as_large = 2131099666;
+			// aapt resource value: 0x7f090016
+			public const int notification_small_icon_size_as_large = 2131296278;
 			
-			// aapt resource value: 0x7f060013
-			public const int notification_subtext_size = 2131099667;
+			// aapt resource value: 0x7f090017
+			public const int notification_subtext_size = 2131296279;
 			
-			// aapt resource value: 0x7f060014
-			public const int notification_top_pad = 2131099668;
+			// aapt resource value: 0x7f090018
+			public const int notification_top_pad = 2131296280;
 			
-			// aapt resource value: 0x7f060015
-			public const int notification_top_pad_large_text = 2131099669;
+			// aapt resource value: 0x7f090019
+			public const int notification_top_pad_large_text = 2131296281;
+			
+			// aapt resource value: 0x7f090000
+			public const int subtitle_corner_radius = 2131296256;
+			
+			// aapt resource value: 0x7f090001
+			public const int subtitle_outline_width = 2131296257;
+			
+			// aapt resource value: 0x7f090002
+			public const int subtitle_shadow_offset = 2131296258;
+			
+			// aapt resource value: 0x7f090003
+			public const int subtitle_shadow_radius = 2131296259;
 			
 			static Dimension()
 			{
@@ -366,98 +636,161 @@ namespace SharedSample.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f090010
-			public const int action_container = 2131296272;
+			// aapt resource value: 0x7f0a0023
+			public const int action0 = 2131361827;
 			
-			// aapt resource value: 0x7f09001c
-			public const int action_divider = 2131296284;
+			// aapt resource value: 0x7f0a0020
+			public const int action_container = 2131361824;
 			
-			// aapt resource value: 0x7f090011
-			public const int action_image = 2131296273;
+			// aapt resource value: 0x7f0a0027
+			public const int action_divider = 2131361831;
 			
-			// aapt resource value: 0x7f090012
-			public const int action_text = 2131296274;
+			// aapt resource value: 0x7f0a0021
+			public const int action_image = 2131361825;
 			
-			// aapt resource value: 0x7f09001d
-			public const int actions = 2131296285;
+			// aapt resource value: 0x7f0a0022
+			public const int action_text = 2131361826;
 			
-			// aapt resource value: 0x7f090008
-			public const int async = 2131296264;
+			// aapt resource value: 0x7f0a0031
+			public const int actions = 2131361841;
 			
-			// aapt resource value: 0x7f090009
-			public const int blocking = 2131296265;
+			// aapt resource value: 0x7f0a0017
+			public const int all = 2131361815;
 			
-			// aapt resource value: 0x7f09001b
-			public const int chronometer = 2131296283;
+			// aapt resource value: 0x7f0a0018
+			public const int async = 2131361816;
 			
-			// aapt resource value: 0x7f09000a
-			public const int forever = 2131296266;
+			// aapt resource value: 0x7f0a0019
+			public const int blocking = 2131361817;
 			
-			// aapt resource value: 0x7f090014
-			public const int icon = 2131296276;
+			// aapt resource value: 0x7f0a0008
+			public const int bottom = 2131361800;
 			
-			// aapt resource value: 0x7f09001e
-			public const int icon_group = 2131296286;
+			// aapt resource value: 0x7f0a0024
+			public const int cancel_action = 2131361828;
 			
-			// aapt resource value: 0x7f090017
-			public const int info = 2131296279;
+			// aapt resource value: 0x7f0a0009
+			public const int center = 2131361801;
 			
-			// aapt resource value: 0x7f09000b
-			public const int italic = 2131296267;
+			// aapt resource value: 0x7f0a000a
+			public const int center_horizontal = 2131361802;
 			
-			// aapt resource value: 0x7f090000
-			public const int line1 = 2131296256;
+			// aapt resource value: 0x7f0a000b
+			public const int center_vertical = 2131361803;
 			
-			// aapt resource value: 0x7f090001
-			public const int line3 = 2131296257;
+			// aapt resource value: 0x7f0a002c
+			public const int chronometer = 2131361836;
 			
-			// aapt resource value: 0x7f09000c
-			public const int normal = 2131296268;
+			// aapt resource value: 0x7f0a000c
+			public const int clip_horizontal = 2131361804;
 			
-			// aapt resource value: 0x7f090019
-			public const int notification_background = 2131296281;
+			// aapt resource value: 0x7f0a000d
+			public const int clip_vertical = 2131361805;
 			
-			// aapt resource value: 0x7f090015
-			public const int notification_main_column = 2131296277;
+			// aapt resource value: 0x7f0a000e
+			public const int end = 2131361806;
 			
-			// aapt resource value: 0x7f090013
-			public const int notification_main_column_container = 2131296275;
+			// aapt resource value: 0x7f0a0033
+			public const int end_padder = 2131361843;
 			
-			// aapt resource value: 0x7f090018
-			public const int right_icon = 2131296280;
+			// aapt resource value: 0x7f0a000f
+			public const int fill = 2131361807;
 			
-			// aapt resource value: 0x7f090016
-			public const int right_side = 2131296278;
+			// aapt resource value: 0x7f0a0010
+			public const int fill_horizontal = 2131361808;
 			
-			// aapt resource value: 0x7f09000e
-			public const int sendEventButton = 2131296270;
+			// aapt resource value: 0x7f0a0011
+			public const int fill_vertical = 2131361809;
 			
-			// aapt resource value: 0x7f09000d
-			public const int setIdentityButton = 2131296269;
+			// aapt resource value: 0x7f0a001a
+			public const int forever = 2131361818;
 			
-			// aapt resource value: 0x7f09000f
-			public const int startButton = 2131296271;
+			// aapt resource value: 0x7f0a002e
+			public const int icon = 2131361838;
 			
-			// aapt resource value: 0x7f090002
-			public const int tag_transition_group = 2131296258;
+			// aapt resource value: 0x7f0a0032
+			public const int icon_group = 2131361842;
 			
-			// aapt resource value: 0x7f090003
-			public const int tag_unhandled_key_event_manager = 2131296259;
+			// aapt resource value: 0x7f0a002d
+			public const int info = 2131361837;
 			
-			// aapt resource value: 0x7f090004
-			public const int tag_unhandled_key_listeners = 2131296260;
+			// aapt resource value: 0x7f0a001b
+			public const int italic = 2131361819;
 			
-			// aapt resource value: 0x7f090005
-			public const int text = 2131296261;
+			// aapt resource value: 0x7f0a0012
+			public const int left = 2131361810;
 			
-			// aapt resource value: 0x7f090006
-			public const int text2 = 2131296262;
+			// aapt resource value: 0x7f0a0000
+			public const int line1 = 2131361792;
 			
-			// aapt resource value: 0x7f09001a
-			public const int time = 2131296282;
+			// aapt resource value: 0x7f0a0001
+			public const int line3 = 2131361793;
 			
-			// aapt resource value: 0x7f090007
-			public const int title = 2131296263;
+			// aapt resource value: 0x7f0a0026
+			public const int media_actions = 2131361830;
+			
+			// aapt resource value: 0x7f0a0016
+			public const int none = 2131361814;
+			
+			// aapt resource value: 0x7f0a001c
+			public const int normal = 2131361820;
+			
+			// aapt resource value: 0x7f0a0030
+			public const int notification_background = 2131361840;
+			
+			// aapt resource value: 0x7f0a0029
+			public const int notification_main_column = 2131361833;
+			
+			// aapt resource value: 0x7f0a0028
+			public const int notification_main_column_container = 2131361832;
+			
+			// aapt resource value: 0x7f0a0013
+			public const int right = 2131361811;
+			
+			// aapt resource value: 0x7f0a002f
+			public const int right_icon = 2131361839;
+			
+			// aapt resource value: 0x7f0a002a
+			public const int right_side = 2131361834;
+			
+			// aapt resource value: 0x7f0a001e
+			public const int sendEventButton = 2131361822;
+			
+			// aapt resource value: 0x7f0a001d
+			public const int setIdentityButton = 2131361821;
+			
+			// aapt resource value: 0x7f0a0014
+			public const int start = 2131361812;
+			
+			// aapt resource value: 0x7f0a001f
+			public const int startButton = 2131361823;
+			
+			// aapt resource value: 0x7f0a0025
+			public const int status_bar_latest_event_content = 2131361829;
+			
+			// aapt resource value: 0x7f0a0002
+			public const int tag_transition_group = 2131361794;
+			
+			// aapt resource value: 0x7f0a0003
+			public const int tag_unhandled_key_event_manager = 2131361795;
+			
+			// aapt resource value: 0x7f0a0004
+			public const int tag_unhandled_key_listeners = 2131361796;
+			
+			// aapt resource value: 0x7f0a0005
+			public const int text = 2131361797;
+			
+			// aapt resource value: 0x7f0a0006
+			public const int text2 = 2131361798;
+			
+			// aapt resource value: 0x7f0a002b
+			public const int time = 2131361835;
+			
+			// aapt resource value: 0x7f0a0007
+			public const int title = 2131361799;
+			
+			// aapt resource value: 0x7f0a0015
+			public const int top = 2131361813;
 			
 			static Id()
 			{
@@ -472,8 +805,14 @@ namespace SharedSample.Droid
 		public partial class Integer
 		{
 			
-			// aapt resource value: 0x7f0a0000
-			public const int status_bar_notification_info_maxnum = 2131361792;
+			// aapt resource value: 0x7f050001
+			public const int cancel_button_image_alpha = 2131034113;
+			
+			// aapt resource value: 0x7f050000
+			public const int google_play_services_version = 2131034112;
+			
+			// aapt resource value: 0x7f050002
+			public const int status_bar_notification_info_maxnum = 2131034114;
 			
 			static Integer()
 			{
@@ -498,16 +837,43 @@ namespace SharedSample.Droid
 			public const int notification_action_tombstone = 2130968578;
 			
 			// aapt resource value: 0x7f040003
-			public const int notification_template_custom_big = 2130968579;
+			public const int notification_media_action = 2130968579;
 			
 			// aapt resource value: 0x7f040004
-			public const int notification_template_icon_group = 2130968580;
+			public const int notification_media_cancel_action = 2130968580;
 			
 			// aapt resource value: 0x7f040005
-			public const int notification_template_part_chronometer = 2130968581;
+			public const int notification_template_big_media = 2130968581;
 			
 			// aapt resource value: 0x7f040006
-			public const int notification_template_part_time = 2130968582;
+			public const int notification_template_big_media_custom = 2130968582;
+			
+			// aapt resource value: 0x7f040007
+			public const int notification_template_big_media_narrow = 2130968583;
+			
+			// aapt resource value: 0x7f040008
+			public const int notification_template_big_media_narrow_custom = 2130968584;
+			
+			// aapt resource value: 0x7f040009
+			public const int notification_template_custom_big = 2130968585;
+			
+			// aapt resource value: 0x7f04000a
+			public const int notification_template_icon_group = 2130968586;
+			
+			// aapt resource value: 0x7f04000b
+			public const int notification_template_lines_media = 2130968587;
+			
+			// aapt resource value: 0x7f04000c
+			public const int notification_template_media = 2130968588;
+			
+			// aapt resource value: 0x7f04000d
+			public const int notification_template_media_custom = 2130968589;
+			
+			// aapt resource value: 0x7f04000e
+			public const int notification_template_part_chronometer = 2130968590;
+			
+			// aapt resource value: 0x7f04000f
+			public const int notification_template_part_time = 2130968591;
 			
 			static Layout()
 			{
@@ -538,17 +904,38 @@ namespace SharedSample.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f050001
-			public const int app_name = 2131034113;
+			// aapt resource value: 0x7f060009
+			public const int app_name = 2131099657;
 			
-			// aapt resource value: 0x7f050003
-			public const int hello = 2131034115;
+			// aapt resource value: 0x7f060000
+			public const int common_google_play_services_unknown_issue = 2131099648;
 			
-			// aapt resource value: 0x7f050002
-			public const int library_name = 2131034114;
+			// aapt resource value: 0x7f06000a
+			public const int hello = 2131099658;
 			
-			// aapt resource value: 0x7f050000
-			public const int status_bar_notification_info_overflow = 2131034112;
+			// aapt resource value: 0x7f060008
+			public const int library_name = 2131099656;
+			
+			// aapt resource value: 0x7f060001
+			public const int s1 = 2131099649;
+			
+			// aapt resource value: 0x7f060002
+			public const int s2 = 2131099650;
+			
+			// aapt resource value: 0x7f060003
+			public const int s3 = 2131099651;
+			
+			// aapt resource value: 0x7f060004
+			public const int s4 = 2131099652;
+			
+			// aapt resource value: 0x7f060005
+			public const int s5 = 2131099653;
+			
+			// aapt resource value: 0x7f060006
+			public const int s6 = 2131099654;
+			
+			// aapt resource value: 0x7f060007
+			public const int status_bar_notification_info_overflow = 2131099655;
 			
 			static String()
 			{
@@ -563,26 +950,47 @@ namespace SharedSample.Droid
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f080000
-			public const int TextAppearance_Compat_Notification = 2131230720;
+			// aapt resource value: 0x7f070007
+			public const int TextAppearance_Compat_Notification = 2131165191;
 			
-			// aapt resource value: 0x7f080001
-			public const int TextAppearance_Compat_Notification_Info = 2131230721;
+			// aapt resource value: 0x7f070008
+			public const int TextAppearance_Compat_Notification_Info = 2131165192;
 			
-			// aapt resource value: 0x7f080006
-			public const int TextAppearance_Compat_Notification_Line2 = 2131230726;
+			// aapt resource value: 0x7f070001
+			public const int TextAppearance_Compat_Notification_Info_Media = 2131165185;
 			
-			// aapt resource value: 0x7f080002
-			public const int TextAppearance_Compat_Notification_Time = 2131230722;
+			// aapt resource value: 0x7f07000d
+			public const int TextAppearance_Compat_Notification_Line2 = 2131165197;
 			
-			// aapt resource value: 0x7f080003
-			public const int TextAppearance_Compat_Notification_Title = 2131230723;
+			// aapt resource value: 0x7f070005
+			public const int TextAppearance_Compat_Notification_Line2_Media = 2131165189;
 			
-			// aapt resource value: 0x7f080004
-			public const int Widget_Compat_NotificationActionContainer = 2131230724;
+			// aapt resource value: 0x7f070002
+			public const int TextAppearance_Compat_Notification_Media = 2131165186;
 			
-			// aapt resource value: 0x7f080005
-			public const int Widget_Compat_NotificationActionText = 2131230725;
+			// aapt resource value: 0x7f070009
+			public const int TextAppearance_Compat_Notification_Time = 2131165193;
+			
+			// aapt resource value: 0x7f070003
+			public const int TextAppearance_Compat_Notification_Time_Media = 2131165187;
+			
+			// aapt resource value: 0x7f07000a
+			public const int TextAppearance_Compat_Notification_Title = 2131165194;
+			
+			// aapt resource value: 0x7f070004
+			public const int TextAppearance_Compat_Notification_Title_Media = 2131165188;
+			
+			// aapt resource value: 0x7f070000
+			public const int Theme_IAPTheme = 2131165184;
+			
+			// aapt resource value: 0x7f07000b
+			public const int Widget_Compat_NotificationActionContainer = 2131165195;
+			
+			// aapt resource value: 0x7f07000c
+			public const int Widget_Compat_NotificationActionText = 2131165196;
+			
+			// aapt resource value: 0x7f070006
+			public const int Widget_Support_CoordinatorLayout = 2131165190;
 			
 			static Style()
 			{
@@ -597,10 +1005,24 @@ namespace SharedSample.Droid
 		public partial class Styleable
 		{
 			
+			public static int[] AdsAttrs = new int[] {
+					2130771968,
+					2130771969,
+					2130771970};
+			
+			// aapt resource value: 0
+			public const int AdsAttrs_adSize = 0;
+			
+			// aapt resource value: 1
+			public const int AdsAttrs_adSizes = 1;
+			
+			// aapt resource value: 2
+			public const int AdsAttrs_adUnitId = 2;
+			
 			public static int[] ColorStateListItem = new int[] {
 					16843173,
 					16843551,
-					2130771968};
+					2130771980};
 			
 			// aapt resource value: 2
 			public const int ColorStateListItem_alpha = 2;
@@ -611,13 +1033,53 @@ namespace SharedSample.Droid
 			// aapt resource value: 0
 			public const int ColorStateListItem_android_color = 0;
 			
-			public static int[] FontFamily = new int[] {
-					2130771969,
-					2130771970,
-					2130771971,
+			public static int[] CoordinatorLayout = new int[] {
 					2130771972,
-					2130771973,
-					2130771974};
+					2130771973};
+			
+			// aapt resource value: 0
+			public const int CoordinatorLayout_keylines = 0;
+			
+			// aapt resource value: 1
+			public const int CoordinatorLayout_statusBarBackground = 1;
+			
+			public static int[] CoordinatorLayout_Layout = new int[] {
+					16842931,
+					2130771974,
+					2130771975,
+					2130771976,
+					2130771977,
+					2130771978,
+					2130771979};
+			
+			// aapt resource value: 0
+			public const int CoordinatorLayout_Layout_android_layout_gravity = 0;
+			
+			// aapt resource value: 2
+			public const int CoordinatorLayout_Layout_layout_anchor = 2;
+			
+			// aapt resource value: 4
+			public const int CoordinatorLayout_Layout_layout_anchorGravity = 4;
+			
+			// aapt resource value: 1
+			public const int CoordinatorLayout_Layout_layout_behavior = 1;
+			
+			// aapt resource value: 6
+			public const int CoordinatorLayout_Layout_layout_dodgeInsetEdges = 6;
+			
+			// aapt resource value: 5
+			public const int CoordinatorLayout_Layout_layout_insetEdge = 5;
+			
+			// aapt resource value: 3
+			public const int CoordinatorLayout_Layout_layout_keyline = 3;
+			
+			public static int[] FontFamily = new int[] {
+					2130771981,
+					2130771982,
+					2130771983,
+					2130771984,
+					2130771985,
+					2130771986};
 			
 			// aapt resource value: 0
 			public const int FontFamily_fontProviderAuthority = 0;
@@ -643,11 +1105,11 @@ namespace SharedSample.Droid
 					16844095,
 					16844143,
 					16844144,
-					2130771975,
-					2130771976,
-					2130771977,
-					2130771978,
-					2130771979};
+					2130771987,
+					2130771988,
+					2130771989,
+					2130771990,
+					2130771991};
 			
 			// aapt resource value: 0
 			public const int FontFamilyFont_android_font = 0;

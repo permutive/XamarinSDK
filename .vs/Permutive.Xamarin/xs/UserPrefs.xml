@@ -1,18 +1,31 @@
 ﻿<Properties StartupConfiguration="{DAA2FDAD-587C-4C3A-8733-26069AA4C27C}|Default">
   <MonoDevelop.Ide.ItemProperties.BindingTest PreferredExecutionTarget="Android.Nexus_5_API_21" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="SharedSample/SharedSample.cs">
+    <Files>
+      <File FileName="Permutive.Xamarin.Android.GoogleAds/PermutiveGoogleAdsSDK.cs" Line="29" Column="30" />
+      <File FileName="Droid/MainActivity.cs" Line="28" Column="36" />
+      <File FileName="SharedSample/SharedSample.cs" Line="12" Column="18" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Permutive.Xamarin" expanded="True">
-            <Node name="Permutive.Xamarin.Android" expanded="True" selected="True">
-              <Node name="References" expanded="True" />
-              <Node name="Packages" expanded="True" />
+            <Node name="Permutive.Xamarin.iOS.Binding" expanded="True" />
+            <Node name="SharedSample" expanded="True">
+              <Node name="SharedSample.cs" selected="True" />
             </Node>
-            <Node name="Permutive.Xamarin.Interface" expanded="True">
-              <Node name="References" expanded="True" />
-            </Node>
+            <Node name="SharedSample.Droid" expanded="True" />
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="Permutive.Xamarin" expanded="True" selected="True" />
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>eventProperties</Value>
         </State>
       </Pad>
     </Pads>

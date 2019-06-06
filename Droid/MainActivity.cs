@@ -37,8 +37,8 @@ namespace SharedSample.Droid
             Button setIdentityButton = FindViewById<Button>(Resource.Id.setIdentityButton);
 
             startButton.Click += delegate {
-                //var providers = new List<IAliasProvider> { new AliasAaidProvider(this) };
-                tester.Initialise(null);
+                var providers = new List<IAliasProvider> { new AliasAaidProvider(this) };
+                tester.Initialise(providers);
                 tester.Setup();
              };
             sendEventButton.Click += delegate {
